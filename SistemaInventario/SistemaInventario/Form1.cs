@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SistemaInventario
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialSkin.Controls.MaterialForm;
     {
         public Form1()
         {
