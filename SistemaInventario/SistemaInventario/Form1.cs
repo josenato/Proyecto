@@ -6,12 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
 namespace SistemaInventario
 {
-    public partial class Form1 : MaterialSkin.Controls.MaterialForm;
+    public partial class Form1 : Form
     {
         public Form1()
         {
