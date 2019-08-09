@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemaInventario
 {
-    public partial class Form1 : Form
+    public partial class MarcasFRM : MaterialSkin.Controls.MaterialForm
     {
-        public Form1()
+        public MarcasFRM()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
