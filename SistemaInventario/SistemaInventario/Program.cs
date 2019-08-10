@@ -16,7 +16,7 @@ namespace SistemaInventario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MarcasFRM());
+            Application.Run(new Marcas());
         }
     }
 }
