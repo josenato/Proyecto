@@ -56,6 +56,7 @@ namespace SistemaInventario
             txt_Descripcion.Text = txt_Descripcion.Text ="" ;
             MarcasID = 0;
             btn_guardar.ButtonText = "Guardar";
+            btn_borrar.Enabled = false;
         }
 
 
@@ -72,6 +73,7 @@ namespace SistemaInventario
                 txt_Descripcion.Text = gtb_datos.CurrentRow.Cells[1].Value.ToString();
                 MarcasID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
                 btn_guardar.ButtonText = "Actualizar";
+                btn_borrar.Enabled = true;
             }
         }
 
@@ -89,6 +91,16 @@ namespace SistemaInventario
               //  gtb_datos.Columns[0].Visible = false;
 
             }
+        }
+
+        private void Btn_cancelar_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        private void Btn_borrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

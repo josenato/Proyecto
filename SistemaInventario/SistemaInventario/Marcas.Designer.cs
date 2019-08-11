@@ -29,21 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Marcas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
             this.txt_Descripcion = new ns1.BunifuMaterialTextbox();
             this.txt_buscar = new ns1.BunifuTextbox();
             this.bunifuThinButton23 = new ns1.BunifuThinButton2();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.btn_guardar = new ns1.BunifuThinButton2();
-            this.bunifuThinButton22 = new ns1.BunifuThinButton2();
+            this.btn_borrar = new ns1.BunifuThinButton2();
+            this.btn_cancelar = new ns1.BunifuThinButton2();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroPanel1.SuspendLayout();
-            this.metroPanel2.SuspendLayout();
-            this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,48 +136,14 @@
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton23.Click += new System.EventHandler(this.BunifuThinButton23_Click);
             // 
-            // metroPanel2
-            // 
-            this.metroPanel2.BackColor = System.Drawing.Color.Red;
-            this.metroPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.metroPanel2.Controls.Add(this.gtb_datos);
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 12;
-            this.metroPanel2.Location = new System.Drawing.Point(74, 194);
-            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(426, 176);
-            this.metroPanel2.TabIndex = 1;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 13;
-            // 
-            // metroPanel3
-            // 
-            this.metroPanel3.BackColor = System.Drawing.Color.White;
-            this.metroPanel3.Controls.Add(this.btn_guardar);
-            this.metroPanel3.Controls.Add(this.bunifuThinButton22);
-            this.metroPanel3.HorizontalScrollbarBarColor = true;
-            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 12;
-            this.metroPanel3.Location = new System.Drawing.Point(74, 389);
-            this.metroPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(426, 113);
-            this.metroPanel3.TabIndex = 2;
-            this.metroPanel3.VerticalScrollbarBarColor = true;
-            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 13;
-            // 
             // btn_guardar
             // 
             this.btn_guardar.ActiveBorderThickness = 1;
             this.btn_guardar.ActiveCornerRadius = 20;
             this.btn_guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.BackColor = System.Drawing.Color.White;
+            this.btn_guardar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btn_guardar.ActiveLineColor = System.Drawing.Color.Green;
+            this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_guardar.BackgroundImage")));
             this.btn_guardar.ButtonText = "Guardar";
             this.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -191,63 +154,90 @@
             this.btn_guardar.IdleFillColor = System.Drawing.Color.White;
             this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.Location = new System.Drawing.Point(31, 28);
+            this.btn_guardar.Location = new System.Drawing.Point(95, 394);
             this.btn_guardar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(133, 60);
+            this.btn_guardar.Size = new System.Drawing.Size(117, 44);
             this.btn_guardar.TabIndex = 6;
             this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
-            // bunifuThinButton22
+            // btn_borrar
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Eliminar ";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(199, 28);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(133, 60);
-            this.bunifuThinButton22.TabIndex = 5;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_borrar.ActiveBorderThickness = 1;
+            this.btn_borrar.ActiveCornerRadius = 20;
+            this.btn_borrar.ActiveFillColor = System.Drawing.Color.Red;
+            this.btn_borrar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btn_borrar.ActiveLineColor = System.Drawing.Color.Green;
+            this.btn_borrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_borrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_borrar.BackgroundImage")));
+            this.btn_borrar.ButtonText = "Eliminar ";
+            this.btn_borrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_borrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_borrar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_borrar.IdleBorderThickness = 1;
+            this.btn_borrar.IdleCornerRadius = 20;
+            this.btn_borrar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_borrar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_borrar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_borrar.Location = new System.Drawing.Point(226, 393);
+            this.btn_borrar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_borrar.Name = "btn_borrar";
+            this.btn_borrar.Size = new System.Drawing.Size(120, 45);
+            this.btn_borrar.TabIndex = 5;
+            this.btn_borrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_borrar.Click += new System.EventHandler(this.Btn_borrar_Click);
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.ActiveBorderThickness = 1;
+            this.btn_cancelar.ActiveCornerRadius = 20;
+            this.btn_cancelar.ActiveFillColor = System.Drawing.Color.Yellow;
+            this.btn_cancelar.ActiveForecolor = System.Drawing.Color.Black;
+            this.btn_cancelar.ActiveLineColor = System.Drawing.Color.Green;
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.BackgroundImage")));
+            this.btn_cancelar.ButtonText = "Cancelar";
+            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_cancelar.IdleBorderThickness = 1;
+            this.btn_cancelar.IdleCornerRadius = 20;
+            this.btn_cancelar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_cancelar.Location = new System.Drawing.Point(369, 393);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(120, 45);
+            this.btn_cancelar.TabIndex = 7;
+            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_cancelar.Click += new System.EventHandler(this.Btn_cancelar_Click);
             // 
             // gtb_datos
             // 
             this.gtb_datos.AllowUserToAddRows = false;
             this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gtb_datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             this.gtb_datos.BackgroundColor = System.Drawing.Color.White;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.gtb_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gtb_datos.ColumnHeadersHeight = 29;
             this.gtb_datos.DoubleBuffered = true;
             this.gtb_datos.EnableHeadersVisualStyles = false;
             this.gtb_datos.GridColor = System.Drawing.Color.Red;
             this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.gtb_datos.HeaderForeColor = System.Drawing.Color.LightSeaGreen;
-            this.gtb_datos.Location = new System.Drawing.Point(18, 22);
+            this.gtb_datos.Location = new System.Drawing.Point(95, 207);
             this.gtb_datos.Margin = new System.Windows.Forms.Padding(4);
             this.gtb_datos.Name = "gtb_datos";
             this.gtb_datos.ReadOnly = true;
@@ -261,10 +251,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 514);
-            this.Controls.Add(this.metroPanel3);
-            this.Controls.Add(this.metroPanel2);
+            this.ClientSize = new System.Drawing.Size(615, 475);
+            this.Controls.Add(this.btn_cancelar);
+            this.Controls.Add(this.btn_guardar);
+            this.Controls.Add(this.gtb_datos);
             this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.btn_borrar);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Marcas";
@@ -272,8 +264,6 @@
             this.Text = "Marcas";
             this.Load += new System.EventHandler(this.Marcas_Load);
             this.metroPanel1.ResumeLayout(false);
-            this.metroPanel2.ResumeLayout(false);
-            this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
             this.ResumeLayout(false);
 
@@ -282,14 +272,13 @@
         #endregion
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroPanel metroPanel3;
         private ns1.BunifuThinButton2 bunifuThinButton23;
-        private ns1.BunifuThinButton2 bunifuThinButton22;
+        private ns1.BunifuThinButton2 btn_borrar;
         private ns1.BunifuThinButton2 btn_guardar;
         private ns1.BunifuTextbox txt_buscar;
         private ns1.BunifuMaterialTextbox txt_Descripcion;
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
+        private ns1.BunifuThinButton2 btn_cancelar;
         private ns1.BunifuCustomDataGrid gtb_datos;
     }
 }
