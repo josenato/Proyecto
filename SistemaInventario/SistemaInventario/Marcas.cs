@@ -13,7 +13,7 @@ namespace SistemaInventario
 {
     public partial class Marcas : MetroFramework.Forms.MetroForm
     {
-        string conexionString = @"Server=localhost; Database=sistemaimpresora; Udi=root; Pwd=;";
+        string conexionString = "Server=sql3.freesqldatabase.com;Database=sql3301281;Uid=sql3301281;Pwd=HdXuswUhwU;";
         int MarcasID = 0;
         public Marcas()
         {
@@ -31,6 +31,7 @@ namespace SistemaInventario
                 mysqlCmd.Parameters.AddWithValue("_Descripcion", txt_Descripcion.Text.Trim());
                 mysqlCmd.ExecuteNonQuery();
                 MessageBox.Show("Dato Guardado");
+                clear();
                 GridFill();
             }
         }
@@ -45,14 +46,49 @@ namespace SistemaInventario
                 DataTable carga_datos = new DataTable();
                 sqlda.Fill(carga_datos);
                 gtb_datos.DataSource = carga_datos;
+              //  gtb_datos.Columns[0].Visible = false;
 
             }
 
         }
+        void clear()
+        {
+            txt_Descripcion.Text = txt_Descripcion.Text ="" ;
+            MarcasID = 0;
+            btn_guardar.ButtonText = "Guardar";
+        }
+
 
         private void Marcas_Load(object sender, EventArgs e)
         {
             GridFill();
+            clear();
+        }
+
+        private void Gtb_datos_DoubleClick(object sender, EventArgs e)
+        {
+            if (gtb_datos.CurrentRow.Index !=  -1 )
+            {
+                txt_Descripcion.Text = gtb_datos.CurrentRow.Cells[1].Value.ToString();
+                MarcasID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
+                btn_guardar.ButtonText = "Actualizar";
+            }
+        }
+
+        private void BunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mysqlcon = new MySqlConnection(conexionString))
+            {
+                mysqlcon.Open();
+                MySqlDataAdapter sqlda = new MySqlDataAdapter("MarcasBuscarPalabra", mysqlcon);
+                sqlda.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlda.SelectCommand.Parameters.AddWithValue("_BuscarDatos", txt_buscar.text);
+                DataTable carga_datos = new DataTable();
+                sqlda.Fill(carga_datos);
+                gtb_datos.DataSource = carga_datos;
+              //  gtb_datos.Columns[0].Visible = false;
+
+            }
         }
     }
 }
