@@ -33,6 +33,8 @@ namespace SistemaInventario
                 MessageBox.Show("Dato Guardado");
                 clear();
                 GridFill();
+                metroPanel1.Enabled = false;
+                metroPanel2.Enabled = false;
             }
         }
 
@@ -64,6 +66,8 @@ namespace SistemaInventario
         {
             GridFill();
             clear();
+            metroPanel1.Enabled = false;
+            metroPanel2.Enabled = false;
         }
 
         private void Gtb_datos_DoubleClick(object sender, EventArgs e)
@@ -96,6 +100,9 @@ namespace SistemaInventario
         private void Btn_cancelar_Click(object sender, EventArgs e)
         {
             clear();
+            metroPanel1.Enabled = false;
+            metroPanel2.Enabled = false;
+
         }
 
         private void Btn_borrar_Click(object sender, EventArgs e)
@@ -110,7 +117,15 @@ namespace SistemaInventario
                 MessageBox.Show("Dato Eliminado");
                 clear();
                 GridFill();
+                metroPanel1.Enabled = false;
+                metroPanel2.Enabled = false;
             }
+        }
+
+        private void Lbl_habilitar_Click(object sender, EventArgs e)
+        {
+            metroPanel1.Enabled = true;
+            metroPanel2.Enabled = true;
         }
     }
 }
