@@ -100,7 +100,17 @@ namespace SistemaInventario
 
         private void Btn_borrar_Click(object sender, EventArgs e)
         {
-
+            using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
+            {
+                mysqlCon.Open();
+                MySqlCommand mysqlCmd = new MySqlCommand("MarcasDelete", mysqlCon);
+                mysqlCmd.CommandType = CommandType.StoredProcedure;
+                mysqlCmd.Parameters.AddWithValue("_idMarcas", MarcasID);            
+                mysqlCmd.ExecuteNonQuery();
+                MessageBox.Show("Dato Eliminado");
+                clear();
+                GridFill();
+            }
         }
     }
 }
