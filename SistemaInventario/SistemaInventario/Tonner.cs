@@ -36,9 +36,9 @@ namespace SistemaInventario
                 return dt;
             }
         }
-
         private void Tonner_Load(object sender, EventArgs e)
         {
+
             cbx_Marcas.DataSource = CargarR();
             cbx_Marcas.DisplayMember = "Descripcion";
             cbx_Marcas.ValueMember = "idMarcas";
@@ -58,7 +58,7 @@ namespace SistemaInventario
                 mysqlCmd.ExecuteNonQuery();
                 MessageBox.Show("Dato Guardado");
                 GridFill();
-                
+
             }
         }
         void GridFill()
@@ -74,8 +74,28 @@ namespace SistemaInventario
                 //  gtb_datos.Columns[0].Visible = false;
 
             }
-
+        }
+        void clear()
+        {
+            txt_Modelo.Text = cbx_Marcas.Text = "";
+            TonnerID = 0;
+            btn_guardar.ButtonText = "Guardar";
+            btn_borrar.Enabled = false;
         }
 
+        private void Btn_borrar_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
+            {
+                mysqlCon.Open();
+                MySqlCommand mysqlCmd = new MySqlCommand("MarcasDelete", mysqlCon);
+                mysqlCmd.CommandType = CommandType.StoredProcedure;
+                mysqlCmd.Parameters.AddWithValue("_idMarcas", TonnerID);
+                mysqlCmd.ExecuteNonQuery();
+                MessageBox.Show("Dato Eliminado");
+                clear();
+                GridFill();
+            }
+        }
     }
 }

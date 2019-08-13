@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tonner));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.bunifuCustomDataGrid1 = new ns1.BunifuCustomDataGrid();
             this.btn_cancelar = new ns1.BunifuThinButton2();
@@ -62,23 +62,22 @@
             this.metroPanel2.Controls.Add(this.btn_borrar);
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 12;
-            this.metroPanel2.Location = new System.Drawing.Point(103, 473);
-            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(77, 384);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(557, 66);
+            this.metroPanel2.Size = new System.Drawing.Size(418, 54);
             this.metroPanel2.Style = MetroFramework.MetroColorStyle.Green;
             this.metroPanel2.TabIndex = 10;
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 13;
+            this.metroPanel2.VerticalScrollbarSize = 10;
             // 
             // bunifuCustomDataGrid1
             // 
             this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
             this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.bunifuCustomDataGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -87,27 +86,26 @@
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.bunifuCustomDataGrid1.ColumnHeadersHeight = 29;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.Silver;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(-4, -172);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(-3, -140);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(557, 150);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(418, 122);
             this.bunifuCustomDataGrid1.TabIndex = 2;
             // 
             // btn_cancelar
@@ -128,10 +126,10 @@
             this.btn_cancelar.IdleFillColor = System.Drawing.Color.White;
             this.btn_cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_cancelar.Location = new System.Drawing.Point(412, 6);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_cancelar.Location = new System.Drawing.Point(309, 5);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(120, 46);
+            this.btn_cancelar.Size = new System.Drawing.Size(90, 37);
             this.btn_cancelar.TabIndex = 7;
             this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -153,10 +151,10 @@
             this.btn_guardar.IdleFillColor = System.Drawing.Color.White;
             this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.Location = new System.Drawing.Point(27, 6);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_guardar.Location = new System.Drawing.Point(20, 5);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(139, 44);
+            this.btn_guardar.Size = new System.Drawing.Size(104, 36);
             this.btn_guardar.TabIndex = 6;
             this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
@@ -179,12 +177,13 @@
             this.btn_borrar.IdleFillColor = System.Drawing.Color.White;
             this.btn_borrar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_borrar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_borrar.Location = new System.Drawing.Point(228, 6);
-            this.btn_borrar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_borrar.Location = new System.Drawing.Point(171, 5);
+            this.btn_borrar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_borrar.Name = "btn_borrar";
-            this.btn_borrar.Size = new System.Drawing.Size(139, 46);
+            this.btn_borrar.Size = new System.Drawing.Size(104, 37);
             this.btn_borrar.TabIndex = 5;
             this.btn_borrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_borrar.Click += new System.EventHandler(this.Btn_borrar_Click);
             // 
             // metroPanel1
             // 
@@ -197,34 +196,31 @@
             this.metroPanel1.Controls.Add(this.bunifuThinButton23);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 12;
-            this.metroPanel1.Location = new System.Drawing.Point(27, 111);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(20, 90);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(759, 111);
+            this.metroPanel1.Size = new System.Drawing.Size(569, 90);
             this.metroPanel1.TabIndex = 9;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 13;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // cbx_Marcas
             // 
             this.cbx_Marcas.FormattingEnabled = true;
-            this.cbx_Marcas.ItemHeight = 24;
-            this.cbx_Marcas.Location = new System.Drawing.Point(304, 64);
-            this.cbx_Marcas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbx_Marcas.ItemHeight = 23;
+            this.cbx_Marcas.Location = new System.Drawing.Point(228, 52);
             this.cbx_Marcas.Name = "cbx_Marcas";
-            this.cbx_Marcas.Size = new System.Drawing.Size(204, 30);
+            this.cbx_Marcas.Size = new System.Drawing.Size(154, 29);
             this.cbx_Marcas.TabIndex = 12;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(325, 31);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(244, 25);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(161, 28);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(121, 23);
             this.bunifuCustomLabel2.TabIndex = 11;
             this.bunifuCustomLabel2.Text = "Marca";
             this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,10 +229,9 @@
             // 
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(41, 31);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(31, 25);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(161, 28);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(121, 23);
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "Modelo";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,10 +248,10 @@
             this.txt_Modelo.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Modelo.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Modelo.LineThickness = 3;
-            this.txt_Modelo.Location = new System.Drawing.Point(8, 58);
-            this.txt_Modelo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_Modelo.Location = new System.Drawing.Point(6, 47);
+            this.txt_Modelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Modelo.Name = "txt_Modelo";
-            this.txt_Modelo.Size = new System.Drawing.Size(233, 42);
+            this.txt_Modelo.Size = new System.Drawing.Size(175, 34);
             this.txt_Modelo.TabIndex = 8;
             this.txt_Modelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -267,10 +262,10 @@
             this.txt_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txt_buscar.ForeColor = System.Drawing.Color.SeaGreen;
             this.txt_buscar.Icon = ((System.Drawing.Image)(resources.GetObject("txt_buscar.Icon")));
-            this.txt_buscar.Location = new System.Drawing.Point(548, 64);
-            this.txt_buscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_buscar.Location = new System.Drawing.Point(409, 52);
+            this.txt_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(208, 42);
+            this.txt_buscar.Size = new System.Drawing.Size(156, 34);
             this.txt_buscar.TabIndex = 7;
             this.txt_buscar.text = "";
             // 
@@ -292,10 +287,10 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(589, 6);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(466, 5);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(137, 53);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(81, 43);
             this.bunifuThinButton23.TabIndex = 6;
             this.bunifuThinButton23.Tag = "";
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -304,8 +299,8 @@
             // 
             this.gtb_datos.AllowUserToAddRows = false;
             this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -314,27 +309,26 @@
             this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gtb_datos.ColumnHeadersHeight = 29;
             this.gtb_datos.DoubleBuffered = true;
             this.gtb_datos.EnableHeadersVisualStyles = false;
             this.gtb_datos.GridColor = System.Drawing.Color.Silver;
             this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gtb_datos.Location = new System.Drawing.Point(8, 17);
-            this.gtb_datos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtb_datos.Location = new System.Drawing.Point(6, 14);
             this.gtb_datos.Name = "gtb_datos";
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(549, 183);
+            this.gtb_datos.Size = new System.Drawing.Size(412, 149);
             this.gtb_datos.TabIndex = 11;
             // 
             // metroPanel3
@@ -342,25 +336,23 @@
             this.metroPanel3.Controls.Add(this.gtb_datos);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 12;
-            this.metroPanel3.Location = new System.Drawing.Point(103, 225);
-            this.metroPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel3.HorizontalScrollbarSize = 10;
+            this.metroPanel3.Location = new System.Drawing.Point(77, 183);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(561, 223);
+            this.metroPanel3.Size = new System.Drawing.Size(421, 181);
             this.metroPanel3.TabIndex = 12;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 13;
+            this.metroPanel3.VerticalScrollbarSize = 10;
             // 
             // Tonner
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 554);
+            this.ClientSize = new System.Drawing.Size(601, 450);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Tonner";
             this.Text = " Tonner";
