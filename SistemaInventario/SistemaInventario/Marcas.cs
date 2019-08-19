@@ -13,7 +13,7 @@ namespace SistemaInventario
 {
     public partial class Marcas : MetroFramework.Forms.MetroForm
     {
-        string conexionString = "Server=sql3.freesqldatabase.com;Database=sql3301281;Uid=sql3301281;Pwd=HdXuswUhwU;";
+        string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
         int MarcasID = 0;
         public Marcas()
         {

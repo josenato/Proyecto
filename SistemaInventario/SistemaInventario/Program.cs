@@ -16,7 +16,7 @@ namespace SistemaInventario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tonner());
+            Application.Run(new Marcas());
         }
     }
 }
