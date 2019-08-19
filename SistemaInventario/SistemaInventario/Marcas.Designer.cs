@@ -61,24 +61,22 @@
             this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 12;
-            this.metroPanel1.Location = new System.Drawing.Point(25, 75);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(20, 60);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(526, 112);
+            this.metroPanel1.Size = new System.Drawing.Size(421, 90);
             this.metroPanel1.TabIndex = 0;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 12;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(4, 15);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 12);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(151, 29);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(121, 23);
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "Descripcion";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,10 +95,10 @@
             this.txt_Descripcion.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Descripcion.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Descripcion.LineThickness = 3;
-            this.txt_Descripcion.Location = new System.Drawing.Point(8, 49);
-            this.txt_Descripcion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_Descripcion.Location = new System.Drawing.Point(6, 39);
+            this.txt_Descripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Descripcion.Name = "txt_Descripcion";
-            this.txt_Descripcion.Size = new System.Drawing.Size(219, 42);
+            this.txt_Descripcion.Size = new System.Drawing.Size(175, 34);
             this.txt_Descripcion.TabIndex = 8;
             this.txt_Descripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -111,10 +109,10 @@
             this.txt_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txt_buscar.ForeColor = System.Drawing.Color.SeaGreen;
             this.txt_buscar.Icon = ((System.Drawing.Image)(resources.GetObject("txt_buscar.Icon")));
-            this.txt_buscar.Location = new System.Drawing.Point(275, 65);
-            this.txt_buscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txt_buscar.Location = new System.Drawing.Point(220, 52);
+            this.txt_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(195, 42);
+            this.txt_buscar.Size = new System.Drawing.Size(156, 34);
             this.txt_buscar.TabIndex = 7;
             this.txt_buscar.text = "";
             // 
@@ -136,10 +134,10 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(295, 6);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(236, 5);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(148, 54);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(118, 43);
             this.bunifuThinButton23.TabIndex = 6;
             this.bunifuThinButton23.Tag = "";
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,10 +162,10 @@
             this.btn_guardar.IdleFillColor = System.Drawing.Color.White;
             this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.Location = new System.Drawing.Point(8, 6);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_guardar.Location = new System.Drawing.Point(26, 5);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(130, 45);
+            this.btn_guardar.Size = new System.Drawing.Size(101, 36);
             this.btn_guardar.TabIndex = 6;
             this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
@@ -191,10 +189,10 @@
             this.btn_borrar.IdleFillColor = System.Drawing.Color.White;
             this.btn_borrar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_borrar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_borrar.Location = new System.Drawing.Point(171, 5);
-            this.btn_borrar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_borrar.Location = new System.Drawing.Point(137, 4);
+            this.btn_borrar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_borrar.Name = "btn_borrar";
-            this.btn_borrar.Size = new System.Drawing.Size(130, 46);
+            this.btn_borrar.Size = new System.Drawing.Size(104, 37);
             this.btn_borrar.TabIndex = 5;
             this.btn_borrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_borrar.Click += new System.EventHandler(this.Btn_borrar_Click);
@@ -218,10 +216,10 @@
             this.btn_cancelar.IdleFillColor = System.Drawing.Color.White;
             this.btn_cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_cancelar.Location = new System.Drawing.Point(331, 5);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_cancelar.Location = new System.Drawing.Point(265, 4);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(112, 46);
+            this.btn_cancelar.Size = new System.Drawing.Size(90, 37);
             this.btn_cancelar.TabIndex = 7;
             this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancelar.Click += new System.EventHandler(this.Btn_cancelar_Click);
@@ -254,13 +252,12 @@
             this.gtb_datos.GridColor = System.Drawing.Color.Silver;
             this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gtb_datos.Location = new System.Drawing.Point(25, 215);
-            this.gtb_datos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtb_datos.Location = new System.Drawing.Point(20, 172);
             this.gtb_datos.Name = "gtb_datos";
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(526, 152);
+            this.gtb_datos.Size = new System.Drawing.Size(421, 122);
             this.gtb_datos.TabIndex = 2;
             this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
@@ -273,16 +270,15 @@
             this.metroPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 12;
-            this.metroPanel2.Location = new System.Drawing.Point(25, 389);
-            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(20, 312);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(526, 68);
+            this.metroPanel2.Size = new System.Drawing.Size(421, 54);
             this.metroPanel2.Style = MetroFramework.MetroColorStyle.Green;
             this.metroPanel2.TabIndex = 8;
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 12;
+            this.metroPanel2.VerticalScrollbarSize = 10;
             // 
             // bunifuCustomDataGrid1
             // 
@@ -312,13 +308,12 @@
             this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.Silver;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(-4, -175);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(-3, -140);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(526, 152);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(421, 122);
             this.bunifuCustomDataGrid1.TabIndex = 2;
             this.bunifuCustomDataGrid1.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
@@ -329,10 +324,9 @@
             this.lbl_habilitar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_habilitar.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.lbl_habilitar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_habilitar.Location = new System.Drawing.Point(460, 26);
-            this.lbl_habilitar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_habilitar.Location = new System.Drawing.Point(368, 21);
             this.lbl_habilitar.Name = "lbl_habilitar";
-            this.lbl_habilitar.Size = new System.Drawing.Size(77, 25);
+            this.lbl_habilitar.Size = new System.Drawing.Size(73, 25);
             this.lbl_habilitar.Style = MetroFramework.MetroColorStyle.Pink;
             this.lbl_habilitar.TabIndex = 9;
             this.lbl_habilitar.Text = "Agregar";
@@ -340,17 +334,15 @@
             // 
             // Marcas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(576, 482);
+            this.ClientSize = new System.Drawing.Size(461, 386);
             this.Controls.Add(this.lbl_habilitar);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.gtb_datos);
             this.Controls.Add(this.metroPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Marcas";
-            this.Padding = new System.Windows.Forms.Padding(25, 75, 25, 25);
             this.Text = "Marcas";
             this.Load += new System.EventHandler(this.Marcas_Load);
             this.metroPanel1.ResumeLayout(false);

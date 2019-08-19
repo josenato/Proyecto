@@ -36,6 +36,7 @@ namespace SistemaInventario
                 return dt;
             }
         }
+
         private void Tonner_Load(object sender, EventArgs e)
         {
 
@@ -96,6 +97,11 @@ namespace SistemaInventario
                 clear();
                 GridFill();
             }
+        }
+
+        private void Btn_cancelar_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }
