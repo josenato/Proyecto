@@ -103,5 +103,19 @@ namespace SistemaInventario
         {
             clear();
         }
+
+        private void BunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mysqlcon = new MySqlConnection(conexionString))
+            {
+                mysqlcon.Open();
+                MySqlDataAdapter sqlda = new MySqlDataAdapter("TonnerBuscarPalabra", mysqlcon);
+                sqlda.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlda.SelectCommand.Parameters.AddWithValue("_BuscarDatos", txt_buscar.text);
+                DataTable carga_datos = new DataTable();
+                sqlda.Fill(carga_datos);
+                gtb_datos.DataSource = carga_datos;               
+            }
+        }
     }
 }

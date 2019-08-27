@@ -19,7 +19,6 @@ namespace SistemaInventario
         {
             InitializeComponent();
         }
-
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
@@ -72,12 +71,13 @@ namespace SistemaInventario
 
         private void Gtb_datos_DoubleClick(object sender, EventArgs e)
         {
-            if (gtb_datos.CurrentRow.Index !=  -1 )
+             if (gtb_datos.CurrentRow.Index !=  -1 )
             {
                 txt_Descripcion.Text = gtb_datos.CurrentRow.Cells[1].Value.ToString();
                 MarcasID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
                 btn_guardar.ButtonText = "Actualizar";
                 btn_borrar.Enabled = true;
+                btn_guardar.Enabled = true;
             }
         }
 
@@ -104,7 +104,6 @@ namespace SistemaInventario
             metroPanel2.Enabled = false;
 
         }
-
         private void Btn_borrar_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
@@ -121,7 +120,6 @@ namespace SistemaInventario
                 metroPanel2.Enabled = false;
             }
         }
-
         private void Lbl_habilitar_Click(object sender, EventArgs e)
         {
             metroPanel1.Enabled = true;
