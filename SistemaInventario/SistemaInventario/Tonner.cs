@@ -23,13 +23,11 @@ namespace SistemaInventario
             InitializeComponent();
         }
        
-
         private void Tonner_Load(object sender, EventArgs e)
         {
             CargarMarcas();
             ListarTonner();
         }
-
         private void CargarMarcas()
         {
             ClsTonner ObjTonn = new ClsTonner();
@@ -37,9 +35,6 @@ namespace SistemaInventario
             cbx_Marcas.DisplayMember = "Descripcion";
             cbx_Marcas.ValueMember = "idMarcas";
         }
-
-        
-       
         void clear()
         {
             txt_Modelo.Text = cbx_Marcas.Text = "";
@@ -47,7 +42,6 @@ namespace SistemaInventario
             btn_guardar.ButtonText = "Guardar";
             btn_borrar.Enabled = false;
         }
-
         private void Btn_borrar_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
@@ -62,31 +56,26 @@ namespace SistemaInventario
                 ListarTonner();
             }
         }
-
         private void Btn_cancelar_Click(object sender, EventArgs e)
         {
             clear();
         }
-
         //evento para buscar datos 
         private void BunifuThinButton23_Click(object sender, EventArgs e)
         {
            
         }
-
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
             objTonner.InsertarTonner(Convert.ToInt32(TonnerID) ,txt_Modelo.Text, Convert.ToInt32(cbx_Marcas.SelectedValue));
             MessageBox.Show("Se agrego correctamente");
             ListarTonner();
         }
-
         private void ListarTonner()
         {
             ClsTonner objTonn = new ClsTonner();
             gtb_datos.DataSource = objTonn.ListarTonner();
         }
-
         private void Gtb_datos_DoubleClick(object sender, EventArgs e)
         {
             if(gtb_datos.CurrentRow.Index != -1)
