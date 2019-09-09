@@ -16,6 +16,7 @@ namespace SistemaInventario
     public partial class Tonner : MaterialSkin.Controls.MaterialForm
     {
          ClsTonner objTonner = new ClsTonner();
+
         string conexionString = "Server=sql3.freesqldatabase.com;Database=sql3301281;Uid=sql3301281;Pwd=HdXuswUhwU;";
         int TonnerID = 0;
         public Tonner()
@@ -70,6 +71,7 @@ namespace SistemaInventario
             objTonner.InsertarTonner(Convert.ToInt32(TonnerID) ,txt_Modelo.Text, Convert.ToInt32(cbx_Marcas.SelectedValue));
             MessageBox.Show("Se agrego correctamente");
             ListarTonner();
+            clear();
         }
         private void ListarTonner()
         {
