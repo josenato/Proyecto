@@ -8,74 +8,38 @@ using MySql.Data.MySqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaInventario.CapaDatos;
+
 
 namespace SistemaInventario
 {
     public partial class Tonner : MaterialSkin.Controls.MaterialForm
     {
+         ClsTonner objTonner = new ClsTonner();
         string conexionString = "Server=sql3.freesqldatabase.com;Database=sql3301281;Uid=sql3301281;Pwd=HdXuswUhwU;";
         int TonnerID = 0;
         public Tonner()
         {
             InitializeComponent();
         }
-        private DataTable CargarR()
-        {
-            using (MySqlConnection conn = new MySqlConnection(conexionString))
-            {
-                DataTable dt = new DataTable();
-
-
-                string query = "SELECT * FROM Marcas";
-
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-
-                MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
-
-                adap.Fill(dt);
-                return dt;
-            }
-        }
+       
 
         private void Tonner_Load(object sender, EventArgs e)
         {
+            CargarMarcas();
+            ListarTonner();
+        }
 
-            cbx_Marcas.DataSource = CargarR();
+        private void CargarMarcas()
+        {
+            ClsTonner ObjTonn = new ClsTonner();
+            cbx_Marcas.DataSource = ObjTonn.ListarMarcas();
             cbx_Marcas.DisplayMember = "Descripcion";
             cbx_Marcas.ValueMember = "idMarcas";
-            GridFill();
         }
 
-        private void Btn_guardar_Click(object sender, EventArgs e)
-        {
-            using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
-            {
-                mysqlCon.Open();
-                MySqlCommand mysqlCmd = new MySqlCommand("TonnerAddEddit", mysqlCon);
-                mysqlCmd.CommandType = CommandType.StoredProcedure;
-                mysqlCmd.Parameters.AddWithValue("_idTonner", TonnerID);
-                mysqlCmd.Parameters.AddWithValue("_Modelo", txt_Modelo.Text.Trim());
-                mysqlCmd.Parameters.AddWithValue("_MarcasIdTonner", cbx_Marcas.SelectedValue);
-                mysqlCmd.ExecuteNonQuery();
-                MessageBox.Show("Dato Guardado");
-                GridFill();
-
-            }
-        }
-        void GridFill()
-        {
-            using (MySqlConnection mysqlcon = new MySqlConnection(conexionString))
-            {
-                mysqlcon.Open();
-                MySqlDataAdapter sqlda = new MySqlDataAdapter("TonnerViewAll", mysqlcon);
-                sqlda.SelectCommand.CommandType = CommandType.StoredProcedure;
-                DataTable carga_datos = new DataTable();
-                sqlda.Fill(carga_datos);
-                gtb_datos.DataSource = carga_datos;
-                //  gtb_datos.Columns[0].Visible = false;
-
-            }
-        }
+        
+       
         void clear()
         {
             txt_Modelo.Text = cbx_Marcas.Text = "";
@@ -88,14 +52,14 @@ namespace SistemaInventario
         {
             using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
             {
-                mysqlCon.Open();
-                MySqlCommand mysqlCmd = new MySqlCommand("MarcasDelete", mysqlCon);
-                mysqlCmd.CommandType = CommandType.StoredProcedure;
-                mysqlCmd.Parameters.AddWithValue("_idMarcas", TonnerID);
-                mysqlCmd.ExecuteNonQuery();
-                MessageBox.Show("Dato Eliminado");
-                clear();
-                GridFill();
+            mysqlCon.Open();
+              MySqlCommand mysqlCmd = new MySqlCommand("MarcasDelete", mysqlCon);
+              mysqlCmd.CommandType = CommandType.StoredProcedure;
+              mysqlCmd.Parameters.AddWithValue("_idMarcas", TonnerID);
+              mysqlCmd.ExecuteNonQuery();
+             MessageBox.Show("Dato Eliminado");
+             clear();
+                ListarTonner();
             }
         }
 
@@ -104,17 +68,35 @@ namespace SistemaInventario
             clear();
         }
 
+        //evento para buscar datos 
         private void BunifuThinButton23_Click(object sender, EventArgs e)
         {
-            using (MySqlConnection mysqlcon = new MySqlConnection(conexionString))
+           
+        }
+
+        private void Btn_guardar_Click(object sender, EventArgs e)
+        {
+            objTonner.InsertarTonner(Convert.ToInt32(TonnerID) ,txt_Modelo.Text, Convert.ToInt32(cbx_Marcas.SelectedValue));
+            MessageBox.Show("Se agrego correctamente");
+            ListarTonner();
+        }
+
+        private void ListarTonner()
+        {
+            ClsTonner objTonn = new ClsTonner();
+            gtb_datos.DataSource = objTonn.ListarTonner();
+        }
+
+        private void Gtb_datos_DoubleClick(object sender, EventArgs e)
+        {
+            if(gtb_datos.CurrentRow.Index != -1)
             {
-                mysqlcon.Open();
-                MySqlDataAdapter sqlda = new MySqlDataAdapter("TonnerBuscarPalabra", mysqlcon);
-                sqlda.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlda.SelectCommand.Parameters.AddWithValue("_BuscarDatos", txt_buscar.text);
-                DataTable carga_datos = new DataTable();
-                sqlda.Fill(carga_datos);
-                gtb_datos.DataSource = carga_datos;               
+                txt_Modelo.Text = gtb_datos.CurrentRow.Cells[1].Value.ToString();
+                cbx_Marcas.Text = gtb_datos.CurrentRow.Cells[2].Value.ToString();
+                TonnerID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
+                btn_guardar.Text = "Actualizar";
+
+
             }
         }
     }
