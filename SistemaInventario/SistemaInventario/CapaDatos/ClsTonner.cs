@@ -50,5 +50,7 @@ namespace SistemaInventario.CapaDatos
             return tabla;
         }
 
+       
+
     }
 }

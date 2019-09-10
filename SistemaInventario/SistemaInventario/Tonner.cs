@@ -10,20 +10,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaInventario.CapaDatos;
 
-
 namespace SistemaInventario
 {
     public partial class Tonner : MaterialSkin.Controls.MaterialForm
     {
          ClsTonner objTonner = new ClsTonner();
 
-        string conexionString = "Server=sql3.freesqldatabase.com;Database=sql3301281;Uid=sql3301281;Pwd=HdXuswUhwU;";
+        string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
         int TonnerID = 0;
         public Tonner()
         {
             InitializeComponent();
         }
-       
         private void Tonner_Load(object sender, EventArgs e)
         {
             CargarMarcas();
@@ -38,7 +36,7 @@ namespace SistemaInventario
         }
         void clear()
         {
-            txt_Modelo.Text = cbx_Marcas.Text = "";
+            txt_Modelo.Text = cbx_Marcas.Text = txt_buscar.text = "";
             TonnerID = 0;
             btn_guardar.ButtonText = "Guardar";
             btn_borrar.Enabled = false;
@@ -60,18 +58,29 @@ namespace SistemaInventario
         private void Btn_cancelar_Click(object sender, EventArgs e)
         {
             clear();
+            ListarTonner();
         }
         //evento para buscar datos 
         private void BunifuThinButton23_Click(object sender, EventArgs e)
         {
-           
+            using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
+            {
+                mysqlCon.Open();
+                MySqlDataAdapter mysqlCmd = new MySqlDataAdapter("TonnerBuscarPalabra", mysqlCon);
+                mysqlCmd.SelectCommand.CommandType = CommandType.StoredProcedure;
+                mysqlCmd.SelectCommand.Parameters.AddWithValue("_BuscarDatos", txt_buscar.text);
+                DataTable gtb_datosA  =  new DataTable();
+                mysqlCmd.Fill(gtb_datosA);
+                gtb_datos.DataSource = gtb_datosA;
+                clear();             
+            }        
         }
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
             objTonner.InsertarTonner(Convert.ToInt32(TonnerID) ,txt_Modelo.Text, Convert.ToInt32(cbx_Marcas.SelectedValue));
             MessageBox.Show("Se agrego correctamente");
             ListarTonner();
-            clear();
+            clear();          
         }
         private void ListarTonner()
         {
@@ -86,7 +95,7 @@ namespace SistemaInventario
                 cbx_Marcas.Text = gtb_datos.CurrentRow.Cells[2].Value.ToString();
                 TonnerID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
                 btn_guardar.Text = "Actualizar";
-
+                btn_borrar.Enabled = true;
 
             }
         }
