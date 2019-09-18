@@ -17,6 +17,7 @@ namespace SistemaInventario.CapaDatos
 
         public DataTable ListarMarcas()
         {
+            //metodo para listar los datos de la tabla marcas en un combobox
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
             cm.CommandText = "MarcasViewAll";
@@ -26,7 +27,7 @@ namespace SistemaInventario.CapaDatos
             Conexion.CerraCX();
             return tabla;
         }
-
+        //metodo para agregar los datos para la tabla tonner
         public void InsertarTonner(int idTonner, string Modelo, int marcas_idMarcas )
         {
             cm.Connection = Conexion.AbrirCX();
@@ -38,8 +39,10 @@ namespace SistemaInventario.CapaDatos
             cm.ExecuteNonQuery();
             cm.Parameters.Clear();
         }
+
         public DataTable ListarTonner()
-        {
+        {//metodo para listar los datos de la tabla tonner en el datagrid
+
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
             cm.CommandText = "TonnerInnerJoin";
@@ -50,7 +53,19 @@ namespace SistemaInventario.CapaDatos
             return tabla;
         }
 
-       
+        public DataTable CargarMarcas()
+        {//metodo para listar los datos de la tabla tonner en el datagrid
+
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "MarcasViewAll";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
 
     }
 }

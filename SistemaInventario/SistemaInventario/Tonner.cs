@@ -52,7 +52,7 @@ namespace SistemaInventario
               mysqlCmd.ExecuteNonQuery();
              MessageBox.Show("Dato Eliminado");
              clear();
-                ListarTonner();
+              ListarTonner();
             }
         }
         private void Btn_cancelar_Click(object sender, EventArgs e)
