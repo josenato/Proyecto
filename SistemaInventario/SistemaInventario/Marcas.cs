@@ -25,13 +25,7 @@ namespace SistemaInventario
 
         private void Marcas_Load(object sender, EventArgs e)
         {
-            CargarMarcas();
-        }
-
-        private void CargarMarcas()
-        {
-            ClsTonner objTonn = new ClsTonner();
-            dtg_Marcas.DataSource = objTonn.CargarMarcas();
+            
         }
     }
 }

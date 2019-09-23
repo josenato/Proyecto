@@ -37,7 +37,9 @@
             this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.bunifuThinButton22 = new ns1.BunifuThinButton2();
             this.bunifuThinButton23 = new ns1.BunifuThinButton2();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Marcas)).BeginInit();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtg_Marcas
@@ -46,7 +48,7 @@
             this.dtg_Marcas.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtg_Marcas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtg_Marcas.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dtg_Marcas.BackgroundColor = System.Drawing.Color.MediumTurquoise;
             this.dtg_Marcas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_Marcas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -58,15 +60,16 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtg_Marcas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtg_Marcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_Marcas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtg_Marcas.DoubleBuffered = true;
             this.dtg_Marcas.EnableHeadersVisualStyles = false;
             this.dtg_Marcas.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dtg_Marcas.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dtg_Marcas.Location = new System.Drawing.Point(8, 119);
+            this.dtg_Marcas.Location = new System.Drawing.Point(0, 0);
             this.dtg_Marcas.Name = "dtg_Marcas";
             this.dtg_Marcas.ReadOnly = true;
             this.dtg_Marcas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtg_Marcas.Size = new System.Drawing.Size(310, 150);
+            this.dtg_Marcas.Size = new System.Drawing.Size(274, 167);
             this.dtg_Marcas.TabIndex = 1;
             // 
             // metroTextBox1
@@ -162,17 +165,31 @@
             this.bunifuThinButton23.TabIndex = 6;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Controls.Add(this.dtg_Marcas);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(23, 117);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(274, 167);
+            this.metroPanel1.TabIndex = 7;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
             // Marcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 358);
+            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.metroTextBox1);
-            this.Controls.Add(this.dtg_Marcas);
             this.MaximizeBox = false;
             this.Name = "Marcas";
             this.Style = MetroFramework.MetroColorStyle.Teal;
@@ -180,6 +197,7 @@
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Right;
             this.Load += new System.EventHandler(this.Marcas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Marcas)).EndInit();
+            this.metroPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +211,6 @@
         private ns1.BunifuThinButton2 bunifuThinButton21;
         private ns1.BunifuThinButton2 bunifuThinButton22;
         private ns1.BunifuThinButton2 bunifuThinButton23;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
     }
 }
