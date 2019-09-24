@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tonner));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.btn_guardar = new ns1.BunifuThinButton2();
             this.bunifuCustomDataGrid1 = new ns1.BunifuCustomDataGrid();
@@ -79,7 +79,7 @@
             this.btn_guardar.ActiveFillColor = System.Drawing.Color.Cyan;
             this.btn_guardar.ActiveForecolor = System.Drawing.Color.Black;
             this.btn_guardar.ActiveLineColor = System.Drawing.Color.Green;
-            this.btn_guardar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_guardar.BackColor = System.Drawing.Color.Gray;
             this.btn_guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_guardar.BackgroundImage")));
             this.btn_guardar.ButtonText = "Guardar";
             this.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -91,7 +91,7 @@
             this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btn_guardar.Location = new System.Drawing.Point(20, 11);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(104, 37);
             this.btn_guardar.TabIndex = 8;
@@ -102,8 +102,8 @@
             // 
             this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
             this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -112,14 +112,14 @@
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.ColumnHeadersHeight = 29;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -141,7 +141,7 @@
             this.btn_cancelar.ActiveFillColor = System.Drawing.Color.Yellow;
             this.btn_cancelar.ActiveForecolor = System.Drawing.Color.Black;
             this.btn_cancelar.ActiveLineColor = System.Drawing.Color.Green;
-            this.btn_cancelar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_cancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btn_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.BackgroundImage")));
             this.btn_cancelar.ButtonText = "Cancelar";
             this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -153,7 +153,7 @@
             this.btn_cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btn_cancelar.Location = new System.Drawing.Point(309, 5);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(90, 37);
             this.btn_cancelar.TabIndex = 7;
@@ -167,7 +167,7 @@
             this.btn_borrar.ActiveFillColor = System.Drawing.Color.Red;
             this.btn_borrar.ActiveForecolor = System.Drawing.Color.Black;
             this.btn_borrar.ActiveLineColor = System.Drawing.Color.Green;
-            this.btn_borrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_borrar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btn_borrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_borrar.BackgroundImage")));
             this.btn_borrar.ButtonText = "Eliminar ";
             this.btn_borrar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -179,7 +179,7 @@
             this.btn_borrar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_borrar.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btn_borrar.Location = new System.Drawing.Point(171, 5);
-            this.btn_borrar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_borrar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_borrar.Name = "btn_borrar";
             this.btn_borrar.Size = new System.Drawing.Size(104, 37);
             this.btn_borrar.TabIndex = 5;
@@ -250,7 +250,7 @@
             this.txt_Modelo.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Modelo.LineThickness = 3;
             this.txt_Modelo.Location = new System.Drawing.Point(6, 47);
-            this.txt_Modelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Modelo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Modelo.Name = "txt_Modelo";
             this.txt_Modelo.Size = new System.Drawing.Size(175, 34);
             this.txt_Modelo.TabIndex = 8;
@@ -264,7 +264,7 @@
             this.txt_buscar.ForeColor = System.Drawing.Color.SeaGreen;
             this.txt_buscar.Icon = ((System.Drawing.Image)(resources.GetObject("txt_buscar.Icon")));
             this.txt_buscar.Location = new System.Drawing.Point(409, 52);
-            this.txt_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_buscar.Margin = new System.Windows.Forms.Padding(4);
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(156, 34);
             this.txt_buscar.TabIndex = 7;
@@ -289,7 +289,7 @@
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.Location = new System.Drawing.Point(466, 5);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(81, 43);
             this.bunifuThinButton23.TabIndex = 6;
@@ -301,8 +301,8 @@
             // 
             this.gtb_datos.AllowUserToAddRows = false;
             this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -311,14 +311,14 @@
             this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gtb_datos.ColumnHeadersHeight = 29;
             this.gtb_datos.DoubleBuffered = true;
             this.gtb_datos.EnableHeadersVisualStyles = false;
@@ -352,6 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(601, 450);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.metroPanel2);

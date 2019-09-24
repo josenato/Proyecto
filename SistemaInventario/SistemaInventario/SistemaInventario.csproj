@@ -70,6 +70,12 @@
   <ItemGroup>
     <Compile Include="CapaDatos\ClsTonner.cs" />
     <Compile Include="CapaDatos\ConectarBD.cs" />
+    <Compile Include="Impresoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impresoras.Designer.cs">
+      <DependentUpon>Impresoras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,15 @@
     <Compile Include="Tonner.Designer.cs">
       <DependentUpon>Tonner.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ubicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicacion.Designer.cs">
+      <DependentUpon>Ubicacion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Impresoras.resx">
+      <DependentUpon>Impresoras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tonner.resx">
       <DependentUpon>Tonner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicacion.resx">
+      <DependentUpon>Ubicacion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

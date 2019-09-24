@@ -46,9 +46,9 @@ namespace SistemaInventario
             using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
             {
             mysqlCon.Open();
-              MySqlCommand mysqlCmd = new MySqlCommand("MarcasDelete", mysqlCon);
+              MySqlCommand mysqlCmd = new MySqlCommand("TonnerDelete", mysqlCon);
               mysqlCmd.CommandType = CommandType.StoredProcedure;
-              mysqlCmd.Parameters.AddWithValue("_idMarcas", TonnerID);
+              mysqlCmd.Parameters.AddWithValue("_idTonner", TonnerID);
               mysqlCmd.ExecuteNonQuery();
              MessageBox.Show("Dato Eliminado");
              clear();
@@ -60,6 +60,7 @@ namespace SistemaInventario
             clear();
             ListarTonner();
         }
+
         //evento para buscar datos 
         private void BunifuThinButton23_Click(object sender, EventArgs e)
         {
