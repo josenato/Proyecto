@@ -16,7 +16,7 @@ namespace SistemaInventario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Impresoras());
+            Application.Run(new Reportes());
         }
     }
 }

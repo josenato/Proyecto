@@ -68,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cantidad y Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cantidad y Color.Designer.cs">
+      <DependentUpon>Cantidad y Color.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaDatos\ClsTonner.cs" />
     <Compile Include="CapaDatos\ConectarBD.cs" />
     <Compile Include="Impresoras.cs">
@@ -89,6 +95,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tonner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +119,9 @@
     <Compile Include="Ubicacion.Designer.cs">
       <DependentUpon>Ubicacion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cantidad y Color.resx">
+      <DependentUpon>Cantidad y Color.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Impresoras.resx">
       <DependentUpon>Impresoras.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +132,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tonner.resx">
       <DependentUpon>Tonner.cs</DependentUpon>
