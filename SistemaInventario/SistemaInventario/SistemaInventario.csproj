@@ -76,6 +76,12 @@
     </Compile>
     <Compile Include="CapaDatos\ClsTonner.cs" />
     <Compile Include="CapaDatos\ConectarBD.cs" />
+    <Compile Include="Envios De Toner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Envios De Toner.Designer.cs">
+      <DependentUpon>Envios De Toner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Impresoras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,12 @@
     <Compile Include="Reportes.Designer.cs">
       <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="SolicitudTonner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudTonner.Designer.cs">
+      <DependentUpon>SolicitudTonner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tonner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="Cantidad y Color.resx">
       <DependentUpon>Cantidad y Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Envios De Toner.resx">
+      <DependentUpon>Envios De Toner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Impresoras.resx">
       <DependentUpon>Impresoras.cs</DependentUpon>
@@ -138,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitudTonner.resx">
+      <DependentUpon>SolicitudTonner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tonner.resx">
       <DependentUpon>Tonner.cs</DependentUpon>

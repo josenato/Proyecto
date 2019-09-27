@@ -1,6 +1,6 @@
 ﻿namespace SistemaInventario
 {
-    partial class Reportes
+    partial class Envios_de_Toner
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reportes));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Envios_de_Toner));
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuGradientPanel2 = new ns1.BunifuGradientPanel();
-            this.bunifuDatepicker2 = new ns1.BunifuDatepicker();
-            this.bunifuDatepicker1 = new ns1.BunifuDatepicker();
-            this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
             this.btn_Cancelar = new ns1.BunifuThinButton2();
             this.btn_Eliminar = new ns1.BunifuThinButton2();
             this.btn_Guardar = new ns1.BunifuThinButton2();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.bunifuDatepicker2 = new ns1.BunifuDatepicker();
+            this.metroComboBox3 = new MetroFramework.Controls.MetroComboBox();
+            this.metroComboBox4 = new MetroFramework.Controls.MetroComboBox();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
-            this.bunifuGradientPanel2.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel3
@@ -57,10 +53,10 @@
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(12, 78);
+            this.metroPanel3.Location = new System.Drawing.Point(12, 69);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(601, 378);
-            this.metroPanel3.TabIndex = 21;
+            this.metroPanel3.Size = new System.Drawing.Size(601, 476);
+            this.metroPanel3.TabIndex = 22;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
@@ -69,8 +65,8 @@
             // 
             this.gtb_datos.AllowUserToAddRows = false;
             this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -79,14 +75,14 @@
             this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gtb_datos.ColumnHeadersHeight = 29;
             this.gtb_datos.DoubleBuffered = true;
             this.gtb_datos.EnableHeadersVisualStyles = false;
@@ -98,7 +94,7 @@
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(579, 346);
+            this.gtb_datos.Size = new System.Drawing.Size(579, 444);
             this.gtb_datos.TabIndex = 11;
             // 
             // metroPanel1
@@ -109,98 +105,13 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(635, 394);
+            this.metroPanel1.Location = new System.Drawing.Point(695, 448);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(449, 62);
-            this.metroPanel1.TabIndex = 27;
+            this.metroPanel1.TabIndex = 28;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(635, 299);
-            this.bunifuCustomTextbox1.Multiline = true;
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(449, 89);
-            this.bunifuCustomTextbox1.TabIndex = 30;
-            // 
-            // bunifuGradientPanel2
-            // 
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuDatepicker2);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuDatepicker1);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(635, 168);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(449, 100);
-            this.bunifuGradientPanel2.TabIndex = 29;
-            // 
-            // bunifuDatepicker2
-            // 
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker2.FormatCustom = null;
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(14, 20);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(182, 50);
-            this.bunifuDatepicker2.TabIndex = 24;
-            this.bunifuDatepicker2.Value = new System.DateTime(2019, 9, 26, 15, 58, 27, 845);
-            // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(238, 20);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(193, 50);
-            this.bunifuDatepicker1.TabIndex = 23;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 9, 26, 15, 58, 27, 845);
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.metroComboBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.metroComboBox2);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(635, 78);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(449, 69);
-            this.bunifuGradientPanel1.TabIndex = 28;
-            // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(3, 18);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(182, 29);
-            this.metroComboBox1.TabIndex = 22;
-            // 
-            // metroComboBox2
-            // 
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Location = new System.Drawing.Point(244, 18);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(187, 29);
-            this.metroComboBox2.TabIndex = 26;
             // 
             // btn_Cancelar
             // 
@@ -277,26 +188,74 @@
             this.btn_Guardar.TabIndex = 2;
             this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Reportes
+            // metroComboBox1
+            // 
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Location = new System.Drawing.Point(670, 125);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox1.TabIndex = 29;
+            // 
+            // metroComboBox2
+            // 
+            this.metroComboBox2.FormattingEnabled = true;
+            this.metroComboBox2.ItemHeight = 23;
+            this.metroComboBox2.Location = new System.Drawing.Point(828, 125);
+            this.metroComboBox2.Name = "metroComboBox2";
+            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox2.TabIndex = 30;
+            // 
+            // bunifuDatepicker2
+            // 
+            this.bunifuDatepicker2.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuDatepicker2.BorderRadius = 0;
+            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker2.FormatCustom = null;
+            this.bunifuDatepicker2.Location = new System.Drawing.Point(740, 215);
+            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
+            this.bunifuDatepicker2.Size = new System.Drawing.Size(182, 50);
+            this.bunifuDatepicker2.TabIndex = 31;
+            this.bunifuDatepicker2.Value = new System.DateTime(2019, 9, 26, 15, 58, 27, 845);
+            // 
+            // metroComboBox3
+            // 
+            this.metroComboBox3.FormattingEnabled = true;
+            this.metroComboBox3.ItemHeight = 23;
+            this.metroComboBox3.Location = new System.Drawing.Point(984, 136);
+            this.metroComboBox3.Name = "metroComboBox3";
+            this.metroComboBox3.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox3.TabIndex = 32;
+            // 
+            // metroComboBox4
+            // 
+            this.metroComboBox4.FormattingEnabled = true;
+            this.metroComboBox4.ItemHeight = 23;
+            this.metroComboBox4.Location = new System.Drawing.Point(984, 215);
+            this.metroComboBox4.Name = "metroComboBox4";
+            this.metroComboBox4.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox4.TabIndex = 33;
+            // 
+            // Envios_de_Toner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 536);
-            this.Controls.Add(this.bunifuCustomTextbox1);
-            this.Controls.Add(this.bunifuGradientPanel2);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.ClientSize = new System.Drawing.Size(1281, 574);
+            this.Controls.Add(this.metroComboBox4);
+            this.Controls.Add(this.metroComboBox3);
+            this.Controls.Add(this.bunifuDatepicker2);
+            this.Controls.Add(this.metroComboBox2);
+            this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroPanel3);
-            this.Name = "Reportes";
-            this.Text = "Reportes";
-            this.Load += new System.EventHandler(this.Reportes_Load);
+            this.Name = "Envios_de_Toner";
+            this.Text = "Envios de Toner";
+            this.Load += new System.EventHandler(this.Envios_de_Toner_Load);
             this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
             this.metroPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            this.bunifuGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -304,16 +263,14 @@
 
         private MetroFramework.Controls.MetroPanel metroPanel3;
         private ns1.BunifuCustomDataGrid gtb_datos;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private ns1.BunifuDatepicker bunifuDatepicker1;
-        private ns1.BunifuDatepicker bunifuDatepicker2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private ns1.BunifuThinButton2 btn_Cancelar;
         private ns1.BunifuThinButton2 btn_Eliminar;
         private ns1.BunifuThinButton2 btn_Guardar;
-        private ns1.BunifuGradientPanel bunifuGradientPanel1;
-        private ns1.BunifuGradientPanel bunifuGradientPanel2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox metroComboBox2;
+        private ns1.BunifuDatepicker bunifuDatepicker2;
+        private MetroFramework.Controls.MetroComboBox metroComboBox3;
+        private MetroFramework.Controls.MetroComboBox metroComboBox4;
     }
 }
