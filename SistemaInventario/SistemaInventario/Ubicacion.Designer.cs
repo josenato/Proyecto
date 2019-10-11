@@ -32,9 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
-            this.btn_guardar = new ns1.BunifuThinButton2();
-            this.btn_Eliminar = new ns1.BunifuThinButton2();
             this.btn_Cancelar = new ns1.BunifuThinButton2();
+            this.btn_Eliminar = new ns1.BunifuThinButton2();
+            this.btn_guardar = new ns1.BunifuThinButton2();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.lbl_desbloquear = new ns1.BunifuCustomLabel();
             this.tbx_Ubucacion = new ns1.BunifuMetroTextbox();
@@ -61,56 +61,6 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(105, 174);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
-            // btn_guardar
-            // 
-            this.btn_guardar.ActiveBorderThickness = 1;
-            this.btn_guardar.ActiveCornerRadius = 20;
-            this.btn_guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_guardar.BackgroundImage")));
-            this.btn_guardar.ButtonText = "Guardar";
-            this.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.IdleBorderThickness = 1;
-            this.btn_guardar.IdleCornerRadius = 20;
-            this.btn_guardar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.Location = new System.Drawing.Point(5, 5);
-            this.btn_guardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(93, 38);
-            this.btn_guardar.TabIndex = 6;
-            this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.ActiveBorderThickness = 1;
-            this.btn_Eliminar.ActiveCornerRadius = 20;
-            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.Red;
-            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
-            this.btn_Eliminar.ButtonText = "Eliminar";
-            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.ForeColor = System.Drawing.Color.Black;
-            this.btn_Eliminar.IdleBorderThickness = 1;
-            this.btn_Eliminar.IdleCornerRadius = 20;
-            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(5, 62);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(93, 38);
-            this.btn_Eliminar.TabIndex = 7;
-            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.ActiveBorderThickness = 1;
@@ -118,7 +68,7 @@
             this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.Black;
             this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Cancelar.BackColor = System.Drawing.Color.Purple;
             this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
             this.btn_Cancelar.ButtonText = "Cancelar";
             this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -135,6 +85,59 @@
             this.btn_Cancelar.Size = new System.Drawing.Size(93, 38);
             this.btn_Cancelar.TabIndex = 8;
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.ActiveBorderThickness = 1;
+            this.btn_Eliminar.ActiveCornerRadius = 20;
+            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.Red;
+            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.BackColor = System.Drawing.Color.Purple;
+            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
+            this.btn_Eliminar.ButtonText = "Eliminar";
+            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Eliminar.IdleBorderThickness = 1;
+            this.btn_Eliminar.IdleCornerRadius = 20;
+            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.Location = new System.Drawing.Point(5, 62);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(93, 38);
+            this.btn_Eliminar.TabIndex = 7;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            // 
+            // btn_guardar
+            // 
+            this.btn_guardar.ActiveBorderThickness = 1;
+            this.btn_guardar.ActiveCornerRadius = 20;
+            this.btn_guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_guardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_guardar.BackColor = System.Drawing.Color.Purple;
+            this.btn_guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_guardar.BackgroundImage")));
+            this.btn_guardar.ButtonText = "Guardar";
+            this.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_guardar.IdleBorderThickness = 1;
+            this.btn_guardar.IdleCornerRadius = 20;
+            this.btn_guardar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_guardar.Location = new System.Drawing.Point(5, 5);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(93, 38);
+            this.btn_guardar.TabIndex = 6;
+            this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
             // gtb_datos
             // 
@@ -148,7 +151,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gtb_datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gtb_datos.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -174,6 +177,7 @@
             this.gtb_datos.RowHeadersWidth = 51;
             this.gtb_datos.Size = new System.Drawing.Size(175, 174);
             this.gtb_datos.TabIndex = 11;
+            this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
             // lbl_desbloquear
             // 
