@@ -15,6 +15,7 @@ namespace SistemaInventario.CapaDatos
         private MySqlCommand cm = new MySqlCommand();
         private MySqlDataReader LeerFilas;
 
+        // metodo para los combobpx
         public DataTable ListarMarcas()
         {
             //metodo para listar los datos de la tabla marcas en un combobox
@@ -27,6 +28,27 @@ namespace SistemaInventario.CapaDatos
             Conexion.CerraCX();
             return tabla;
         }
+
+        public DataTable ListarTonerCbx()
+        {
+            //metodo para listar los datos de la tabla tonner en un combobox
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "TonnerViewAll";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
         //metodo para agregar los datos para la tabla tonner
         public void InsertarTonner(int idTonner, string Modelo, int marcas_idMarcas )
         {
@@ -39,6 +61,25 @@ namespace SistemaInventario.CapaDatos
             cm.ExecuteNonQuery();
             cm.Parameters.Clear();
         }
+        //metodo para agregar datos  en la tabla CantidadColor 
+        public void InsertarCantidadColor(int idColor_Cantidad, string Color, int Cantidad, int Marcas_idMarcas, int Tonner_idTonner)
+        {
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "ColorCantidadAddEddit";
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("_idColor_Cantidad", idColor_Cantidad);
+            cm.Parameters.AddWithValue("_Color", Color);
+            cm.Parameters.AddWithValue("_Cantidad", Cantidad);
+            cm.Parameters.AddWithValue("_Marcas_idMarcas", Marcas_idMarcas);
+            cm.Parameters.AddWithValue("_Tonner_idTonner", Tonner_idTonner);
+            cm.ExecuteNonQuery(); //error  revisar el procedimiento almacenado 
+            cm.Parameters.Clear();
+        }
+
+
+
+
+        //////////////////////////////////////////////////////////////////////////////////////////
 
         public DataTable ListarTonner()
         {//metodo para listar los datos de la tabla tonner en el datagrid
@@ -53,7 +94,19 @@ namespace SistemaInventario.CapaDatos
             return tabla;
         }
 
-        
+        public DataTable ListarCantidadColor()
+        {//metodo para listar los datos de la tabla tonner en el datagrid
+
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "Color_CantidadViewAllInnerJoin";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
 
     }
 }

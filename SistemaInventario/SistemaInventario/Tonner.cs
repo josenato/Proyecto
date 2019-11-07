@@ -18,6 +18,7 @@ namespace SistemaInventario
 
         string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
         int TonnerID = 0;
+
         public Tonner()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace SistemaInventario
             CargarMarcas();
             ListarTonner();
         }
+
         private void CargarMarcas()
         {
             ClsTonner ObjTonn = new ClsTonner();
@@ -34,6 +36,7 @@ namespace SistemaInventario
             cbx_Marcas.DisplayMember = "Descripcion";
             cbx_Marcas.ValueMember = "idMarcas";
         }
+
         void clear()
         {
             txt_Modelo.Text = cbx_Marcas.Text = txt_buscar.text = "";
@@ -78,16 +81,18 @@ namespace SistemaInventario
         }
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
-            objTonner.InsertarTonner(Convert.ToInt32(TonnerID) ,txt_Modelo.Text, Convert.ToInt32(cbx_Marcas.SelectedValue));
+            objTonner.InsertarTonner(Convert.ToInt32(TonnerID) ,txt_Modelo.Text, Convert.ToInt32(cbx_Marcas.SelectedValue) );
             MessageBox.Show("Se agrego correctamente");
             ListarTonner();
             clear();          
         }
+
         private void ListarTonner()
         {
             ClsTonner objTonn = new ClsTonner();
             gtb_datos.DataSource = objTonn.ListarTonner();
         }
+
         private void Gtb_datos_DoubleClick(object sender, EventArgs e)
         {
             if(gtb_datos.CurrentRow.Index != -1)

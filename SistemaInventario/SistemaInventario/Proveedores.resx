@@ -121,17 +121,17 @@
   <data name="btn_Cancelar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
 </value>
   </data>
   <data name="btn_Eliminar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
