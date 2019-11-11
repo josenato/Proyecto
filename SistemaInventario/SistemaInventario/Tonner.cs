@@ -102,7 +102,6 @@ namespace SistemaInventario
                 TonnerID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
                 btn_guardar.Text = "Actualizar";
                 btn_borrar.Enabled = true;
-
             }
         }
     }
