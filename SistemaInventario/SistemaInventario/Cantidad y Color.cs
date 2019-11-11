@@ -18,6 +18,7 @@ namespace SistemaInventario
 
         string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
         int CantidadColorID = 0;
+
         public Cantidad_y_Color()
         {
             InitializeComponent();

@@ -47,8 +47,8 @@
             this.btn_Eliminar = new ns1.BunifuThinButton2();
             this.btn_Guardar = new ns1.BunifuThinButton2();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
-            this.dtpFecha = new ns1.BunifuDatepicker();
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
+            this.dtpFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.metroPanel5.SuspendLayout();
             this.metroPanel4.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -281,6 +281,7 @@
             this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
             this.btn_Cancelar.TabIndex = 4;
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // btn_Eliminar
             // 
@@ -350,6 +351,16 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(527, 57);
             this.bunifuGradientPanel1.TabIndex = 21;
             // 
+            // cbx_Marcas
+            // 
+            this.cbx_Marcas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbx_Marcas.FormattingEnabled = true;
+            this.cbx_Marcas.ItemHeight = 23;
+            this.cbx_Marcas.Location = new System.Drawing.Point(30, 13);
+            this.cbx_Marcas.Name = "cbx_Marcas";
+            this.cbx_Marcas.Size = new System.Drawing.Size(183, 29);
+            this.cbx_Marcas.TabIndex = 0;
+            // 
             // dtpFecha
             // 
             this.dtpFecha.BackColor = System.Drawing.Color.SeaGreen;
@@ -357,20 +368,11 @@
             this.dtpFecha.ForeColor = System.Drawing.Color.White;
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpFecha.FormatCustom = null;
-            this.dtpFecha.Location = new System.Drawing.Point(265, 13);
+            this.dtpFecha.Location = new System.Drawing.Point(235, 6);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(241, 29);
+            this.dtpFecha.Size = new System.Drawing.Size(271, 36);
             this.dtpFecha.TabIndex = 1;
-            this.dtpFecha.Value = new System.DateTime(2019, 9, 26, 15, 3, 58, 664);
-            // 
-            // cbx_Marcas
-            // 
-            this.cbx_Marcas.FormattingEnabled = true;
-            this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(30, 13);
-            this.cbx_Marcas.Name = "cbx_Marcas";
-            this.cbx_Marcas.Size = new System.Drawing.Size(183, 29);
-            this.cbx_Marcas.TabIndex = 0;
+            this.dtpFecha.Value = new System.DateTime(2019, 11, 11, 3, 38, 27, 126);
             // 
             // Proveedores
             // 
@@ -419,6 +421,6 @@
         private ns1.BunifuThinButton2 btn_Cancelar;
         private ns1.BunifuThinButton2 btn_Eliminar;
         private ns1.BunifuThinButton2 btn_Guardar;
-        private ns1.BunifuDatepicker dtpFecha;
+        private Bunifu.Framework.UI.BunifuDatepicker dtpFecha;
     }
 }

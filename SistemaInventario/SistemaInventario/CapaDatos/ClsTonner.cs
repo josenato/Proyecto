@@ -29,6 +29,19 @@ namespace SistemaInventario.CapaDatos
             return tabla;
         }
 
+        public DataTable ListarUbicaciones()
+        {
+            //metodo para listar los datos de la tabla ubicaciones en un combobox
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "UbicacionViewAll";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
         public DataTable ListarTonerCbx()
         {
             //metodo para listar los datos de la tabla tonner en un combobox
@@ -122,7 +135,31 @@ namespace SistemaInventario.CapaDatos
             return tabla;
         }
 
+        public DataTable ListarImpresora()
+        {//metodo para listar los datos de la tabla Cantidad Color  en el datagrid
 
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "ImpresoraViewAllInnerJoin";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
+        public DataTable ListarReportes()
+        {//metodo para listar los datos de la tabla Reportes  en el datagrid
+
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "ReportesViewAllInnerJoin";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
         public DataTable ListarProveedor()
         {//metodo para listar los datos de la tabla tonner en el datagrid
 

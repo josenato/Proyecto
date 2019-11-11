@@ -68,6 +68,15 @@ namespace SistemaInventario
             }
         }
 
+        void clear()
+        {
+            tbxStatus.Text = cbx_Marcas.Text = txtAdquisicion.Text = txtNombre.Text = "";
+
+            ProveedorID = 0;
+            btn_Guardar.ButtonText = "Guardar";
+            btn_Eliminar.Enabled = false;
+        }
+
         private void Btn_Eliminar_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mysqlCon = new MySqlConnection(conexionString))
@@ -80,6 +89,11 @@ namespace SistemaInventario
                 MessageBox.Show("Dato Eliminado");
                 ListarProveedor();
             }
+        }
+
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }
