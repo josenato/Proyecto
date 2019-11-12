@@ -41,10 +41,12 @@
             this.dtp_Inicio = new ns1.BunifuDatepicker();
             this.dtp_Final = new ns1.BunifuDatepicker();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
             this.cbx_Ubicacion = new MetroFramework.Controls.MetroComboBox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -60,7 +62,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(12, 78);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(601, 378);
+            this.metroPanel3.Size = new System.Drawing.Size(601, 372);
             this.metroPanel3.TabIndex = 21;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -94,12 +96,12 @@
             this.gtb_datos.GridColor = System.Drawing.Color.Silver;
             this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gtb_datos.Location = new System.Drawing.Point(12, 13);
+            this.gtb_datos.Location = new System.Drawing.Point(3, 3);
             this.gtb_datos.Name = "gtb_datos";
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(579, 346);
+            this.gtb_datos.Size = new System.Drawing.Size(595, 359);
             this.gtb_datos.TabIndex = 11;
             // 
             // metroPanel1
@@ -110,9 +112,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(635, 394);
+            this.metroPanel1.Location = new System.Drawing.Point(616, 388);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(449, 62);
+            this.metroPanel1.Size = new System.Drawing.Size(349, 62);
             this.metroPanel1.TabIndex = 27;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -136,7 +138,7 @@
             this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(326, 16);
+            this.btn_Cancelar.Location = new System.Drawing.Point(242, 16);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
@@ -161,10 +163,10 @@
             this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(171, 16);
+            this.btn_Eliminar.Location = new System.Drawing.Point(125, 16);
             this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Eliminar.Size = new System.Drawing.Size(107, 41);
             this.btn_Eliminar.TabIndex = 3;
             this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -186,12 +188,13 @@
             this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.Location = new System.Drawing.Point(14, 16);
+            this.btn_Guardar.Location = new System.Drawing.Point(7, 16);
             this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Guardar.Size = new System.Drawing.Size(108, 41);
             this.btn_Guardar.TabIndex = 2;
             this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // bunifuGradientPanel2
             // 
@@ -203,10 +206,10 @@
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(635, 174);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(619, 81);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(449, 136);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(349, 100);
             this.bunifuGradientPanel2.TabIndex = 29;
             // 
             // dtp_Inicio
@@ -239,6 +242,8 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.textBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.materialLabel3);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel2);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel1);
             this.bunifuGradientPanel1.Controls.Add(this.cbx_Marcas);
@@ -247,29 +252,24 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(635, 78);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(619, 192);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(449, 69);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(346, 190);
             this.bunifuGradientPanel1.TabIndex = 28;
             // 
-            // cbx_Marcas
+            // materialLabel2
             // 
-            this.cbx_Marcas.FormattingEnabled = true;
-            this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(3, 37);
-            this.cbx_Marcas.Name = "cbx_Marcas";
-            this.cbx_Marcas.Size = new System.Drawing.Size(182, 29);
-            this.cbx_Marcas.TabIndex = 22;
-            // 
-            // cbx_Ubicacion
-            // 
-            this.cbx_Ubicacion.FormattingEnabled = true;
-            this.cbx_Ubicacion.ItemHeight = 23;
-            this.cbx_Ubicacion.Location = new System.Drawing.Point(238, 37);
-            this.cbx_Ubicacion.Name = "cbx_Ubicacion";
-            this.cbx_Ubicacion.Size = new System.Drawing.Size(187, 29);
-            this.cbx_Ubicacion.TabIndex = 26;
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(3, 69);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(92, 19);
+            this.materialLabel2.TabIndex = 28;
+            this.materialLabel2.Text = "Ubicaciones";
             // 
             // materialLabel1
             // 
@@ -284,24 +284,50 @@
             this.materialLabel1.TabIndex = 27;
             this.materialLabel1.Text = "Marcas";
             // 
-            // materialLabel2
+            // cbx_Marcas
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(234, 13);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(92, 19);
-            this.materialLabel2.TabIndex = 28;
-            this.materialLabel2.Text = "Ubicaciones";
+            this.cbx_Marcas.FormattingEnabled = true;
+            this.cbx_Marcas.ItemHeight = 23;
+            this.cbx_Marcas.Location = new System.Drawing.Point(3, 37);
+            this.cbx_Marcas.Name = "cbx_Marcas";
+            this.cbx_Marcas.Size = new System.Drawing.Size(323, 29);
+            this.cbx_Marcas.TabIndex = 22;
+            // 
+            // cbx_Ubicacion
+            // 
+            this.cbx_Ubicacion.FormattingEnabled = true;
+            this.cbx_Ubicacion.ItemHeight = 23;
+            this.cbx_Ubicacion.Location = new System.Drawing.Point(4, 91);
+            this.cbx_Ubicacion.Name = "cbx_Ubicacion";
+            this.cbx_Ubicacion.Size = new System.Drawing.Size(323, 29);
+            this.cbx_Ubicacion.TabIndex = 26;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(3, 123);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(108, 19);
+            this.materialLabel3.TabIndex = 30;
+            this.materialLabel3.Text = "Observaciones";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(3, 145);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(324, 45);
+            this.textBox1.TabIndex = 31;
             // 
             // Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 536);
+            this.ClientSize = new System.Drawing.Size(985, 470);
             this.Controls.Add(this.bunifuGradientPanel2);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.metroPanel1);
@@ -335,6 +361,8 @@
         private ns1.BunifuGradientPanel bunifuGradientPanel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.TextBox textBox1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
         //   private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
     }
 }

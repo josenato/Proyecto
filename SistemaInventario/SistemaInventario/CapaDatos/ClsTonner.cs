@@ -54,11 +54,7 @@ namespace SistemaInventario.CapaDatos
             Conexion.CerraCX();
             return tabla;
         }
-        ///////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
+        ////////////////////////////////////METODO INSER INTO EN EL DATA GRID///////////////////////////////////////////////////
 
 
         //metodo para agregar los datos para la tabla tonner
@@ -104,9 +100,39 @@ namespace SistemaInventario.CapaDatos
             cm.Parameters.Clear();
         }
 
+        public void InsertarReporte(int idColor_Cantidad, string Color, int Cantidad, int Marcas_idMarcas, int Tonner_idTonner)
+        {
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "ColorCantidadAddEddit";
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("_idColor_Cantidad", idColor_Cantidad);
+            cm.Parameters.AddWithValue("_Color", Color);
+            cm.Parameters.AddWithValue("_Cantidad", Cantidad);
+            cm.Parameters.AddWithValue("_Marcas_idMarcas", Marcas_idMarcas);
+            cm.Parameters.AddWithValue("_Tonner_idTonner", Tonner_idTonner);
+            cm.ExecuteNonQuery(); //error  revisar el procedimiento almacenado 
+            cm.Parameters.Clear();
+        }
 
 
-        //////////////////////////////////////////////////////////////////////////////////////////
+        public void InsertarImpresora(int idImpresora, int Marcas_idMarcas, string Serialss, int Ubicacion_idUbicacion, string IpImpresora , string Estatus, string Modelo )
+        {
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "ImpresoraAddEddit";
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("_idImpresora", idImpresora);
+            cm.Parameters.AddWithValue("_Marcas_idMarcas", Marcas_idMarcas);
+            cm.Parameters.AddWithValue("_Serialss", Serialss);
+            cm.Parameters.AddWithValue("_Ubicacion_idUbicacion",Ubicacion_idUbicacion);
+            cm.Parameters.AddWithValue("_IpImpresora", IpImpresora);
+            cm.Parameters.AddWithValue("_Estatus", Estatus);
+            cm.Parameters.AddWithValue("_Modelo", Modelo);
+            cm.ExecuteNonQuery(); //error  revisar el procedimiento almacenado 
+            cm.Parameters.Clear();
+        }
+
+
+        //////////////////////////////////METODO SELECT FROM DATAGRID//////////////////////////////////////////////////////
 
         public DataTable ListarTonner()
         {//metodo para listar los datos de la tabla tonner en el datagrid

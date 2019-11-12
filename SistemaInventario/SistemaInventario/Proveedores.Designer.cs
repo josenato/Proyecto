@@ -48,7 +48,7 @@
             this.btn_Guardar = new ns1.BunifuThinButton2();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
-            this.dtpFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.dtpFecha = new ns1.BunifuDatepicker();
             this.metroPanel5.SuspendLayout();
             this.metroPanel4.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -356,7 +356,7 @@
             this.cbx_Marcas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbx_Marcas.FormattingEnabled = true;
             this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(30, 13);
+            this.cbx_Marcas.Location = new System.Drawing.Point(3, 25);
             this.cbx_Marcas.Name = "cbx_Marcas";
             this.cbx_Marcas.Size = new System.Drawing.Size(183, 29);
             this.cbx_Marcas.TabIndex = 0;
@@ -368,11 +368,11 @@
             this.dtpFecha.ForeColor = System.Drawing.Color.White;
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpFecha.FormatCustom = null;
-            this.dtpFecha.Location = new System.Drawing.Point(235, 6);
+            this.dtpFecha.Location = new System.Drawing.Point(205, 25);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(271, 36);
+            this.dtpFecha.Size = new System.Drawing.Size(301, 23);
             this.dtpFecha.TabIndex = 1;
-            this.dtpFecha.Value = new System.DateTime(2019, 11, 11, 3, 38, 27, 126);
+            this.dtpFecha.Value = new System.DateTime(2019, 11, 11, 10, 20, 36, 278);
             // 
             // Proveedores
             // 
@@ -421,6 +421,7 @@
         private ns1.BunifuThinButton2 btn_Cancelar;
         private ns1.BunifuThinButton2 btn_Eliminar;
         private ns1.BunifuThinButton2 btn_Guardar;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpFecha;
+        private ns1.BunifuDatepicker dtpFecha;
+        //private Bunifu.Framework.UI.BunifuDatepicker dtpFecha;
     }
 }

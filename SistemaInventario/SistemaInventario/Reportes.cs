@@ -49,5 +49,9 @@ namespace SistemaInventario
             gtb_datos.DataSource = objTonn.ListarReportes();
         }
 
+        private void Btn_Guardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
