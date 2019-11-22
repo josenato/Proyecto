@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reportes));
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
@@ -41,12 +41,12 @@
             this.dtp_Inicio = new ns1.BunifuDatepicker();
             this.dtp_Final = new ns1.BunifuDatepicker();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
+            this.txt_observaciones = new System.Windows.Forms.TextBox();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
             this.cbx_Ubicacion = new MetroFramework.Controls.MetroComboBox();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -72,8 +72,8 @@
             // 
             this.gtb_datos.AllowUserToAddRows = false;
             this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -82,14 +82,14 @@
             this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.gtb_datos.ColumnHeadersHeight = 29;
             this.gtb_datos.DoubleBuffered = true;
             this.gtb_datos.EnableHeadersVisualStyles = false;
@@ -103,6 +103,7 @@
             this.gtb_datos.RowHeadersWidth = 51;
             this.gtb_datos.Size = new System.Drawing.Size(595, 359);
             this.gtb_datos.TabIndex = 11;
+            this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
             // metroPanel1
             // 
@@ -144,6 +145,7 @@
             this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
             this.btn_Cancelar.TabIndex = 4;
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // btn_Eliminar
             // 
@@ -215,15 +217,17 @@
             // dtp_Inicio
             // 
             this.dtp_Inicio.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtp_Inicio.BorderRadius = 0;
+            this.dtp_Inicio.BorderRadius = 2;
             this.dtp_Inicio.ForeColor = System.Drawing.Color.White;
             this.dtp_Inicio.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtp_Inicio.FormatCustom = null;
+            this.dtp_Inicio.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dtp_Inicio.Location = new System.Drawing.Point(7, 14);
             this.dtp_Inicio.Name = "dtp_Inicio";
-            this.dtp_Inicio.Size = new System.Drawing.Size(319, 26);
+            this.dtp_Inicio.Size = new System.Drawing.Size(337, 26);
             this.dtp_Inicio.TabIndex = 24;
-            this.dtp_Inicio.Value = new System.DateTime(2019, 9, 26, 15, 58, 27, 845);
+            this.dtp_Inicio.Tag = "Inicio";
+            this.dtp_Inicio.Value = new System.DateTime(2019, 11, 22, 2, 37, 13, 0);
             // 
             // dtp_Final
             // 
@@ -234,15 +238,16 @@
             this.dtp_Final.FormatCustom = null;
             this.dtp_Final.Location = new System.Drawing.Point(7, 62);
             this.dtp_Final.Name = "dtp_Final";
-            this.dtp_Final.Size = new System.Drawing.Size(319, 26);
+            this.dtp_Final.Size = new System.Drawing.Size(337, 26);
             this.dtp_Final.TabIndex = 23;
-            this.dtp_Final.Value = new System.DateTime(2019, 9, 26, 15, 58, 27, 845);
+            this.dtp_Final.Tag = "Final";
+            this.dtp_Final.Value = new System.DateTime(2019, 11, 22, 2, 37, 24, 0);
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.textBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.txt_observaciones);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel3);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel2);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel1);
@@ -257,6 +262,27 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(346, 190);
             this.bunifuGradientPanel1.TabIndex = 28;
+            // 
+            // txt_observaciones
+            // 
+            this.txt_observaciones.Location = new System.Drawing.Point(3, 145);
+            this.txt_observaciones.Multiline = true;
+            this.txt_observaciones.Name = "txt_observaciones";
+            this.txt_observaciones.Size = new System.Drawing.Size(324, 45);
+            this.txt_observaciones.TabIndex = 31;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(3, 123);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(108, 19);
+            this.materialLabel3.TabIndex = 30;
+            this.materialLabel3.Text = "Observaciones";
             // 
             // materialLabel2
             // 
@@ -302,27 +328,6 @@
             this.cbx_Ubicacion.Size = new System.Drawing.Size(323, 29);
             this.cbx_Ubicacion.TabIndex = 26;
             // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(3, 123);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(108, 19);
-            this.materialLabel3.TabIndex = 30;
-            this.materialLabel3.Text = "Observaciones";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(3, 145);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(324, 45);
-            this.textBox1.TabIndex = 31;
-            // 
             // Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,7 +366,7 @@
         private ns1.BunifuGradientPanel bunifuGradientPanel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_observaciones;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         //   private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
     }

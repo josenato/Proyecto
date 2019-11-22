@@ -100,16 +100,17 @@ namespace SistemaInventario.CapaDatos
             cm.Parameters.Clear();
         }
 
-        public void InsertarReporte(int idColor_Cantidad, string Color, int Cantidad, int Marcas_idMarcas, int Tonner_idTonner)
+        public void InsertarReporte(int idReportes, int Ubicacion_idUbicacion, DateTime Fecha_Reporte, DateTime Fecha_Cierre, string Observacion, int Marcas_idMarcas)
         {
             cm.Connection = Conexion.AbrirCX();
-            cm.CommandText = "ColorCantidadAddEddit";
+            cm.CommandText = "ReportesAddEdit";
             cm.CommandType = CommandType.StoredProcedure;
-            cm.Parameters.AddWithValue("_idColor_Cantidad", idColor_Cantidad);
-            cm.Parameters.AddWithValue("_Color", Color);
-            cm.Parameters.AddWithValue("_Cantidad", Cantidad);
+            cm.Parameters.AddWithValue("_idReportes", idReportes);
+            cm.Parameters.AddWithValue("_Ubicacion_idUbicacion", Ubicacion_idUbicacion);
+            cm.Parameters.AddWithValue("_Fecha_Reporte", Fecha_Reporte);
+            cm.Parameters.AddWithValue("_Fecha_Cierre", Fecha_Cierre);
+            cm.Parameters.AddWithValue("_Observacion", Observacion);
             cm.Parameters.AddWithValue("_Marcas_idMarcas", Marcas_idMarcas);
-            cm.Parameters.AddWithValue("_Tonner_idTonner", Tonner_idTonner);
             cm.ExecuteNonQuery(); //error  revisar el procedimiento almacenado 
             cm.Parameters.Clear();
         }
