@@ -17,7 +17,7 @@ namespace SistemaInventario
 
         ClsTonner objTonner = new ClsTonner();
 
-        string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
+        string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
         int ImpresoraID = 0;
 
         public Impresoras()
@@ -104,6 +104,30 @@ namespace SistemaInventario
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Proveedores fm = new Proveedores();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
+
+        private void ButtotnReportn2_Click(object sender, EventArgs e)
+        {
+            Reportes fm = new Reportes();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnUbicaciones_Click(object sender, EventArgs e)
+        {
+            Ubicacion fm = new Ubicacion();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
         }
     }
 }

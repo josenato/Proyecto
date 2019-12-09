@@ -37,17 +37,22 @@
             this.btn_Cancelar = new ns1.BunifuThinButton2();
             this.btn_Eliminar = new ns1.BunifuThinButton2();
             this.btn_Guardar = new ns1.BunifuThinButton2();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.bunifuDatepicker1 = new ns1.BunifuDatepicker();
-            this.bunifuDatepicker2 = new ns1.BunifuDatepicker();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox3 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox4 = new MetroFramework.Controls.MetroComboBox();
-            this.bunifuTextbox1 = new ns1.BunifuTextbox();
-            this.metroComboBox5 = new MetroFramework.Controls.MetroComboBox();
+            this.cbx_Tonner = new MetroFramework.Controls.MetroComboBox();
+            this.Dtp_Fecha = new ns1.BunifuDatepicker();
+            this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
+            this.cbxColor = new MetroFramework.Controls.MetroComboBox();
+            this.jl = new MetroFramework.Controls.MetroLabel();
+            this.lbl_ttt = new MetroFramework.Controls.MetroLabel();
+            this.lbl_lv = new MetroFramework.Controls.MetroLabel();
+            this.nudSoli = new System.Windows.Forms.NumericUpDown();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.lbl = new MetroFramework.Controls.MetroLabel();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoli)).BeginInit();
+            this.metroPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel3
@@ -58,7 +63,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(12, 72);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(601, 607);
+            this.metroPanel3.Size = new System.Drawing.Size(601, 336);
             this.metroPanel3.TabIndex = 23;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -97,7 +102,7 @@
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(579, 575);
+            this.gtb_datos.Size = new System.Drawing.Size(571, 291);
             this.gtb_datos.TabIndex = 11;
             // 
             // metroPanel1
@@ -108,9 +113,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(634, 580);
+            this.metroPanel1.Location = new System.Drawing.Point(12, 429);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(499, 62);
+            this.metroPanel1.Size = new System.Drawing.Size(601, 67);
             this.metroPanel1.TabIndex = 29;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -134,7 +139,7 @@
             this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(326, 16);
+            this.btn_Cancelar.Location = new System.Drawing.Point(249, 8);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
@@ -159,12 +164,13 @@
             this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(171, 16);
+            this.btn_Eliminar.Location = new System.Drawing.Point(375, 5);
             this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
             this.btn_Eliminar.TabIndex = 3;
             this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // btn_Guardar
             // 
@@ -184,110 +190,140 @@
             this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.Location = new System.Drawing.Point(14, 16);
+            this.btn_Guardar.Location = new System.Drawing.Point(120, 8);
             this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
             this.btn_Guardar.TabIndex = 2;
             this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
-            // metroComboBox1
+            // cbx_Tonner
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(619, 114);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox1.TabIndex = 30;
+            this.cbx_Tonner.FormattingEnabled = true;
+            this.cbx_Tonner.ItemHeight = 23;
+            this.cbx_Tonner.Location = new System.Drawing.Point(14, 325);
+            this.cbx_Tonner.Name = "cbx_Tonner";
+            this.cbx_Tonner.Size = new System.Drawing.Size(193, 29);
+            this.cbx_Tonner.TabIndex = 30;
             // 
-            // bunifuDatepicker1
+            // Dtp_Fecha
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(634, 197);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(387, 47);
-            this.bunifuDatepicker1.TabIndex = 31;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 9, 27, 17, 59, 25, 948);
+            this.Dtp_Fecha.BackColor = System.Drawing.Color.SeaGreen;
+            this.Dtp_Fecha.BorderRadius = 0;
+            this.Dtp_Fecha.ForeColor = System.Drawing.Color.White;
+            this.Dtp_Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Dtp_Fecha.FormatCustom = null;
+            this.Dtp_Fecha.Location = new System.Drawing.Point(14, 51);
+            this.Dtp_Fecha.Name = "Dtp_Fecha";
+            this.Dtp_Fecha.Size = new System.Drawing.Size(245, 35);
+            this.Dtp_Fecha.TabIndex = 31;
+            this.Dtp_Fecha.Value = new System.DateTime(2019, 9, 27, 17, 59, 25, 948);
             // 
-            // bunifuDatepicker2
+            // cbx_Marcas
             // 
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker2.FormatCustom = null;
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(619, 402);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(421, 47);
-            this.bunifuDatepicker2.TabIndex = 32;
-            this.bunifuDatepicker2.Value = new System.DateTime(2019, 9, 27, 17, 59, 25, 948);
+            this.cbx_Marcas.FormattingEnabled = true;
+            this.cbx_Marcas.ItemHeight = 23;
+            this.cbx_Marcas.Location = new System.Drawing.Point(14, 143);
+            this.cbx_Marcas.Name = "cbx_Marcas";
+            this.cbx_Marcas.Size = new System.Drawing.Size(193, 29);
+            this.cbx_Marcas.TabIndex = 33;
             // 
-            // metroComboBox2
+            // cbxColor
             // 
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Location = new System.Drawing.Point(765, 114);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox2.TabIndex = 33;
+            this.cbxColor.FormattingEnabled = true;
+            this.cbxColor.ItemHeight = 23;
+            this.cbxColor.Location = new System.Drawing.Point(14, 227);
+            this.cbxColor.Name = "cbxColor";
+            this.cbxColor.Size = new System.Drawing.Size(193, 29);
+            this.cbxColor.TabIndex = 34;
             // 
-            // metroComboBox3
+            // jl
             // 
-            this.metroComboBox3.FormattingEnabled = true;
-            this.metroComboBox3.ItemHeight = 23;
-            this.metroComboBox3.Location = new System.Drawing.Point(912, 114);
-            this.metroComboBox3.Name = "metroComboBox3";
-            this.metroComboBox3.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox3.TabIndex = 34;
+            this.jl.AutoSize = true;
+            this.jl.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.jl.Location = new System.Drawing.Point(14, 115);
+            this.jl.Name = "jl";
+            this.jl.Size = new System.Drawing.Size(66, 25);
+            this.jl.TabIndex = 38;
+            this.jl.Text = "Marcas";
             // 
-            // metroComboBox4
+            // lbl_ttt
             // 
-            this.metroComboBox4.FormattingEnabled = true;
-            this.metroComboBox4.ItemHeight = 23;
-            this.metroComboBox4.Location = new System.Drawing.Point(1060, 114);
-            this.metroComboBox4.Name = "metroComboBox4";
-            this.metroComboBox4.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox4.TabIndex = 35;
+            this.lbl_ttt.AutoSize = true;
+            this.lbl_ttt.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbl_ttt.Location = new System.Drawing.Point(14, 287);
+            this.lbl_ttt.Name = "lbl_ttt";
+            this.lbl_ttt.Size = new System.Drawing.Size(70, 25);
+            this.lbl_ttt.TabIndex = 39;
+            this.lbl_ttt.Text = "Modelo";
             // 
-            // bunifuTextbox1
+            // lbl_lv
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(619, 505);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(250, 42);
-            this.bunifuTextbox1.TabIndex = 36;
-            this.bunifuTextbox1.text = "Bunifu TextBox";
+            this.lbl_lv.AutoSize = true;
+            this.lbl_lv.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbl_lv.Location = new System.Drawing.Point(14, 199);
+            this.lbl_lv.Name = "lbl_lv";
+            this.lbl_lv.Size = new System.Drawing.Size(53, 25);
+            this.lbl_lv.TabIndex = 40;
+            this.lbl_lv.Text = "Color";
             // 
-            // metroComboBox5
+            // nudSoli
             // 
-            this.metroComboBox5.FormattingEnabled = true;
-            this.metroComboBox5.ItemHeight = 23;
-            this.metroComboBox5.Location = new System.Drawing.Point(1200, 114);
-            this.metroComboBox5.Name = "metroComboBox5";
-            this.metroComboBox5.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox5.TabIndex = 37;
+            this.nudSoli.Location = new System.Drawing.Point(14, 421);
+            this.nudSoli.Name = "nudSoli";
+            this.nudSoli.Size = new System.Drawing.Size(193, 20);
+            this.nudSoli.TabIndex = 41;
+            // 
+            // metroPanel2
+            // 
+            this.metroPanel2.Controls.Add(this.lbl);
+            this.metroPanel2.Controls.Add(this.metroLabel4);
+            this.metroPanel2.Controls.Add(this.lbl_ttt);
+            this.metroPanel2.Controls.Add(this.lbl_lv);
+            this.metroPanel2.Controls.Add(this.nudSoli);
+            this.metroPanel2.Controls.Add(this.jl);
+            this.metroPanel2.Controls.Add(this.Dtp_Fecha);
+            this.metroPanel2.Controls.Add(this.cbxColor);
+            this.metroPanel2.Controls.Add(this.cbx_Marcas);
+            this.metroPanel2.Controls.Add(this.cbx_Tonner);
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(634, 72);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(321, 456);
+            this.metroPanel2.TabIndex = 42;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel4.Location = new System.Drawing.Point(14, 13);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(141, 25);
+            this.metroLabel4.TabIndex = 42;
+            this.metroLabel4.Text = "Fecha de Ingreso";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbl.Location = new System.Drawing.Point(14, 381);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(119, 25);
+            this.lbl.TabIndex = 43;
+            this.lbl.Text = "Ingresar Toner";
             // 
             // SolicitudTonner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 742);
-            this.Controls.Add(this.metroComboBox5);
-            this.Controls.Add(this.bunifuTextbox1);
-            this.Controls.Add(this.metroComboBox4);
-            this.Controls.Add(this.metroComboBox3);
-            this.Controls.Add(this.metroComboBox2);
-            this.Controls.Add(this.bunifuDatepicker2);
-            this.Controls.Add(this.bunifuDatepicker1);
-            this.Controls.Add(this.metroComboBox1);
+            this.ClientSize = new System.Drawing.Size(986, 534);
+            this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroPanel3);
             this.Name = "SolicitudTonner";
@@ -296,6 +332,9 @@
             this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
             this.metroPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoli)).EndInit();
+            this.metroPanel2.ResumeLayout(false);
+            this.metroPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -308,13 +347,16 @@
         private ns1.BunifuThinButton2 btn_Cancelar;
         private ns1.BunifuThinButton2 btn_Eliminar;
         private ns1.BunifuThinButton2 btn_Guardar;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private ns1.BunifuDatepicker bunifuDatepicker1;
-        private ns1.BunifuDatepicker bunifuDatepicker2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox3;
-        private MetroFramework.Controls.MetroComboBox metroComboBox4;
-        private ns1.BunifuTextbox bunifuTextbox1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox5;
+        private MetroFramework.Controls.MetroComboBox cbx_Tonner;
+        private ns1.BunifuDatepicker Dtp_Fecha;
+        private MetroFramework.Controls.MetroComboBox cbx_Marcas;
+        private MetroFramework.Controls.MetroComboBox cbxColor;
+        private MetroFramework.Controls.MetroLabel jl;
+        private MetroFramework.Controls.MetroLabel lbl_ttt;
+        private MetroFramework.Controls.MetroLabel lbl_lv;
+        private System.Windows.Forms.NumericUpDown nudSoli;
+        private MetroFramework.Controls.MetroPanel metroPanel2;
+        private MetroFramework.Controls.MetroLabel lbl;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }

@@ -42,6 +42,20 @@ namespace SistemaInventario.CapaDatos
             return tabla;
         }
 
+
+        public DataTable ListarColor()
+        {
+            //metodo para listar los datos de la tabla color_cantidad en un combobox
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "Color_CantidadSELECT";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
         public DataTable ListarTonerCbx()
         {
             //metodo para listar los datos de la tabla tonner en un combobox
@@ -84,6 +98,23 @@ namespace SistemaInventario.CapaDatos
             cm.ExecuteNonQuery();
             cm.Parameters.Clear();
         }
+
+
+        public void InsertarTonerSS(int idTonnerSS, int Marcas_idMarcas, DateTime Fecha_Llegada, int Color_Cantidad_idColor_Cantidad, int Tonner_idTonner, int TonnerRecivido)
+        {
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "TonnerSolicitudAddEddit";
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("_idTonnerSS", idTonnerSS);
+            cm.Parameters.AddWithValue("_Marcas_idMarcas", Marcas_idMarcas);
+            cm.Parameters.AddWithValue("_Fecha_Llegada", Fecha_Llegada);
+            cm.Parameters.AddWithValue("_Color_Cantidad_idColor_Cantidad", Color_Cantidad_idColor_Cantidad);
+            cm.Parameters.AddWithValue("_Tonner_idTonner", Tonner_idTonner);
+            cm.Parameters.AddWithValue("_TonnerRecivido", TonnerRecivido);
+            cm.ExecuteNonQuery();
+            cm.Parameters.Clear();
+        }
+
 
         //metodo para agregar datos  en la tabla CantidadColor 
         public void InsertarCantidadColor(int idColor_Cantidad, string Color, int Cantidad, int Marcas_idMarcas, int Tonner_idTonner)
@@ -133,6 +164,23 @@ namespace SistemaInventario.CapaDatos
         }
 
 
+        public void InsertarTonerEnvios(int idTonnerC, int Ubicacion_idUbicacion, int Marcas_idMarcas,  int Tonner_idTonner, int EnviosToner, int idColor_Cantidad_Color_Cantidad, DateTime Fecha_Cambio)
+        {
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "TonnerEnviosAddEddit";
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("_idTonnerC", idTonnerC);
+            cm.Parameters.AddWithValue("_Ubicacion_idUbicacion", Ubicacion_idUbicacion);
+            cm.Parameters.AddWithValue("_Marcas_idMarcas", Marcas_idMarcas);
+            cm.Parameters.AddWithValue("_Tonner_idTonner", Tonner_idTonner);
+            cm.Parameters.AddWithValue("_EnviosToner", EnviosToner);
+            cm.Parameters.AddWithValue("_idColor_Cantidad_Color_Cantidad", idColor_Cantidad_Color_Cantidad);
+            cm.Parameters.AddWithValue("_Fecha", Fecha_Cambio);
+            cm.ExecuteNonQuery(); //error  revisar el procedimiento almacenado 
+            cm.Parameters.Clear();
+        }
+
+
         //////////////////////////////////METODO SELECT FROM DATAGRID//////////////////////////////////////////////////////
 
         public DataTable ListarTonner()
@@ -154,6 +202,20 @@ namespace SistemaInventario.CapaDatos
 
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "TonnerSolicitudViewAlljoin";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
+
+        public DataTable ListarTonerSolicitud()
+        {//metodo para listar los datos de la tabla Cantidad Color  en el datagrid
+
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
             cm.CommandText = "Color_CantidadViewAllInnerJoin";
             cm.CommandType = CommandType.StoredProcedure;
             LeerFilas = cm.ExecuteReader();
@@ -161,6 +223,7 @@ namespace SistemaInventario.CapaDatos
             Conexion.CerraCX();
             return tabla;
         }
+
 
         public DataTable ListarImpresora()
         {//metodo para listar los datos de la tabla Cantidad Color  en el datagrid
@@ -174,6 +237,20 @@ namespace SistemaInventario.CapaDatos
             Conexion.CerraCX();
             return tabla;
         }
+
+        public DataTable ListarTonerEnvios()
+        {//metodo para listar los datos de la tabla Cantidad Color  en el datagrid
+
+            DataTable tabla = new DataTable();
+            cm.Connection = Conexion.AbrirCX();
+            cm.CommandText = "TonnerEnviosViewAllInnerJoin";
+            cm.CommandType = CommandType.StoredProcedure;
+            LeerFilas = cm.ExecuteReader();
+            tabla.Load(LeerFilas);
+            Conexion.CerraCX();
+            return tabla;
+        }
+
 
         public DataTable ListarReportes()
         {//metodo para listar los datos de la tabla Reportes  en el datagrid

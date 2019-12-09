@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\rrr\Design Dashboard Modern\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\packages\Bunifu_UI_v1.52\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
@@ -149,6 +152,9 @@
     <EmbeddedResource Include="Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -185,6 +191,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\proveedor3.ico" />
+    <None Include="Resources\reporte.ico" />
+    <None Include="Resources\proveedor.ico" />
+    <None Include="Resources\marcas.ico" />
+    <None Include="Resources\ubicacion.ico" />
+    <None Include="Resources\colors_1014.ico" />
+    <None Include="Resources\pintura.ico" />
+    <None Include="Resources\impresora21.png" />
+    <None Include="Resources\pintura1.ico" />
+    <None Include="Resources\impresora.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

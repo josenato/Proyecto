@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.metroButton1 = new ns1.BunifuImageButton();
+            this.metroButton2 = new ns1.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.metroButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroButton2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.Color.Transparent;
+            this.metroButton1.Image = global::SistemaInventario.Properties.Resources.pintura1;
+            this.metroButton1.ImageActive = null;
+            this.metroButton1.Location = new System.Drawing.Point(243, 257);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(191, 150);
+            this.metroButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.TabStop = false;
+            this.metroButton1.Zoom = 10;
+            this.metroButton1.Click += new System.EventHandler(this.MetroButton1_Click_1);
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.BackColor = System.Drawing.Color.Transparent;
+            this.metroButton2.Image = global::SistemaInventario.Properties.Resources.impresora;
+            this.metroButton2.ImageActive = null;
+            this.metroButton2.Location = new System.Drawing.Point(243, 63);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(191, 143);
+            this.metroButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.metroButton2.TabIndex = 1;
+            this.metroButton2.TabStop = false;
+            this.metroButton2.Zoom = 10;
+            this.metroButton2.Click += new System.EventHandler(this.MetroButton2_Click_1);
+            // 
+            // Principal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(666, 456);
+            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.metroButton2);
+            this.Name = "Principal";
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.Principal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.metroButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroButton2)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private ns1.BunifuImageButton metroButton2;
+        private ns1.BunifuImageButton metroButton1;
     }
 }

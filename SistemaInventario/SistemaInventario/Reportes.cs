@@ -16,7 +16,7 @@ namespace SistemaInventario
     {
         ClsTonner objTonner = new ClsTonner();
 
-        string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
+        string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
         int ReporteID = 0;
 
         public Reportes()

@@ -15,7 +15,7 @@ namespace SistemaInventario
     public partial class Marcas : MetroFramework.Forms.MetroForm
     {      
 
-        string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
+        string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
         int MarcasID = 0;
 
         public Marcas()

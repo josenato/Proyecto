@@ -11,7 +11,7 @@ namespace SistemaInventario.CapaDatos
 {
     class ConectarBD
     {
-        static private string conexionString = "Server=bwuqcvalsdelocgxtp9a-mysql.services.clever-cloud.com; Database=bwuqcvalsdelocgxtp9a; Uid=uy0okgaxam4x58av; Pwd=hvdeODwGw6OQ0qgdpxjH;";
+        static private string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
         private MySqlConnection CX = new MySqlConnection(conexionString);
 
         public MySqlConnection AbrirCX()
