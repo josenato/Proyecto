@@ -191,6 +191,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <Content Include="Resources\3643764-back-backward-left-reply-turn_113415.ico" />
+    <None Include="Resources\photo-1535370976884-f4376736ab06.jpg" />
+    <None Include="Resources\SS.ico" />
+    <None Include="Resources\encios.ico" />
+    <None Include="Resources\impre.ico" />
+    <None Include="Resources\Marca.ico" />
+    <None Include="Resources\Ubicacion %282%291.ico" />
+    <None Include="Resources\Toner.ico" />
+    <None Include="Resources\Inventario.ico" />
+    <None Include="Resources\Ubicacion %282%29.ico" />
+    <None Include="Resources\document.ico" />
+    <None Include="Resources\reporte1.ico" />
+    <None Include="Resources\Proveedor %282%29.ico" />
+    <None Include="Resources\atras2.ico" />
+    <None Include="Resources\atras.ico" />
+    <None Include="Resources\3643764-back-backward-left-reply-turn_1134151.ico" />
     <None Include="Resources\proveedor3.ico" />
     <None Include="Resources\reporte.ico" />
     <None Include="Resources\proveedor.ico" />

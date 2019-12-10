@@ -90,5 +90,13 @@ namespace SistemaInventario
                 btn_Eliminar.Enabled = true;
             }
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Impresoras fm = new Impresoras();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
 }

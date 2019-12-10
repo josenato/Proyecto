@@ -93,5 +93,31 @@ namespace SistemaInventario
             ListarTonerSS();
             clear();
         }
+
+        private void Gtb_datos_DoubleClick(object sender, EventArgs e)
+        {
+            if (gtb_datos.CurrentRow.Index != -1)
+            {
+                cbx_Marcas.Text = gtb_datos.CurrentRow.Cells[1].Value.ToString();
+                Dtp_Fecha.Text = gtb_datos.CurrentRow.Cells[2].Value.ToString();
+                cbxColor.Text = gtb_datos.CurrentRow.Cells[3].Value.ToString();
+                cbx_Tonner.Text = gtb_datos.CurrentRow.Cells[4].Value.ToString();
+                nudSoli.Text = gtb_datos.CurrentRow.Cells[5].Value.ToString();
+
+
+                TonerSSID = Convert.ToInt32(gtb_datos.CurrentRow.Cells[0].Value.ToString());
+                btn_Guardar.Text = "Actualizar";
+                btn_Eliminar.Enabled = true;
+
+            }
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Envios_de_Toner fm = new Envios_de_Toner();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
 }

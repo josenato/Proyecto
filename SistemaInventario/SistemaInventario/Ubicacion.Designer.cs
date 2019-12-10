@@ -28,19 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ubicacion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.gtb_datos = new ns1.BunifuCustomDataGrid();
+            this.tbx_Ubucacion = new ns1.BunifuMetroTextbox();
+            this.btn_Envios = new System.Windows.Forms.Button();
+            this.btn_Impresora = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
             this.btn_Cancelar = new ns1.BunifuThinButton2();
             this.btn_Eliminar = new ns1.BunifuThinButton2();
             this.btn_guardar = new ns1.BunifuThinButton2();
-            this.gtb_datos = new ns1.BunifuCustomDataGrid();
-            this.lbl_desbloquear = new ns1.BunifuCustomLabel();
-            this.tbx_Ubucacion = new ns1.BunifuMetroTextbox();
-            this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // gtb_datos
+            // 
+            this.gtb_datos.AllowUserToAddRows = false;
+            this.gtb_datos.AllowUserToDeleteRows = false;
+            this.gtb_datos.AllowUserToResizeRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gtb_datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gtb_datos.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gtb_datos.ColumnHeadersHeight = 29;
+            this.gtb_datos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gtb_datos.DoubleBuffered = true;
+            this.gtb_datos.EnableHeadersVisualStyles = false;
+            this.gtb_datos.GridColor = System.Drawing.Color.Silver;
+            this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
+            this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
+            this.gtb_datos.Location = new System.Drawing.Point(126, 108);
+            this.gtb_datos.MultiSelect = false;
+            this.gtb_datos.Name = "gtb_datos";
+            this.gtb_datos.ReadOnly = true;
+            this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gtb_datos.RowHeadersWidth = 51;
+            this.gtb_datos.Size = new System.Drawing.Size(175, 174);
+            this.gtb_datos.TabIndex = 11;
+            this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
+            // 
+            // tbx_Ubucacion
+            // 
+            this.tbx_Ubucacion.BorderColorFocused = System.Drawing.Color.Blue;
+            this.tbx_Ubucacion.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbx_Ubucacion.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.tbx_Ubucacion.BorderThickness = 2;
+            this.tbx_Ubucacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbx_Ubucacion.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_Ubucacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbx_Ubucacion.isPassword = false;
+            this.tbx_Ubucacion.Location = new System.Drawing.Point(4, 53);
+            this.tbx_Ubucacion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbx_Ubucacion.Name = "tbx_Ubucacion";
+            this.tbx_Ubucacion.Size = new System.Drawing.Size(175, 33);
+            this.tbx_Ubucacion.TabIndex = 13;
+            this.tbx_Ubucacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btn_Envios
+            // 
+            this.btn_Envios.Image = global::SistemaInventario.Properties.Resources.encios;
+            this.btn_Envios.Location = new System.Drawing.Point(201, 30);
+            this.btn_Envios.Name = "btn_Envios";
+            this.btn_Envios.Size = new System.Drawing.Size(45, 56);
+            this.btn_Envios.TabIndex = 28;
+            this.btn_Envios.UseVisualStyleBackColor = true;
+            this.btn_Envios.Click += new System.EventHandler(this.Btn_Envios_Click);
+            // 
+            // btn_Impresora
+            // 
+            this.btn_Impresora.Image = global::SistemaInventario.Properties.Resources.impre;
+            this.btn_Impresora.Location = new System.Drawing.Point(264, 30);
+            this.btn_Impresora.Name = "btn_Impresora";
+            this.btn_Impresora.Size = new System.Drawing.Size(49, 56);
+            this.btn_Impresora.TabIndex = 27;
+            this.btn_Impresora.UseVisualStyleBackColor = true;
+            this.btn_Impresora.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -139,91 +217,23 @@
             this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
-            // gtb_datos
-            // 
-            this.gtb_datos.AllowUserToAddRows = false;
-            this.gtb_datos.AllowUserToDeleteRows = false;
-            this.gtb_datos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gtb_datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gtb_datos.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
-            this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gtb_datos.ColumnHeadersHeight = 29;
-            this.gtb_datos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gtb_datos.DoubleBuffered = true;
-            this.gtb_datos.EnableHeadersVisualStyles = false;
-            this.gtb_datos.GridColor = System.Drawing.Color.Silver;
-            this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
-            this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gtb_datos.Location = new System.Drawing.Point(126, 108);
-            this.gtb_datos.MultiSelect = false;
-            this.gtb_datos.Name = "gtb_datos";
-            this.gtb_datos.ReadOnly = true;
-            this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(175, 174);
-            this.gtb_datos.TabIndex = 11;
-            this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
-            // 
-            // lbl_desbloquear
-            // 
-            this.lbl_desbloquear.AutoSize = true;
-            this.lbl_desbloquear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_desbloquear.Font = new System.Drawing.Font("NSimSun", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_desbloquear.Location = new System.Drawing.Point(251, 33);
-            this.lbl_desbloquear.Name = "lbl_desbloquear";
-            this.lbl_desbloquear.Size = new System.Drawing.Size(70, 15);
-            this.lbl_desbloquear.TabIndex = 12;
-            this.lbl_desbloquear.Text = "Agregar";
-            // 
-            // tbx_Ubucacion
-            // 
-            this.tbx_Ubucacion.BorderColorFocused = System.Drawing.Color.Blue;
-            this.tbx_Ubucacion.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbx_Ubucacion.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.tbx_Ubucacion.BorderThickness = 2;
-            this.tbx_Ubucacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tbx_Ubucacion.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_Ubucacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbx_Ubucacion.isPassword = false;
-            this.tbx_Ubucacion.Location = new System.Drawing.Point(4, 53);
-            this.tbx_Ubucacion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.tbx_Ubucacion.Name = "tbx_Ubucacion";
-            this.tbx_Ubucacion.Size = new System.Drawing.Size(175, 33);
-            this.tbx_Ubucacion.TabIndex = 13;
-            this.tbx_Ubucacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // Ubicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 290);
+            this.Controls.Add(this.btn_Envios);
+            this.Controls.Add(this.btn_Impresora);
             this.Controls.Add(this.tbx_Ubucacion);
-            this.Controls.Add(this.lbl_desbloquear);
             this.Controls.Add(this.gtb_datos);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.MaximizeBox = false;
             this.Name = "Ubicacion";
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
-            this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -234,7 +244,8 @@
         private ns1.BunifuThinButton2 btn_Eliminar;
         private ns1.BunifuThinButton2 btn_guardar;
         private ns1.BunifuCustomDataGrid gtb_datos;
-        private ns1.BunifuCustomLabel lbl_desbloquear;
         private ns1.BunifuMetroTextbox tbx_Ubucacion;
+        private System.Windows.Forms.Button btn_Impresora;
+        private System.Windows.Forms.Button btn_Envios;
     }
 }

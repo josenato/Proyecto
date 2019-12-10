@@ -37,6 +37,7 @@ namespace SistemaInventario
             cbx_Marcas.DataSource = ObjTonn.ListarMarcas();
             cbx_Marcas.DisplayMember = "Descripcion";
             cbx_Marcas.ValueMember = "idMarcas";
+            
         }
 
 
@@ -51,6 +52,7 @@ namespace SistemaInventario
             objTonner.InsertarProveedor(Convert.ToInt32(ProveedorID), txtNombre.Text, Convert.ToInt32(cbx_Marcas.SelectedValue), txtAdquisicion.Text, dtpFecha.Value, tbxStatus.Text);
             MessageBox.Show("Se agrego correctamente");
             ListarProveedor();
+            clear();
         }
 
         private void Gtb_datos_DoubleClick(object sender, EventArgs e)
@@ -88,12 +90,21 @@ namespace SistemaInventario
                 mysqlCmd.ExecuteNonQuery();
                 MessageBox.Show("Dato Eliminado");
                 ListarProveedor();
+                clear();
             }
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Impresoras fm = new Impresoras();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
         }
     }
 }

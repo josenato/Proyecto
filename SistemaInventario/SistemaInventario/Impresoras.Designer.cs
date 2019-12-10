@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Impresoras));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Impresoras));
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btnUbicaciones = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new ns1.BunifuThinButton2();
+            this.btn_Eliminar = new ns1.BunifuThinButton2();
+            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -49,9 +51,8 @@
             this.txtb_Modelo = new ns1.BunifuMaterialTextbox();
             this.button1 = new System.Windows.Forms.Button();
             this.buttotnReportn2 = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new ns1.BunifuThinButton2();
-            this.btn_Eliminar = new ns1.BunifuThinButton2();
-            this.btn_Guardar = new ns1.BunifuThinButton2();
+            this.btnUbicaciones = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.metroPanel1.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
@@ -73,16 +74,83 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // btnUbicaciones
+            // btn_Cancelar
             // 
-            this.btnUbicaciones.Image = global::SistemaInventario.Properties.Resources.ubicacion;
-            this.btnUbicaciones.Location = new System.Drawing.Point(805, 495);
-            this.btnUbicaciones.Name = "btnUbicaciones";
-            this.btnUbicaciones.Size = new System.Drawing.Size(93, 74);
-            this.btnUbicaciones.TabIndex = 7;
-            this.btnUbicaciones.Text = "Ubicacion";
-            this.btnUbicaciones.UseVisualStyleBackColor = true;
-            this.btnUbicaciones.Click += new System.EventHandler(this.BtnUbicaciones_Click);
+            this.btn_Cancelar.ActiveBorderThickness = 1;
+            this.btn_Cancelar.ActiveCornerRadius = 20;
+            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
+            this.btn_Cancelar.ButtonText = "Cancelar";
+            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleBorderThickness = 1;
+            this.btn_Cancelar.IdleCornerRadius = 20;
+            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.Location = new System.Drawing.Point(339, 16);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
+            this.btn_Cancelar.TabIndex = 4;
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.ActiveBorderThickness = 1;
+            this.btn_Eliminar.ActiveCornerRadius = 20;
+            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
+            this.btn_Eliminar.ButtonText = "Eliminar";
+            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleBorderThickness = 1;
+            this.btn_Eliminar.IdleCornerRadius = 20;
+            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.Location = new System.Drawing.Point(167, 16);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Eliminar.TabIndex = 3;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.ActiveBorderThickness = 1;
+            this.btn_Guardar.ActiveCornerRadius = 20;
+            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
+            this.btn_Guardar.ButtonText = "Guardar";
+            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleBorderThickness = 1;
+            this.btn_Guardar.IdleCornerRadius = 20;
+            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.Location = new System.Drawing.Point(14, 16);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Guardar.TabIndex = 2;
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // metroPanel3
             // 
@@ -138,7 +206,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(726, 419);
+            this.metroLabel1.Location = new System.Drawing.Point(726, 453);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(66, 19);
             this.metroLabel1.TabIndex = 3;
@@ -147,7 +215,7 @@
             // lblMarcas
             // 
             this.lblMarcas.AutoSize = true;
-            this.lblMarcas.Location = new System.Drawing.Point(726, 352);
+            this.lblMarcas.Location = new System.Drawing.Point(726, 364);
             this.lblMarcas.Name = "lblMarcas";
             this.lblMarcas.Size = new System.Drawing.Size(51, 19);
             this.lblMarcas.TabIndex = 2;
@@ -157,7 +225,7 @@
             // 
             this.cbx_Ubicacion.FormattingEnabled = true;
             this.cbx_Ubicacion.ItemHeight = 23;
-            this.cbx_Ubicacion.Location = new System.Drawing.Point(711, 441);
+            this.cbx_Ubicacion.Location = new System.Drawing.Point(711, 475);
             this.cbx_Ubicacion.Name = "cbx_Ubicacion";
             this.cbx_Ubicacion.Size = new System.Drawing.Size(202, 29);
             this.cbx_Ubicacion.TabIndex = 1;
@@ -166,7 +234,7 @@
             // 
             this.cbx_Marcas.FormattingEnabled = true;
             this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(711, 374);
+            this.cbx_Marcas.Location = new System.Drawing.Point(711, 386);
             this.cbx_Marcas.Name = "cbx_Marcas";
             this.cbx_Marcas.Size = new System.Drawing.Size(204, 29);
             this.cbx_Marcas.TabIndex = 0;
@@ -219,7 +287,7 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(706, 80);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(721, 80);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(71, 16);
             this.bunifuCustomLabel3.TabIndex = 4;
@@ -301,110 +369,51 @@
             // 
             // button1
             // 
-            this.button1.Image = global::SistemaInventario.Properties.Resources.proveedor3;
-            this.button1.Location = new System.Drawing.Point(522, 495);
+            this.button1.Image = global::SistemaInventario.Properties.Resources.Proveedor__2_;
+            this.button1.Location = new System.Drawing.Point(493, 495);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 74);
+            this.button1.Size = new System.Drawing.Size(71, 62);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Proveedor";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // buttotnReportn2
             // 
-            this.buttotnReportn2.Image = global::SistemaInventario.Properties.Resources.reporte;
-            this.buttotnReportn2.Location = new System.Drawing.Point(669, 495);
+            this.buttotnReportn2.Image = global::SistemaInventario.Properties.Resources.document;
+            this.buttotnReportn2.Location = new System.Drawing.Point(570, 495);
             this.buttotnReportn2.Name = "buttotnReportn2";
-            this.buttotnReportn2.Size = new System.Drawing.Size(85, 74);
+            this.buttotnReportn2.Size = new System.Drawing.Size(67, 62);
             this.buttotnReportn2.TabIndex = 6;
-            this.buttotnReportn2.Text = "Reporte";
             this.buttotnReportn2.UseVisualStyleBackColor = true;
             this.buttotnReportn2.Click += new System.EventHandler(this.ButtotnReportn2_Click);
             // 
-            // btn_Cancelar
+            // btnUbicaciones
             // 
-            this.btn_Cancelar.ActiveBorderThickness = 1;
-            this.btn_Cancelar.ActiveCornerRadius = 20;
-            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
-            this.btn_Cancelar.ButtonText = "Cancelar";
-            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleBorderThickness = 1;
-            this.btn_Cancelar.IdleCornerRadius = 20;
-            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(323, 16);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
-            this.btn_Cancelar.TabIndex = 4;
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            this.btnUbicaciones.Image = global::SistemaInventario.Properties.Resources.Ubicacion__2_;
+            this.btnUbicaciones.Location = new System.Drawing.Point(643, 495);
+            this.btnUbicaciones.Name = "btnUbicaciones";
+            this.btnUbicaciones.Size = new System.Drawing.Size(56, 62);
+            this.btnUbicaciones.TabIndex = 7;
+            this.btnUbicaciones.UseVisualStyleBackColor = true;
+            this.btnUbicaciones.Click += new System.EventHandler(this.BtnUbicaciones_Click);
             // 
-            // btn_Eliminar
+            // btnAtras
             // 
-            this.btn_Eliminar.ActiveBorderThickness = 1;
-            this.btn_Eliminar.ActiveCornerRadius = 20;
-            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
-            this.btn_Eliminar.ButtonText = "Eliminar";
-            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleBorderThickness = 1;
-            this.btn_Eliminar.IdleCornerRadius = 20;
-            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(167, 16);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Eliminar.TabIndex = 3;
-            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
-            // 
-            // btn_Guardar
-            // 
-            this.btn_Guardar.ActiveBorderThickness = 1;
-            this.btn_Guardar.ActiveCornerRadius = 20;
-            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
-            this.btn_Guardar.ButtonText = "Guardar";
-            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleBorderThickness = 1;
-            this.btn_Guardar.IdleCornerRadius = 20;
-            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.Location = new System.Drawing.Point(14, 16);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Guardar.TabIndex = 2;
-            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
+            this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
+            this.btnAtras.Location = new System.Drawing.Point(852, 28);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(61, 36);
+            this.btnAtras.TabIndex = 26;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // Impresoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(943, 581);
+            this.ClientSize = new System.Drawing.Size(943, 565);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.cbx_Ubicacion);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.button1);
@@ -457,5 +466,6 @@
         private System.Windows.Forms.Button btnUbicaciones;
         private System.Windows.Forms.Button buttotnReportn2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

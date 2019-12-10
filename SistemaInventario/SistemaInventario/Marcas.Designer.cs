@@ -38,6 +38,7 @@
             this.btn_Cancelar = new ns1.BunifuThinButton2();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -195,11 +196,22 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
+            this.btnAtras.Location = new System.Drawing.Point(23, 21);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(61, 39);
+            this.btnAtras.TabIndex = 29;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
             // Marcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 286);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.gtb_datos);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -225,5 +237,6 @@
         private ns1.BunifuThinButton2 btn_Cancelar;
         private ns1.BunifuCustomDataGrid gtb_datos;
         private MetroFramework.Controls.MetroPanel metroPanel1;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

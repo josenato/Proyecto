@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.metroButton1 = new ns1.BunifuImageButton();
             this.metroButton2 = new ns1.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroButton1)).BeginInit();
@@ -66,9 +67,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::SistemaInventario.Properties.Resources.photo_1535370976884_f4376736ab06;
             this.ClientSize = new System.Drawing.Size(666, 456);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroButton2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Principal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);

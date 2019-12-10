@@ -98,6 +98,22 @@ namespace SistemaInventario
 
             }
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Impresoras fm = new Impresoras();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_Envios_Click(object sender, EventArgs e)
+        {
+            Envios_de_Toner fm = new Envios_de_Toner();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
     }
 

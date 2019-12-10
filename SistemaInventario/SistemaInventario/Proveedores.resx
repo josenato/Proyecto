@@ -120,18 +120,18 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_Cancelar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        iVBORw0KGgoAAAANSUhEUgAAAHcAAAApCAYAAAAPvbYNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJeSURBVHhe7Zu9S1tRGMb7F7l1cnPq5iQd7FJCBx00IIZC
+        G0qhQmuVSBFBIUKGQChpe0solw5BaSPYWlCJEgkYSSCDSqmEDMEMr+c5Vy8p+VjNeXl+8MD9CFl+93zc
+        e97zQKQqjM5QruJQruJQruJQruJQruIMlNtqn4pf+iqx3FuJZF7Io41pGXn/mLnHwAFcRL034hU/SaN1
+        0tMd0lduofLd/lEslzCCd2Svdiz1qwtzj9wncAAX+fJvifur1pFX/GzudDvskosnIe4vy1R2QS6b/8w1
+        Msw0Wk0reSr72vg6Mlf6yIXYidSceRK2zDlxiUJlX56kn5uWfWDOeshFi6VYd0F3jfG4Sy7GWHTFxG1W
+        fqQluZsyR7dyMSvGwMwx1n1a7WsztM5L5e+fQC6m1BiUiQ6Su19MC14P5OKdCVNrooOT8zM7MbZyx5Mz
+        phnXb28R10HX/DAxGcgd/fDUvi8RPeBrlpWLA6ILylUM5SqGchVDuYqhXMVQrmIoVzGhXHzNwFcNoodQ
+        LlaEWEKji1AuSjSwkk90gHUCrBdYuVjcxSIv0YFX3Ja4vxTIRd3NeHKW464Sot6i5MvfArnI2s6mycfg
+        LnEWv1SQWO6dOeqooUKpTSTzUg7rZfsj4h4ok8JYe1eoHspFUHcT1N9w4d41IDaSeSV7NVSvBj7/k4sc
+        1n/aEg3U4RA3yJd/2RbbKRbpkougi0aBFZ4EzLxYFTl8oHIG23yw3SfqLYRdcWd6yr0LngRMqcfWntmX
+        YmZ4gtIobNDDRr1e7pCBchm3Q7mKQ7mKQ7mKQ7lqU5UbfMJGUFgf7YYAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btn_Eliminar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

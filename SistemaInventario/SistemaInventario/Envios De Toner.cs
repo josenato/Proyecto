@@ -127,6 +127,7 @@ namespace SistemaInventario
 
         private void Btn_Ubi_Click(object sender, EventArgs e)
         {
+
             Ubicacion fm = new Ubicacion();
             this.Hide();
             fm.ShowDialog();
@@ -136,6 +137,22 @@ namespace SistemaInventario
         private void Btn_Marcas_Click(object sender, EventArgs e)
         {
             Marcas fm = new Marcas();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Principal fm = new Principal();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_SS_Click(object sender, EventArgs e)
+        {
+            SolicitudTonner fm = new SolicitudTonner();
             this.Hide();
             fm.ShowDialog();
             this.Close();

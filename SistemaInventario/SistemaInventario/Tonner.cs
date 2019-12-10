@@ -104,5 +104,13 @@ namespace SistemaInventario
                 btn_borrar.Enabled = true;
             }
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Envios_de_Toner fm = new Envios_de_Toner();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
 }

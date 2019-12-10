@@ -202,7 +202,7 @@ namespace SistemaInventario.CapaDatos
 
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
-            cm.CommandText = "TonnerSolicitudViewAlljoin";
+            cm.CommandText = "Color_CantidadViewAllInnerJoin";
             cm.CommandType = CommandType.StoredProcedure;
             LeerFilas = cm.ExecuteReader();
             tabla.Load(LeerFilas);
@@ -216,7 +216,7 @@ namespace SistemaInventario.CapaDatos
 
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
-            cm.CommandText = "Color_CantidadViewAllInnerJoin";
+            cm.CommandText = "TonnerSolicitudViewAlljoin";
             cm.CommandType = CommandType.StoredProcedure;
             LeerFilas = cm.ExecuteReader();
             tabla.Load(LeerFilas);

@@ -47,6 +47,7 @@
             this.bunifuThinButton23 = new ns1.BunifuThinButton2();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -63,9 +64,9 @@
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(77, 384);
+            this.metroPanel2.Location = new System.Drawing.Point(10, 370);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(418, 54);
+            this.metroPanel2.Size = new System.Drawing.Size(418, 50);
             this.metroPanel2.Style = MetroFramework.MetroColorStyle.Green;
             this.metroPanel2.TabIndex = 10;
             this.metroPanel2.VerticalScrollbarBarColor = true;
@@ -90,7 +91,7 @@
             this.btn_guardar.IdleFillColor = System.Drawing.Color.White;
             this.btn_guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_guardar.Location = new System.Drawing.Point(20, 11);
+            this.btn_guardar.Location = new System.Drawing.Point(20, 5);
             this.btn_guardar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(104, 37);
@@ -131,7 +132,7 @@
             this.bunifuCustomDataGrid1.ReadOnly = true;
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(418, 122);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(418, 118);
             this.bunifuCustomDataGrid1.TabIndex = 2;
             // 
             // btn_cancelar
@@ -198,9 +199,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(20, 93);
+            this.metroPanel1.Location = new System.Drawing.Point(10, 67);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(569, 87);
+            this.metroPanel1.Size = new System.Drawing.Size(581, 91);
             this.metroPanel1.TabIndex = 9;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -210,7 +211,7 @@
             // 
             this.cbx_Marcas.FormattingEnabled = true;
             this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(228, 52);
+            this.cbx_Marcas.Location = new System.Drawing.Point(207, 31);
             this.cbx_Marcas.Name = "cbx_Marcas";
             this.cbx_Marcas.Size = new System.Drawing.Size(154, 29);
             this.cbx_Marcas.TabIndex = 12;
@@ -219,7 +220,7 @@
             // 
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(244, 25);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(204, 5);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(121, 23);
             this.bunifuCustomLabel2.TabIndex = 11;
@@ -230,7 +231,7 @@
             // 
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(31, 25);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 5);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(121, 23);
             this.bunifuCustomLabel1.TabIndex = 9;
@@ -249,10 +250,10 @@
             this.txt_Modelo.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Modelo.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Modelo.LineThickness = 3;
-            this.txt_Modelo.Location = new System.Drawing.Point(6, 47);
+            this.txt_Modelo.Location = new System.Drawing.Point(6, 32);
             this.txt_Modelo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Modelo.Name = "txt_Modelo";
-            this.txt_Modelo.Size = new System.Drawing.Size(175, 34);
+            this.txt_Modelo.Size = new System.Drawing.Size(175, 28);
             this.txt_Modelo.TabIndex = 8;
             this.txt_Modelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -263,7 +264,7 @@
             this.txt_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txt_buscar.ForeColor = System.Drawing.Color.SeaGreen;
             this.txt_buscar.Icon = ((System.Drawing.Image)(resources.GetObject("txt_buscar.Icon")));
-            this.txt_buscar.Location = new System.Drawing.Point(409, 52);
+            this.txt_buscar.Location = new System.Drawing.Point(379, 53);
             this.txt_buscar.Margin = new System.Windows.Forms.Padding(4);
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(156, 34);
@@ -288,7 +289,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(466, 5);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(409, 5);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(81, 43);
@@ -348,12 +349,23 @@
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
+            this.btnAtras.Location = new System.Drawing.Point(500, 375);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(61, 45);
+            this.btnAtras.TabIndex = 28;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
             // Tonner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(601, 460);
+            this.ClientSize = new System.Drawing.Size(601, 434);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.metroPanel3);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
@@ -386,5 +398,6 @@
         private ns1.BunifuCustomLabel bunifuCustomLabel2;
         private MetroFramework.Controls.MetroComboBox cbx_Marcas;
         private ns1.BunifuThinButton2 btn_guardar;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

@@ -129,5 +129,13 @@ namespace SistemaInventario
             fm.ShowDialog();
             this.Close();
         }
+
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Principal fm = new Principal();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
 }
