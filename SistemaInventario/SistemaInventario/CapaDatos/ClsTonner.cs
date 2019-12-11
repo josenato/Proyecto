@@ -48,7 +48,7 @@ namespace SistemaInventario.CapaDatos
             //metodo para listar los datos de la tabla color_cantidad en un combobox
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
-            cm.CommandText = "Color_CantidadSELECT";
+            cm.CommandText = "Color_Cantidad";
             cm.CommandType = CommandType.StoredProcedure;
             LeerFilas = cm.ExecuteReader();
             tabla.Load(LeerFilas);
