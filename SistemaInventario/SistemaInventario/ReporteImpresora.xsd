@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteImpresora" targetNamespace="http://tempuri.org/ReporteImpresora.xsd" xmlns:mstns="http://tempuri.org/ReporteImpresora.xsd" xmlns="http://tempuri.org/ReporteImpresora.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReporteImpresora" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReporteImpresora" msprop:Generator_UserDSName="ReporteImpresora">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Impresora" msprop:Generator_TableClassName="ImpresoraDataTable" msprop:Generator_TableVarName="tableImpresora" msprop:Generator_RowChangedName="ImpresoraRowChanged" msprop:Generator_TablePropName="Impresora" msprop:Generator_RowDeletingName="ImpresoraRowDeleting" msprop:Generator_RowChangingName="ImpresoraRowChanging" msprop:Generator_RowEvHandlerName="ImpresoraRowChangeEventHandler" msprop:Generator_RowDeletedName="ImpresoraRowDeleted" msprop:Generator_RowClassName="ImpresoraRow" msprop:Generator_UserTableName="Impresora" msprop:Generator_RowEvArgName="ImpresoraRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idImpresora" msprop:Generator_ColumnVarNameInTable="columnidImpresora" msprop:Generator_ColumnPropNameInRow="idImpresora" msprop:Generator_ColumnPropNameInTable="idImpresoraColumn" msprop:Generator_UserColumnName="idImpresora" type="xs:int" minOccurs="0" />
+              <xs:element name="Marcas_idMarcas" msprop:Generator_ColumnVarNameInTable="columnMarcas_idMarcas" msprop:Generator_ColumnPropNameInRow="Marcas_idMarcas" msprop:Generator_ColumnPropNameInTable="Marcas_idMarcasColumn" msprop:Generator_UserColumnName="Marcas_idMarcas" type="xs:int" minOccurs="0" />
+              <xs:element name="Serialss" msprop:Generator_ColumnVarNameInTable="columnSerialss" msprop:Generator_ColumnPropNameInRow="Serialss" msprop:Generator_ColumnPropNameInTable="SerialssColumn" msprop:Generator_UserColumnName="Serialss" type="xs:string" minOccurs="0" />
+              <xs:element name="Ubicacion_idUbicacion" msprop:Generator_ColumnVarNameInTable="columnUbicacion_idUbicacion" msprop:Generator_ColumnPropNameInRow="Ubicacion_idUbicacion" msprop:Generator_ColumnPropNameInTable="Ubicacion_idUbicacionColumn" msprop:Generator_UserColumnName="Ubicacion_idUbicacion" type="xs:int" minOccurs="0" />
+              <xs:element name="IpImpresora" msprop:Generator_ColumnVarNameInTable="columnIpImpresora" msprop:Generator_ColumnPropNameInRow="IpImpresora" msprop:Generator_ColumnPropNameInTable="IpImpresoraColumn" msprop:Generator_UserColumnName="IpImpresora" type="xs:string" minOccurs="0" />
+              <xs:element name="Estatus" msprop:Generator_ColumnVarNameInTable="columnEstatus" msprop:Generator_ColumnPropNameInRow="Estatus" msprop:Generator_ColumnPropNameInTable="EstatusColumn" msprop:Generator_UserColumnName="Estatus" type="xs:string" minOccurs="0" />
+              <xs:element name="Modelo" msprop:Generator_ColumnVarNameInTable="columnModelo" msprop:Generator_ColumnPropNameInRow="Modelo" msprop:Generator_ColumnPropNameInTable="ModeloColumn" msprop:Generator_UserColumnName="Modelo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

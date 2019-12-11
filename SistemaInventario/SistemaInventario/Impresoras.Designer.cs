@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Impresoras));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btn_Cancelar = new ns1.BunifuThinButton2();
-            this.btn_Eliminar = new ns1.BunifuThinButton2();
-            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -49,13 +46,23 @@
             this.tbx_IP = new ns1.BunifuMaterialTextbox();
             this.txb_status = new ns1.BunifuMaterialTextbox();
             this.txtb_Modelo = new ns1.BunifuMaterialTextbox();
+            this.btnInforme = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttotnReportn2 = new System.Windows.Forms.Button();
             this.btnUbicaciones = new System.Windows.Forms.Button();
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new ns1.BunifuThinButton2();
+            this.btn_Eliminar = new ns1.BunifuThinButton2();
+            this.btn_Guardar = new ns1.BunifuThinButton2();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.metroPanel1.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -73,6 +80,273 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroPanel3
+            // 
+            this.metroPanel3.Controls.Add(this.gtb_datos);
+            this.metroPanel3.HorizontalScrollbarBarColor = true;
+            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.HorizontalScrollbarSize = 10;
+            this.metroPanel3.Location = new System.Drawing.Point(12, 67);
+            this.metroPanel3.Name = "metroPanel3";
+            this.metroPanel3.Size = new System.Drawing.Size(688, 416);
+            this.metroPanel3.TabIndex = 13;
+            this.metroPanel3.VerticalScrollbarBarColor = true;
+            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // gtb_datos
+            // 
+            this.gtb_datos.AllowUserToAddRows = false;
+            this.gtb_datos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gtb_datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gtb_datos.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.gtb_datos.ColumnHeadersHeight = 29;
+            this.gtb_datos.DoubleBuffered = true;
+            this.gtb_datos.EnableHeadersVisualStyles = false;
+            this.gtb_datos.GridColor = System.Drawing.Color.Silver;
+            this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
+            this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
+            this.gtb_datos.Location = new System.Drawing.Point(12, 13);
+            this.gtb_datos.Name = "gtb_datos";
+            this.gtb_datos.ReadOnly = true;
+            this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gtb_datos.RowHeadersWidth = 51;
+            this.gtb_datos.Size = new System.Drawing.Size(666, 384);
+            this.gtb_datos.TabIndex = 11;
+            this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(726, 433);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel1.TabIndex = 3;
+            this.metroLabel1.Text = "Ubicacion";
+            // 
+            // lblMarcas
+            // 
+            this.lblMarcas.AutoSize = true;
+            this.lblMarcas.Location = new System.Drawing.Point(726, 364);
+            this.lblMarcas.Name = "lblMarcas";
+            this.lblMarcas.Size = new System.Drawing.Size(51, 19);
+            this.lblMarcas.TabIndex = 2;
+            this.lblMarcas.Text = "Marcas";
+            // 
+            // cbx_Ubicacion
+            // 
+            this.cbx_Ubicacion.FormattingEnabled = true;
+            this.cbx_Ubicacion.ItemHeight = 23;
+            this.cbx_Ubicacion.Location = new System.Drawing.Point(711, 455);
+            this.cbx_Ubicacion.Name = "cbx_Ubicacion";
+            this.cbx_Ubicacion.Size = new System.Drawing.Size(202, 29);
+            this.cbx_Ubicacion.TabIndex = 1;
+            // 
+            // cbx_Marcas
+            // 
+            this.cbx_Marcas.FormattingEnabled = true;
+            this.cbx_Marcas.ItemHeight = 23;
+            this.cbx_Marcas.Location = new System.Drawing.Point(711, 386);
+            this.cbx_Marcas.Name = "cbx_Marcas";
+            this.cbx_Marcas.Size = new System.Drawing.Size(204, 29);
+            this.cbx_Marcas.TabIndex = 0;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MS PGothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(723, 226);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(54, 13);
+            this.bunifuCustomLabel1.TabIndex = 2;
+            this.bunifuCustomLabel1.Text = "SERIAL";
+            // 
+            // btn_Serialss
+            // 
+            this.btn_Serialss.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_Serialss.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btn_Serialss.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btn_Serialss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Serialss.HintForeColor = System.Drawing.Color.Empty;
+            this.btn_Serialss.HintText = "";
+            this.btn_Serialss.isPassword = false;
+            this.btn_Serialss.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_Serialss.LineIdleColor = System.Drawing.Color.Gray;
+            this.btn_Serialss.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.btn_Serialss.LineThickness = 3;
+            this.btn_Serialss.Location = new System.Drawing.Point(711, 243);
+            this.btn_Serialss.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Serialss.Name = "btn_Serialss";
+            this.btn_Serialss.Size = new System.Drawing.Size(204, 28);
+            this.btn_Serialss.TabIndex = 6;
+            this.btn_Serialss.Text = " ";
+            this.btn_Serialss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(722, 284);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(176, 26);
+            this.bunifuCustomLabel2.TabIndex = 3;
+            this.bunifuCustomLabel2.Text = "IP de la Impresora";
+            this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(721, 80);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(71, 16);
+            this.bunifuCustomLabel3.TabIndex = 4;
+            this.bunifuCustomLabel3.Text = "Estatus";
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(708, 156);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(205, 18);
+            this.bunifuCustomLabel4.TabIndex = 5;
+            this.bunifuCustomLabel4.Text = "Modelo de la Impresora";
+            // 
+            // tbx_IP
+            // 
+            this.tbx_IP.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbx_IP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbx_IP.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbx_IP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbx_IP.HintForeColor = System.Drawing.Color.Empty;
+            this.tbx_IP.HintText = "";
+            this.tbx_IP.isPassword = false;
+            this.tbx_IP.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tbx_IP.LineIdleColor = System.Drawing.Color.Gray;
+            this.tbx_IP.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.tbx_IP.LineThickness = 3;
+            this.tbx_IP.Location = new System.Drawing.Point(711, 322);
+            this.tbx_IP.Margin = new System.Windows.Forms.Padding(4);
+            this.tbx_IP.Name = "tbx_IP";
+            this.tbx_IP.Size = new System.Drawing.Size(204, 24);
+            this.tbx_IP.TabIndex = 7;
+            this.tbx_IP.Text = " ";
+            this.tbx_IP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txb_status
+            // 
+            this.txb_status.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txb_status.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_status.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txb_status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_status.HintForeColor = System.Drawing.Color.Empty;
+            this.txb_status.HintText = "";
+            this.txb_status.isPassword = false;
+            this.txb_status.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txb_status.LineIdleColor = System.Drawing.Color.Gray;
+            this.txb_status.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.txb_status.LineThickness = 3;
+            this.txb_status.Location = new System.Drawing.Point(709, 100);
+            this.txb_status.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_status.Name = "txb_status";
+            this.txb_status.Size = new System.Drawing.Size(204, 29);
+            this.txb_status.TabIndex = 8;
+            this.txb_status.Text = " ";
+            this.txb_status.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtb_Modelo
+            // 
+            this.txtb_Modelo.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtb_Modelo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtb_Modelo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtb_Modelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtb_Modelo.HintForeColor = System.Drawing.Color.Empty;
+            this.txtb_Modelo.HintText = "";
+            this.txtb_Modelo.isPassword = false;
+            this.txtb_Modelo.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtb_Modelo.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtb_Modelo.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.txtb_Modelo.LineThickness = 3;
+            this.txtb_Modelo.Location = new System.Drawing.Point(709, 178);
+            this.txtb_Modelo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtb_Modelo.Name = "txtb_Modelo";
+            this.txtb_Modelo.Size = new System.Drawing.Size(204, 23);
+            this.txtb_Modelo.TabIndex = 9;
+            this.txtb_Modelo.Text = " ";
+            this.txtb_Modelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnInforme
+            // 
+            this.btnInforme.Image = global::SistemaInventario.Properties.Resources.informe;
+            this.btnInforme.Location = new System.Drawing.Point(711, 495);
+            this.btnInforme.Name = "btnInforme";
+            this.btnInforme.Size = new System.Drawing.Size(56, 62);
+            this.btnInforme.TabIndex = 27;
+            this.btnInforme.UseVisualStyleBackColor = true;
+            this.btnInforme.Click += new System.EventHandler(this.btnInforme_Click);
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
+            this.btnAtras.Location = new System.Drawing.Point(852, 28);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(61, 36);
+            this.btnAtras.TabIndex = 26;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
+            // button1
+            // 
+            this.button1.Image = global::SistemaInventario.Properties.Resources.Proveedor__2_;
+            this.button1.Location = new System.Drawing.Point(493, 495);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 62);
+            this.button1.TabIndex = 5;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // buttotnReportn2
+            // 
+            this.buttotnReportn2.Image = global::SistemaInventario.Properties.Resources.document;
+            this.buttotnReportn2.Location = new System.Drawing.Point(570, 495);
+            this.buttotnReportn2.Name = "buttotnReportn2";
+            this.buttotnReportn2.Size = new System.Drawing.Size(67, 62);
+            this.buttotnReportn2.TabIndex = 6;
+            this.buttotnReportn2.UseVisualStyleBackColor = true;
+            this.buttotnReportn2.Click += new System.EventHandler(this.ButtotnReportn2_Click);
+            // 
+            // btnUbicaciones
+            // 
+            this.btnUbicaciones.Image = global::SistemaInventario.Properties.Resources.Ubicacion__2_;
+            this.btnUbicaciones.Location = new System.Drawing.Point(643, 495);
+            this.btnUbicaciones.Name = "btnUbicaciones";
+            this.btnUbicaciones.Size = new System.Drawing.Size(56, 62);
+            this.btnUbicaciones.TabIndex = 7;
+            this.btnUbicaciones.UseVisualStyleBackColor = true;
+            this.btnUbicaciones.Click += new System.EventHandler(this.BtnUbicaciones_Click);
             // 
             // btn_Cancelar
             // 
@@ -152,267 +426,54 @@
             this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
-            // metroPanel3
+            // panel1
             // 
-            this.metroPanel3.Controls.Add(this.gtb_datos);
-            this.metroPanel3.HorizontalScrollbarBarColor = true;
-            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(12, 67);
-            this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(688, 416);
-            this.metroPanel3.TabIndex = 13;
-            this.metroPanel3.VerticalScrollbarBarColor = true;
-            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 10;
+            this.panel1.Controls.Add(this.webBrowser1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(922, 76);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(967, 493);
+            this.panel1.TabIndex = 28;
             // 
-            // gtb_datos
+            // panel2
             // 
-            this.gtb_datos.AllowUserToAddRows = false;
-            this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gtb_datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gtb_datos.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
-            this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gtb_datos.ColumnHeadersHeight = 29;
-            this.gtb_datos.DoubleBuffered = true;
-            this.gtb_datos.EnableHeadersVisualStyles = false;
-            this.gtb_datos.GridColor = System.Drawing.Color.Silver;
-            this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
-            this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gtb_datos.Location = new System.Drawing.Point(12, 13);
-            this.gtb_datos.Name = "gtb_datos";
-            this.gtb_datos.ReadOnly = true;
-            this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(666, 384);
-            this.gtb_datos.TabIndex = 11;
-            this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
+            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Controls.Add(this.bunifuCustomLabel5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(967, 44);
+            this.panel2.TabIndex = 0;
             // 
-            // metroLabel1
+            // bunifuCustomLabel5
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(726, 453);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(66, 19);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Ubicacion";
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(314, 9);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(228, 26);
+            this.bunifuCustomLabel5.TabIndex = 4;
+            this.bunifuCustomLabel5.Text = "Sistema de la Impresora";
             // 
-            // lblMarcas
+            // webBrowser1
             // 
-            this.lblMarcas.AutoSize = true;
-            this.lblMarcas.Location = new System.Drawing.Point(726, 364);
-            this.lblMarcas.Name = "lblMarcas";
-            this.lblMarcas.Size = new System.Drawing.Size(51, 19);
-            this.lblMarcas.TabIndex = 2;
-            this.lblMarcas.Text = "Marcas";
-            // 
-            // cbx_Ubicacion
-            // 
-            this.cbx_Ubicacion.FormattingEnabled = true;
-            this.cbx_Ubicacion.ItemHeight = 23;
-            this.cbx_Ubicacion.Location = new System.Drawing.Point(711, 475);
-            this.cbx_Ubicacion.Name = "cbx_Ubicacion";
-            this.cbx_Ubicacion.Size = new System.Drawing.Size(202, 29);
-            this.cbx_Ubicacion.TabIndex = 1;
-            // 
-            // cbx_Marcas
-            // 
-            this.cbx_Marcas.FormattingEnabled = true;
-            this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(711, 386);
-            this.cbx_Marcas.Name = "cbx_Marcas";
-            this.cbx_Marcas.Size = new System.Drawing.Size(204, 29);
-            this.cbx_Marcas.TabIndex = 0;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("MS PGothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(723, 226);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(54, 13);
-            this.bunifuCustomLabel1.TabIndex = 2;
-            this.bunifuCustomLabel1.Text = "SERIAL";
-            // 
-            // btn_Serialss
-            // 
-            this.btn_Serialss.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_Serialss.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btn_Serialss.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btn_Serialss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Serialss.HintForeColor = System.Drawing.Color.Empty;
-            this.btn_Serialss.HintText = "";
-            this.btn_Serialss.isPassword = false;
-            this.btn_Serialss.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_Serialss.LineIdleColor = System.Drawing.Color.Gray;
-            this.btn_Serialss.LineMouseHoverColor = System.Drawing.Color.Black;
-            this.btn_Serialss.LineThickness = 3;
-            this.btn_Serialss.Location = new System.Drawing.Point(711, 243);
-            this.btn_Serialss.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Serialss.Name = "btn_Serialss";
-            this.btn_Serialss.Size = new System.Drawing.Size(204, 28);
-            this.btn_Serialss.TabIndex = 6;
-            this.btn_Serialss.Text = " ";
-            this.btn_Serialss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(722, 284);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(146, 22);
-            this.bunifuCustomLabel2.TabIndex = 3;
-            this.bunifuCustomLabel2.Text = "IP de la Impresora";
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(721, 80);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(71, 16);
-            this.bunifuCustomLabel3.TabIndex = 4;
-            this.bunifuCustomLabel3.Text = "Estatus";
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(708, 156);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(205, 18);
-            this.bunifuCustomLabel4.TabIndex = 5;
-            this.bunifuCustomLabel4.Text = "Modelo de la Impresora";
-            // 
-            // tbx_IP
-            // 
-            this.tbx_IP.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbx_IP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbx_IP.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbx_IP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbx_IP.HintForeColor = System.Drawing.Color.Empty;
-            this.tbx_IP.HintText = "";
-            this.tbx_IP.isPassword = false;
-            this.tbx_IP.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbx_IP.LineIdleColor = System.Drawing.Color.Gray;
-            this.tbx_IP.LineMouseHoverColor = System.Drawing.Color.Black;
-            this.tbx_IP.LineThickness = 3;
-            this.tbx_IP.Location = new System.Drawing.Point(711, 310);
-            this.tbx_IP.Margin = new System.Windows.Forms.Padding(4);
-            this.tbx_IP.Name = "tbx_IP";
-            this.tbx_IP.Size = new System.Drawing.Size(204, 24);
-            this.tbx_IP.TabIndex = 7;
-            this.tbx_IP.Text = " ";
-            this.tbx_IP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txb_status
-            // 
-            this.txb_status.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txb_status.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_status.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txb_status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txb_status.HintForeColor = System.Drawing.Color.Empty;
-            this.txb_status.HintText = "";
-            this.txb_status.isPassword = false;
-            this.txb_status.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txb_status.LineIdleColor = System.Drawing.Color.Gray;
-            this.txb_status.LineMouseHoverColor = System.Drawing.Color.Black;
-            this.txb_status.LineThickness = 3;
-            this.txb_status.Location = new System.Drawing.Point(709, 100);
-            this.txb_status.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_status.Name = "txb_status";
-            this.txb_status.Size = new System.Drawing.Size(204, 29);
-            this.txb_status.TabIndex = 8;
-            this.txb_status.Text = " ";
-            this.txb_status.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtb_Modelo
-            // 
-            this.txtb_Modelo.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtb_Modelo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtb_Modelo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtb_Modelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtb_Modelo.HintForeColor = System.Drawing.Color.Empty;
-            this.txtb_Modelo.HintText = "";
-            this.txtb_Modelo.isPassword = false;
-            this.txtb_Modelo.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtb_Modelo.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtb_Modelo.LineMouseHoverColor = System.Drawing.Color.Black;
-            this.txtb_Modelo.LineThickness = 3;
-            this.txtb_Modelo.Location = new System.Drawing.Point(709, 178);
-            this.txtb_Modelo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtb_Modelo.Name = "txtb_Modelo";
-            this.txtb_Modelo.Size = new System.Drawing.Size(204, 23);
-            this.txtb_Modelo.TabIndex = 9;
-            this.txtb_Modelo.Text = " ";
-            this.txtb_Modelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::SistemaInventario.Properties.Resources.Proveedor__2_;
-            this.button1.Location = new System.Drawing.Point(493, 495);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 62);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // buttotnReportn2
-            // 
-            this.buttotnReportn2.Image = global::SistemaInventario.Properties.Resources.document;
-            this.buttotnReportn2.Location = new System.Drawing.Point(570, 495);
-            this.buttotnReportn2.Name = "buttotnReportn2";
-            this.buttotnReportn2.Size = new System.Drawing.Size(67, 62);
-            this.buttotnReportn2.TabIndex = 6;
-            this.buttotnReportn2.UseVisualStyleBackColor = true;
-            this.buttotnReportn2.Click += new System.EventHandler(this.ButtotnReportn2_Click);
-            // 
-            // btnUbicaciones
-            // 
-            this.btnUbicaciones.Image = global::SistemaInventario.Properties.Resources.Ubicacion__2_;
-            this.btnUbicaciones.Location = new System.Drawing.Point(643, 495);
-            this.btnUbicaciones.Name = "btnUbicaciones";
-            this.btnUbicaciones.Size = new System.Drawing.Size(56, 62);
-            this.btnUbicaciones.TabIndex = 7;
-            this.btnUbicaciones.UseVisualStyleBackColor = true;
-            this.btnUbicaciones.Click += new System.EventHandler(this.BtnUbicaciones_Click);
-            // 
-            // btnAtras
-            // 
-            this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
-            this.btnAtras.Location = new System.Drawing.Point(852, 28);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(61, 36);
-            this.btnAtras.TabIndex = 26;
-            this.btnAtras.UseVisualStyleBackColor = true;
-            this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 44);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(967, 449);
+            this.webBrowser1.TabIndex = 1;
             // 
             // Impresoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(943, 565);
+            this.ClientSize = new System.Drawing.Size(1904, 586);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnInforme);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.cbx_Ubicacion);
             this.Controls.Add(this.metroLabel1);
@@ -438,6 +499,9 @@
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,5 +531,10 @@
         private System.Windows.Forms.Button buttotnReportn2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button btnInforme;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private ns1.BunifuCustomLabel bunifuCustomLabel5;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

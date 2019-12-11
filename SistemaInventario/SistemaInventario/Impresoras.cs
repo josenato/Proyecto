@@ -14,6 +14,7 @@ namespace SistemaInventario
 {
     public partial class Impresoras : MaterialSkin.Controls.MaterialForm  
     {
+        MySqlConnection Connexion;
 
         ClsTonner objTonner = new ClsTonner();
 
@@ -136,6 +137,17 @@ namespace SistemaInventario
             this.Hide();
             fm.ShowDialog();
             this.Close();
+        }
+
+        private void btnInforme_Click(object sender, EventArgs e)
+        {
+            ImpresoraReporte IMRPT = new ImpresoraReporte(Connexion);
+            IMRPT.Show();
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(tbx_IP.Text);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace SistemaInventario.CapaDatos
     class ConectarBD
     {
         static private string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
-        private MySqlConnection CX = new MySqlConnection(conexionString);
+        public MySqlConnection CX = new MySqlConnection(conexionString);
 
         public MySqlConnection AbrirCX()
         {
