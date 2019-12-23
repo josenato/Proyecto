@@ -96,6 +96,7 @@ namespace SistemaInventario
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
+            ListarProveedor();
             clear();
         }
 

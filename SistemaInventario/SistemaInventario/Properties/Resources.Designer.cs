@@ -213,6 +213,16 @@ namespace SistemaInventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Login_37128 {
+            get {
+                object obj = ResourceManager.GetObject("Login_37128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Marca {
             get {
                 object obj = ResourceManager.GetObject("Marca", resourceCulture);

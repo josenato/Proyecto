@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Impresoras));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.btn_Cancelar = new ns1.BunifuThinButton2();
+            this.btn_Eliminar = new ns1.BunifuThinButton2();
+            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -51,13 +54,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttotnReportn2 = new System.Windows.Forms.Button();
             this.btnUbicaciones = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new ns1.BunifuThinButton2();
-            this.btn_Eliminar = new ns1.BunifuThinButton2();
-            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.metroPanel1.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
@@ -81,6 +81,84 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.ActiveBorderThickness = 1;
+            this.btn_Cancelar.ActiveCornerRadius = 20;
+            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
+            this.btn_Cancelar.ButtonText = "Cancelar";
+            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleBorderThickness = 1;
+            this.btn_Cancelar.IdleCornerRadius = 20;
+            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.Location = new System.Drawing.Point(339, 16);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
+            this.btn_Cancelar.TabIndex = 4;
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.ActiveBorderThickness = 1;
+            this.btn_Eliminar.ActiveCornerRadius = 20;
+            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
+            this.btn_Eliminar.ButtonText = "Eliminar";
+            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleBorderThickness = 1;
+            this.btn_Eliminar.IdleCornerRadius = 20;
+            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.Location = new System.Drawing.Point(167, 16);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Eliminar.TabIndex = 3;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.ActiveBorderThickness = 1;
+            this.btn_Guardar.ActiveCornerRadius = 20;
+            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
+            this.btn_Guardar.ButtonText = "Guardar";
+            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleBorderThickness = 1;
+            this.btn_Guardar.IdleCornerRadius = 20;
+            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.Location = new System.Drawing.Point(14, 16);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Guardar.TabIndex = 2;
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
+            // 
             // metroPanel3
             // 
             this.metroPanel3.Controls.Add(this.gtb_datos);
@@ -99,8 +177,8 @@
             // 
             this.gtb_datos.AllowUserToAddRows = false;
             this.gtb_datos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gtb_datos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gtb_datos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -109,14 +187,14 @@
             this.gtb_datos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gtb_datos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.gtb_datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gtb_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gtb_datos.ColumnHeadersHeight = 29;
             this.gtb_datos.DoubleBuffered = true;
             this.gtb_datos.EnableHeadersVisualStyles = false;
@@ -348,84 +426,6 @@
             this.btnUbicaciones.UseVisualStyleBackColor = true;
             this.btnUbicaciones.Click += new System.EventHandler(this.BtnUbicaciones_Click);
             // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.ActiveBorderThickness = 1;
-            this.btn_Cancelar.ActiveCornerRadius = 20;
-            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
-            this.btn_Cancelar.ButtonText = "Cancelar";
-            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleBorderThickness = 1;
-            this.btn_Cancelar.IdleCornerRadius = 20;
-            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(339, 16);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
-            this.btn_Cancelar.TabIndex = 4;
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
-            // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.ActiveBorderThickness = 1;
-            this.btn_Eliminar.ActiveCornerRadius = 20;
-            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
-            this.btn_Eliminar.ButtonText = "Eliminar";
-            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleBorderThickness = 1;
-            this.btn_Eliminar.IdleCornerRadius = 20;
-            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(167, 16);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Eliminar.TabIndex = 3;
-            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
-            // 
-            // btn_Guardar
-            // 
-            this.btn_Guardar.ActiveBorderThickness = 1;
-            this.btn_Guardar.ActiveCornerRadius = 20;
-            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
-            this.btn_Guardar.ButtonText = "Guardar";
-            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleBorderThickness = 1;
-            this.btn_Guardar.IdleCornerRadius = 20;
-            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.Location = new System.Drawing.Point(14, 16);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Guardar.TabIndex = 2;
-            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.webBrowser1);
@@ -434,6 +434,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(967, 493);
             this.panel1.TabIndex = 28;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 44);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(967, 449);
+            this.webBrowser1.TabIndex = 1;
             // 
             // panel2
             // 
@@ -457,21 +466,12 @@
             this.bunifuCustomLabel5.TabIndex = 4;
             this.bunifuCustomLabel5.Text = "Sistema de la Impresora";
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 44);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(967, 449);
-            this.webBrowser1.TabIndex = 1;
-            // 
             // Impresoras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1904, 586);
+            this.ClientSize = new System.Drawing.Size(1878, 574);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnInforme);
             this.Controls.Add(this.btnAtras);

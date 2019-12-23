@@ -34,7 +34,7 @@ namespace SistemaInventario
 
         private void btnRporte_Click(object sender, EventArgs e)
         {
-            String Consulta = "SELECT * FROM Impresora;";
+            String Consulta = "select idImpresora  as Id, Descripcion as Marcas, Serialss as Seriales, Ubicacion as Ubicacion, IpImpresora as Ip, Estatus, Modelo from Impresora  inner join Marcas  on Impresora.Marcas_idMarcas = Marcas.idMarcas inner join Ubicacion on Impresora.Ubicacion_idUbicacion = Ubicacion.idUbicacion;";
 
             MySqlDataAdapter da = new MySqlDataAdapter(Consulta, conexionString);
             DataSet ds = new DataSet();

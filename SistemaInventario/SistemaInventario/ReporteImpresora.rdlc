@@ -6,10 +6,10 @@
         <Source>Embedded</Source>
         <Value>logo3</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.42333cm</Top>
-        <Left>12.59099cm</Left>
+        <Top>0.74083cm</Top>
+        <Left>10.26266cm</Left>
         <Height>1.97266cm</Height>
-        <Width>2.91042cm</Width>
+        <Width>2.87453cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -51,9 +51,9 @@
       </Textbox>
       <Line Name="Line1">
         <Top>3.11891cm</Top>
-        <Left>0.61891cm</Left>
+        <Left>0.89641cm</Left>
         <Height>0cm</Height>
-        <Width>16.41708cm</Width>
+        <Width>15.33042cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -65,30 +65,30 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.09935cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.09935cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.09935cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.53238cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.31101cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.09935cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.09935cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.94396cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -303,7 +303,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.94396cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -541,10 +541,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Impresora</DataSetName>
-        <Top>4.2037cm</Top>
+        <Top>3.51578cm</Top>
         <Left>0.89641cm</Left>
-        <Height>1.2cm</Height>
-        <Width>17.5cm</Width>
+        <Height>1.88792cm</Height>
+        <Width>14.34012cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -553,10 +553,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>7.7175in</Height>
+    <Height>7.16542in</Height>
     <Style />
   </Body>
-  <Width>7.6126in</Width>
+  <Width>7.01885in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

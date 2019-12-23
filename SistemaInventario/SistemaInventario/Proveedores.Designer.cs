@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedores));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedores));
             this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
+            this.btn_Cancelar = new ns1.BunifuThinButton2();
             this.tbxStatus = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel3 = new ns1.BunifuCustomLabel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
             this.txtAdquisicion = new ns1.BunifuMaterialTextbox();
+            this.btn_Eliminar = new ns1.BunifuThinButton2();
             this.bunifuCustomLabel2 = new ns1.BunifuCustomLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.txtNombre = new ns1.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new ns1.BunifuCustomLabel();
+            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
-            this.btn_Cancelar = new ns1.BunifuThinButton2();
-            this.btn_Eliminar = new ns1.BunifuThinButton2();
-            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.bunifuGradientPanel1 = new ns1.BunifuGradientPanel();
+            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
             this.dtpFecha = new ns1.BunifuDatepicker();
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
-            this.bunifuCustomLabel4 = new ns1.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new ns1.BunifuCustomLabel();
             this.btnAtras = new System.Windows.Forms.Button();
             this.metroPanel5.SuspendLayout();
             this.metroPanel4.SuspendLayout();
@@ -74,6 +74,32 @@
             this.metroPanel5.VerticalScrollbarBarColor = true;
             this.metroPanel5.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel5.VerticalScrollbarSize = 10;
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.ActiveBorderThickness = 1;
+            this.btn_Cancelar.ActiveCornerRadius = 20;
+            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.Info;
+            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
+            this.btn_Cancelar.ButtonText = "Cancelar";
+            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleBorderThickness = 1;
+            this.btn_Cancelar.IdleCornerRadius = 20;
+            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.Location = new System.Drawing.Point(359, 11);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Cancelar.TabIndex = 4;
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // tbxStatus
             // 
@@ -139,6 +165,32 @@
             this.txtAdquisicion.TabIndex = 7;
             this.txtAdquisicion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.ActiveBorderThickness = 1;
+            this.btn_Eliminar.ActiveCornerRadius = 20;
+            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.Info;
+            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
+            this.btn_Eliminar.ButtonText = "Eliminar";
+            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleBorderThickness = 1;
+            this.btn_Eliminar.IdleCornerRadius = 20;
+            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.Location = new System.Drawing.Point(359, 24);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Eliminar.TabIndex = 3;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
@@ -194,6 +246,32 @@
             this.bunifuCustomLabel1.TabIndex = 2;
             this.bunifuCustomLabel1.Text = "Nombre del Proveedor";
             // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.ActiveBorderThickness = 1;
+            this.btn_Guardar.ActiveCornerRadius = 20;
+            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.BackColor = System.Drawing.SystemColors.Info;
+            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
+            this.btn_Guardar.ButtonText = "Guardar";
+            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleBorderThickness = 1;
+            this.btn_Guardar.IdleCornerRadius = 20;
+            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.Location = new System.Drawing.Point(359, 21);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Guardar.TabIndex = 2;
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
+            // 
             // metroPanel3
             // 
             this.metroPanel3.Controls.Add(this.gtb_datos);
@@ -245,84 +323,6 @@
             this.gtb_datos.TabIndex = 11;
             this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.ActiveBorderThickness = 1;
-            this.btn_Cancelar.ActiveCornerRadius = 20;
-            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.Info;
-            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
-            this.btn_Cancelar.ButtonText = "Cancelar";
-            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleBorderThickness = 1;
-            this.btn_Cancelar.IdleCornerRadius = 20;
-            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(359, 11);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Cancelar.TabIndex = 4;
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
-            // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.ActiveBorderThickness = 1;
-            this.btn_Eliminar.ActiveCornerRadius = 20;
-            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.Info;
-            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
-            this.btn_Eliminar.ButtonText = "Eliminar";
-            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleBorderThickness = 1;
-            this.btn_Eliminar.IdleCornerRadius = 20;
-            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(359, 24);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Eliminar.TabIndex = 3;
-            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
-            // 
-            // btn_Guardar
-            // 
-            this.btn_Guardar.ActiveBorderThickness = 1;
-            this.btn_Guardar.ActiveCornerRadius = 20;
-            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.BackColor = System.Drawing.SystemColors.Info;
-            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
-            this.btn_Guardar.ButtonText = "Guardar";
-            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleBorderThickness = 1;
-            this.btn_Guardar.IdleCornerRadius = 20;
-            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.Location = new System.Drawing.Point(359, 21);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Guardar.TabIndex = 2;
-            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
-            // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
@@ -340,6 +340,26 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(490, 70);
             this.bunifuGradientPanel1.TabIndex = 21;
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(208, 13);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(52, 22);
+            this.bunifuCustomLabel5.TabIndex = 5;
+            this.bunifuCustomLabel5.Text = "Fecha";
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(3, 13);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(63, 22);
+            this.bunifuCustomLabel4.TabIndex = 4;
+            this.bunifuCustomLabel4.Text = "Marcas";
             // 
             // dtpFecha
             // 
@@ -363,26 +383,6 @@
             this.cbx_Marcas.Name = "cbx_Marcas";
             this.cbx_Marcas.Size = new System.Drawing.Size(183, 29);
             this.cbx_Marcas.TabIndex = 0;
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(3, 13);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(83, 22);
-            this.bunifuCustomLabel4.TabIndex = 4;
-            this.bunifuCustomLabel4.Text = "Ubicacion";
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(208, 13);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(52, 22);
-            this.bunifuCustomLabel5.TabIndex = 5;
-            this.bunifuCustomLabel5.Text = "Fecha";
             // 
             // btnAtras
             // 

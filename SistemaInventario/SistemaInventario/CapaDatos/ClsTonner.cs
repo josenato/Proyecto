@@ -48,7 +48,7 @@ namespace SistemaInventario.CapaDatos
             //metodo para listar los datos de la tabla color_cantidad en un combobox
             DataTable tabla = new DataTable();
             cm.Connection = Conexion.AbrirCX();
-            cm.CommandText = "Color_Cantidad";
+            cm.CommandText = "Color_CantidadSELECT";
             cm.CommandType = CommandType.StoredProcedure;
             LeerFilas = cm.ExecuteReader();
             tabla.Load(LeerFilas);
@@ -175,7 +175,7 @@ namespace SistemaInventario.CapaDatos
             cm.Parameters.AddWithValue("_Tonner_idTonner", Tonner_idTonner);
             cm.Parameters.AddWithValue("_EnviosToner", EnviosToner);
             cm.Parameters.AddWithValue("_idColor_Cantidad_Color_Cantidad", idColor_Cantidad_Color_Cantidad);
-            cm.Parameters.AddWithValue("_Fecha", Fecha_Cambio);
+            cm.Parameters.AddWithValue("_Fecha_Cambio", Fecha_Cambio);
             cm.ExecuteNonQuery(); //error  revisar el procedimiento almacenado 
             cm.Parameters.Clear();
         }

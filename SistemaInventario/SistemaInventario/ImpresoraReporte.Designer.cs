@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRporte = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRporte = new System.Windows.Forms.Button();
             this.RptImpresora = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -43,18 +43,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(764, 100);
+            this.panel1.Size = new System.Drawing.Size(840, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // btnRporte
-            // 
-            this.btnRporte.Location = new System.Drawing.Point(259, 22);
-            this.btnRporte.Name = "btnRporte";
-            this.btnRporte.Size = new System.Drawing.Size(119, 48);
-            this.btnRporte.TabIndex = 0;
-            this.btnRporte.Text = "Informe";
-            this.btnRporte.UseVisualStyleBackColor = true;
-            this.btnRporte.Click += new System.EventHandler(this.btnRporte_Click);
             // 
             // label1
             // 
@@ -66,20 +56,30 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mostrar Resguardo";
             // 
+            // btnRporte
+            // 
+            this.btnRporte.Location = new System.Drawing.Point(259, 22);
+            this.btnRporte.Name = "btnRporte";
+            this.btnRporte.Size = new System.Drawing.Size(119, 48);
+            this.btnRporte.TabIndex = 0;
+            this.btnRporte.Text = "Informe";
+            this.btnRporte.UseVisualStyleBackColor = true;
+            this.btnRporte.Click += new System.EventHandler(this.btnRporte_Click);
+            // 
             // RptImpresora
             // 
             this.RptImpresora.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RptImpresora.Location = new System.Drawing.Point(0, 100);
             this.RptImpresora.Name = "RptImpresora";
             this.RptImpresora.ServerReport.BearerToken = null;
-            this.RptImpresora.Size = new System.Drawing.Size(764, 470);
+            this.RptImpresora.Size = new System.Drawing.Size(840, 594);
             this.RptImpresora.TabIndex = 1;
             // 
             // ImpresoraReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 570);
+            this.ClientSize = new System.Drawing.Size(840, 694);
             this.Controls.Add(this.RptImpresora);
             this.Controls.Add(this.panel1);
             this.Name = "ImpresoraReporte";
