@@ -37,5 +37,13 @@ namespace SistemaInventario
             fm.ShowDialog();
             this.Close();
         }
+
+        private void txt_Salir_Click(object sender, EventArgs e)
+        {
+            Login fm = new Login();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
 }

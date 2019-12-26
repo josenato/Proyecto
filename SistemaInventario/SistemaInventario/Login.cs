@@ -20,6 +20,7 @@ namespace SistemaInventario
         public Login()
         {
             InitializeComponent();
+            txtPass.PasswordChar = '*';
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace SistemaInventario
                 this.Hide();
                 Principal ss = new Principal();
                 ss.Show();
+                MessageBox.Show("Bienvenido " + txtUsuario.Text);
             }
             else //Si no lo es mostrara este mensaje.
                 MessageBox.Show("Error - Ingrese sus datos correctamente");

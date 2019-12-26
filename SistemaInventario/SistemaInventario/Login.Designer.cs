@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -54,6 +55,7 @@
             // 
             // txtPass
             // 
+            this.txtPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtPass.Location = new System.Drawing.Point(26, 205);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(176, 20);
@@ -90,6 +92,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.metroLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.metroButton1 = new ns1.BunifuImageButton();
             this.metroButton2 = new ns1.BunifuImageButton();
+            this.txt_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.metroButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroButton2)).BeginInit();
             this.SuspendLayout();
@@ -63,12 +64,23 @@
             this.metroButton2.Zoom = 10;
             this.metroButton2.Click += new System.EventHandler(this.MetroButton2_Click_1);
             // 
+            // txt_Salir
+            // 
+            this.txt_Salir.Image = global::SistemaInventario.Properties.Resources.Login_37128;
+            this.txt_Salir.Location = new System.Drawing.Point(511, 12);
+            this.txt_Salir.Name = "txt_Salir";
+            this.txt_Salir.Size = new System.Drawing.Size(75, 61);
+            this.txt_Salir.TabIndex = 3;
+            this.txt_Salir.UseVisualStyleBackColor = true;
+            this.txt_Salir.Click += new System.EventHandler(this.txt_Salir_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaInventario.Properties.Resources.photo_1535370976884_f4376736ab06;
-            this.ClientSize = new System.Drawing.Size(666, 456);
+            this.ClientSize = new System.Drawing.Size(598, 456);
+            this.Controls.Add(this.txt_Salir);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroButton2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -85,5 +97,6 @@
         #endregion
         private ns1.BunifuImageButton metroButton2;
         private ns1.BunifuImageButton metroButton1;
+        private System.Windows.Forms.Button txt_Salir;
     }
 }
