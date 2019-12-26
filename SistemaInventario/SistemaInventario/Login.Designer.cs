@@ -74,7 +74,7 @@
             // btnEntrar
             // 
             this.btnEntrar.Image = global::SistemaInventario.Properties.Resources.Login_37128;
-            this.btnEntrar.Location = new System.Drawing.Point(65, 254);
+            this.btnEntrar.Location = new System.Drawing.Point(75, 250);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(71, 73);
             this.btnEntrar.TabIndex = 4;
