@@ -13,7 +13,7 @@ namespace SistemaInventario
 {
     public partial class Ubicacion : MetroFramework.Forms.MetroForm       
     {
-        string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
+        string conexionString = "Server=172.17.254.84; Database=sistemas2019; Uid=SistemasCDC; Pwd=;";
         int UbicacionID = 0;
         public Ubicacion()
         {

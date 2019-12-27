@@ -17,7 +17,7 @@ namespace SistemaInventario
     {
        MySqlConnection Connexion;
 
-        string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
+        string conexionString = "Server=172.17.254.84; Database=sistemas2019; Uid=SistemasCDC; Pwd=;";
 
          ClsTonner objTonner = new ClsTonner();
         public ImpresoraReporte( MySqlConnection Connexion)
@@ -34,7 +34,7 @@ namespace SistemaInventario
 
         private void btnRporte_Click(object sender, EventArgs e)
         {
-            String Consulta = "select idImpresora  as Id, Descripcion as Marcas, Serialss as Seriales, Ubicacion as Ubicacion, IpImpresora as Ip, Estatus, Modelo from Impresora  inner join Marcas  on Impresora.Marcas_idMarcas = Marcas.idMarcas inner join Ubicacion on Impresora.Ubicacion_idUbicacion = Ubicacion.idUbicacion;";
+            String Consulta = "select * from impresora";
 
             MySqlDataAdapter da = new MySqlDataAdapter(Consulta, conexionString);
             DataSet ds = new DataSet();

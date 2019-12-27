@@ -67,15 +67,19 @@
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Controls.Add(this.btnInforme);
             this.metroPanel1.Controls.Add(this.btn_Cancelar);
             this.metroPanel1.Controls.Add(this.btn_Eliminar);
             this.metroPanel1.Controls.Add(this.btn_Guardar);
+            this.metroPanel1.Controls.Add(this.btnUbicaciones);
+            this.metroPanel1.Controls.Add(this.buttotnReportn2);
+            this.metroPanel1.Controls.Add(this.button1);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(12, 495);
+            this.metroPanel1.Location = new System.Drawing.Point(12, 67);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(475, 62);
+            this.metroPanel1.Size = new System.Drawing.Size(948, 69);
             this.metroPanel1.TabIndex = 3;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -99,7 +103,7 @@
             this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(339, 16);
+            this.btn_Cancelar.Location = new System.Drawing.Point(284, 16);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
@@ -125,7 +129,7 @@
             this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(167, 16);
+            this.btn_Eliminar.Location = new System.Drawing.Point(143, 16);
             this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
@@ -165,9 +169,9 @@
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(12, 67);
+            this.metroPanel3.Location = new System.Drawing.Point(12, 142);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(688, 416);
+            this.metroPanel3.Size = new System.Drawing.Size(948, 331);
             this.metroPanel3.TabIndex = 13;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -206,14 +210,14 @@
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(666, 384);
+            this.gtb_datos.Size = new System.Drawing.Size(926, 299);
             this.gtb_datos.TabIndex = 11;
             this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(726, 433);
+            this.metroLabel1.Location = new System.Drawing.Point(986, 379);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(66, 19);
             this.metroLabel1.TabIndex = 3;
@@ -222,7 +226,7 @@
             // lblMarcas
             // 
             this.lblMarcas.AutoSize = true;
-            this.lblMarcas.Location = new System.Drawing.Point(726, 364);
+            this.lblMarcas.Location = new System.Drawing.Point(988, 311);
             this.lblMarcas.Name = "lblMarcas";
             this.lblMarcas.Size = new System.Drawing.Size(51, 19);
             this.lblMarcas.TabIndex = 2;
@@ -232,7 +236,7 @@
             // 
             this.cbx_Ubicacion.FormattingEnabled = true;
             this.cbx_Ubicacion.ItemHeight = 23;
-            this.cbx_Ubicacion.Location = new System.Drawing.Point(711, 455);
+            this.cbx_Ubicacion.Location = new System.Drawing.Point(984, 401);
             this.cbx_Ubicacion.Name = "cbx_Ubicacion";
             this.cbx_Ubicacion.Size = new System.Drawing.Size(202, 29);
             this.cbx_Ubicacion.TabIndex = 1;
@@ -241,7 +245,7 @@
             // 
             this.cbx_Marcas.FormattingEnabled = true;
             this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(711, 386);
+            this.cbx_Marcas.Location = new System.Drawing.Point(986, 333);
             this.cbx_Marcas.Name = "cbx_Marcas";
             this.cbx_Marcas.Size = new System.Drawing.Size(204, 29);
             this.cbx_Marcas.TabIndex = 0;
@@ -251,7 +255,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("MS PGothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(723, 226);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(985, 178);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(54, 13);
             this.bunifuCustomLabel1.TabIndex = 2;
@@ -270,7 +274,7 @@
             this.btn_Serialss.LineIdleColor = System.Drawing.Color.Gray;
             this.btn_Serialss.LineMouseHoverColor = System.Drawing.Color.Black;
             this.btn_Serialss.LineThickness = 3;
-            this.btn_Serialss.Location = new System.Drawing.Point(711, 243);
+            this.btn_Serialss.Location = new System.Drawing.Point(986, 195);
             this.btn_Serialss.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Serialss.Name = "btn_Serialss";
             this.btn_Serialss.Size = new System.Drawing.Size(204, 28);
@@ -284,7 +288,7 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(722, 284);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(983, 238);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(176, 26);
             this.bunifuCustomLabel2.TabIndex = 3;
@@ -296,7 +300,7 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(721, 80);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(996, 69);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(71, 16);
             this.bunifuCustomLabel3.TabIndex = 4;
@@ -307,7 +311,7 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(708, 156);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(985, 118);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(205, 18);
             this.bunifuCustomLabel4.TabIndex = 5;
@@ -326,7 +330,7 @@
             this.tbx_IP.LineIdleColor = System.Drawing.Color.Gray;
             this.tbx_IP.LineMouseHoverColor = System.Drawing.Color.Black;
             this.tbx_IP.LineThickness = 3;
-            this.tbx_IP.Location = new System.Drawing.Point(711, 322);
+            this.tbx_IP.Location = new System.Drawing.Point(986, 268);
             this.tbx_IP.Margin = new System.Windows.Forms.Padding(4);
             this.tbx_IP.Name = "tbx_IP";
             this.tbx_IP.Size = new System.Drawing.Size(204, 24);
@@ -347,10 +351,10 @@
             this.txb_status.LineIdleColor = System.Drawing.Color.Gray;
             this.txb_status.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txb_status.LineThickness = 3;
-            this.txb_status.Location = new System.Drawing.Point(709, 100);
+            this.txb_status.Location = new System.Drawing.Point(984, 89);
             this.txb_status.Margin = new System.Windows.Forms.Padding(4);
             this.txb_status.Name = "txb_status";
-            this.txb_status.Size = new System.Drawing.Size(204, 29);
+            this.txb_status.Size = new System.Drawing.Size(204, 21);
             this.txb_status.TabIndex = 8;
             this.txb_status.Text = " ";
             this.txb_status.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -368,7 +372,7 @@
             this.txtb_Modelo.LineIdleColor = System.Drawing.Color.Gray;
             this.txtb_Modelo.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtb_Modelo.LineThickness = 3;
-            this.txtb_Modelo.Location = new System.Drawing.Point(709, 178);
+            this.txtb_Modelo.Location = new System.Drawing.Point(986, 142);
             this.txtb_Modelo.Margin = new System.Windows.Forms.Padding(4);
             this.txtb_Modelo.Name = "txtb_Modelo";
             this.txtb_Modelo.Size = new System.Drawing.Size(204, 23);
@@ -379,7 +383,7 @@
             // btnInforme
             // 
             this.btnInforme.Image = global::SistemaInventario.Properties.Resources.informe;
-            this.btnInforme.Location = new System.Drawing.Point(711, 495);
+            this.btnInforme.Location = new System.Drawing.Point(699, 4);
             this.btnInforme.Name = "btnInforme";
             this.btnInforme.Size = new System.Drawing.Size(56, 62);
             this.btnInforme.TabIndex = 27;
@@ -389,7 +393,7 @@
             // btnAtras
             // 
             this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
-            this.btnAtras.Location = new System.Drawing.Point(852, 28);
+            this.btnAtras.Location = new System.Drawing.Point(1129, 26);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(61, 36);
             this.btnAtras.TabIndex = 26;
@@ -399,7 +403,7 @@
             // button1
             // 
             this.button1.Image = global::SistemaInventario.Properties.Resources.Proveedor__2_;
-            this.button1.Location = new System.Drawing.Point(493, 495);
+            this.button1.Location = new System.Drawing.Point(411, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(71, 62);
             this.button1.TabIndex = 5;
@@ -409,7 +413,7 @@
             // buttotnReportn2
             // 
             this.buttotnReportn2.Image = global::SistemaInventario.Properties.Resources.document;
-            this.buttotnReportn2.Location = new System.Drawing.Point(570, 495);
+            this.buttotnReportn2.Location = new System.Drawing.Point(512, 4);
             this.buttotnReportn2.Name = "buttotnReportn2";
             this.buttotnReportn2.Size = new System.Drawing.Size(67, 62);
             this.buttotnReportn2.TabIndex = 6;
@@ -419,7 +423,7 @@
             // btnUbicaciones
             // 
             this.btnUbicaciones.Image = global::SistemaInventario.Properties.Resources.Ubicacion__2_;
-            this.btnUbicaciones.Location = new System.Drawing.Point(643, 495);
+            this.btnUbicaciones.Location = new System.Drawing.Point(605, 4);
             this.btnUbicaciones.Name = "btnUbicaciones";
             this.btnUbicaciones.Size = new System.Drawing.Size(56, 62);
             this.btnUbicaciones.TabIndex = 7;
@@ -430,9 +434,9 @@
             // 
             this.panel1.Controls.Add(this.webBrowser1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(922, 76);
+            this.panel1.Location = new System.Drawing.Point(12, 479);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 493);
+            this.panel1.Size = new System.Drawing.Size(1178, 537);
             this.panel1.TabIndex = 28;
             // 
             // webBrowser1
@@ -441,7 +445,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 44);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(967, 449);
+            this.webBrowser1.Size = new System.Drawing.Size(1178, 493);
             this.webBrowser1.TabIndex = 1;
             // 
             // panel2
@@ -451,7 +455,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(967, 44);
+            this.panel2.Size = new System.Drawing.Size(1178, 44);
             this.panel2.TabIndex = 0;
             // 
             // bunifuCustomLabel5
@@ -471,15 +475,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1878, 574);
+            this.ClientSize = new System.Drawing.Size(1202, 1033);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnInforme);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.cbx_Ubicacion);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttotnReportn2);
-            this.Controls.Add(this.btnUbicaciones);
             this.Controls.Add(this.txb_status);
             this.Controls.Add(this.lblMarcas);
             this.Controls.Add(this.cbx_Marcas);

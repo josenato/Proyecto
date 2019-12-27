@@ -14,7 +14,7 @@ namespace SistemaInventario
 {
     public partial class Login : Form
     {
-        MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistemas2019; Uid=root; Pwd=;");
+        MySqlConnection con = new MySqlConnection("Server=172.17.254.84; Database=sistemas2019; Uid=SistemasCDC; Pwd=;");
         //En donde server="nombre del servidor", user id="root" y database="Nombre de la BD a la que nos conectaremos.
 
         public Login()

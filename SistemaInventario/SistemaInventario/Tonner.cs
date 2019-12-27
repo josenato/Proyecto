@@ -16,7 +16,7 @@ namespace SistemaInventario
     {
          ClsTonner objTonner = new ClsTonner();
 
-        string conexionString = "Server=localhost; Database=sistemas2019; Uid=root; Pwd=;";
+        string conexionString = "Server=172.17.254.84; Database=sistemas2019; Uid=SistemasCDC; Pwd=;";
         int TonnerID = 0;
 
         public Tonner()
