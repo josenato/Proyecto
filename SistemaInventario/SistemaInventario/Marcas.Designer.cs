@@ -105,7 +105,7 @@
             this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(5, 56);
+            this.btn_Eliminar.Location = new System.Drawing.Point(100, 5);
             this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(85, 41);
@@ -131,7 +131,7 @@
             this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
             this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(5, 102);
+            this.btn_Cancelar.Location = new System.Drawing.Point(195, 5);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(85, 41);
@@ -169,13 +169,13 @@
             this.gtb_datos.GridColor = System.Drawing.Color.Silver;
             this.gtb_datos.HeaderBgColor = System.Drawing.Color.DarkCyan;
             this.gtb_datos.HeaderForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gtb_datos.Location = new System.Drawing.Point(118, 106);
+            this.gtb_datos.Location = new System.Drawing.Point(23, 92);
             this.gtb_datos.MultiSelect = false;
             this.gtb_datos.Name = "gtb_datos";
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(189, 157);
+            this.gtb_datos.Size = new System.Drawing.Size(762, 385);
             this.gtb_datos.TabIndex = 10;
             this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
@@ -188,9 +188,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(8, 106);
+            this.metroPanel1.Location = new System.Drawing.Point(296, 34);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(104, 158);
+            this.metroPanel1.Size = new System.Drawing.Size(288, 52);
             this.metroPanel1.TabIndex = 13;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -210,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 286);
+            this.ClientSize = new System.Drawing.Size(795, 500);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.gtb_datos);

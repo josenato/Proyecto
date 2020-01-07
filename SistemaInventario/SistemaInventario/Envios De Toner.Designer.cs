@@ -34,6 +34,9 @@
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.gtb_datos = new ns1.BunifuCustomDataGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.btn_Cancelar = new ns1.BunifuThinButton2();
+            this.btn_Eliminar = new ns1.BunifuThinButton2();
+            this.btn_Guardar = new ns1.BunifuThinButton2();
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
             this.cbx_Ubicacion = new MetroFramework.Controls.MetroComboBox();
             this.cbxColor = new MetroFramework.Controls.MetroComboBox();
@@ -53,9 +56,11 @@
             this.btn_Ubi = new System.Windows.Forms.Button();
             this.btn_Toner = new System.Windows.Forms.Button();
             this.btn_CC = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new ns1.BunifuThinButton2();
-            this.btn_Eliminar = new ns1.BunifuThinButton2();
-            this.btn_Guardar = new ns1.BunifuThinButton2();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -71,7 +76,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(12, 69);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(601, 416);
+            this.metroPanel3.Size = new System.Drawing.Size(717, 424);
             this.metroPanel3.TabIndex = 22;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -110,24 +115,112 @@
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(579, 378);
+            this.gtb_datos.Size = new System.Drawing.Size(695, 406);
             this.gtb_datos.TabIndex = 11;
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Controls.Add(this.metroLabel11);
+            this.metroPanel1.Controls.Add(this.metroLabel10);
+            this.metroPanel1.Controls.Add(this.metroLabel9);
+            this.metroPanel1.Controls.Add(this.metroLabel8);
+            this.metroPanel1.Controls.Add(this.metroLabel7);
+            this.metroPanel1.Controls.Add(this.btn_SS);
+            this.metroPanel1.Controls.Add(this.btn_Toner);
+            this.metroPanel1.Controls.Add(this.btn_Ubi);
+            this.metroPanel1.Controls.Add(this.btn_Marcas);
             this.metroPanel1.Controls.Add(this.btn_Cancelar);
             this.metroPanel1.Controls.Add(this.btn_Eliminar);
             this.metroPanel1.Controls.Add(this.btn_Guardar);
+            this.metroPanel1.Controls.Add(this.btn_CC);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(632, 356);
+            this.metroPanel1.Location = new System.Drawing.Point(732, 346);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(449, 48);
+            this.metroPanel1.Size = new System.Drawing.Size(449, 147);
             this.metroPanel1.TabIndex = 28;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.ActiveBorderThickness = 1;
+            this.btn_Cancelar.ActiveCornerRadius = 20;
+            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
+            this.btn_Cancelar.ButtonText = "Cancelar";
+            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleBorderThickness = 1;
+            this.btn_Cancelar.IdleCornerRadius = 20;
+            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Cancelar.Location = new System.Drawing.Point(326, 5);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
+            this.btn_Cancelar.TabIndex = 4;
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.ActiveBorderThickness = 1;
+            this.btn_Eliminar.ActiveCornerRadius = 20;
+            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
+            this.btn_Eliminar.ButtonText = "Eliminar";
+            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleBorderThickness = 1;
+            this.btn_Eliminar.IdleCornerRadius = 20;
+            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Eliminar.Location = new System.Drawing.Point(171, 5);
+            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Eliminar.TabIndex = 3;
+            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.ActiveBorderThickness = 1;
+            this.btn_Guardar.ActiveCornerRadius = 20;
+            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
+            this.btn_Guardar.ButtonText = "Guardar";
+            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleBorderThickness = 1;
+            this.btn_Guardar.IdleCornerRadius = 20;
+            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
+            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Guardar.Location = new System.Drawing.Point(14, 5);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
+            this.btn_Guardar.TabIndex = 2;
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // cbx_Marcas
             // 
@@ -182,7 +275,7 @@
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(632, 69);
+            this.metroPanel2.Location = new System.Drawing.Point(732, 69);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(449, 268);
             this.metroPanel2.TabIndex = 34;
@@ -267,7 +360,7 @@
             // btn_SS
             // 
             this.btn_SS.Image = global::SistemaInventario.Properties.Resources.SS;
-            this.btn_SS.Location = new System.Drawing.Point(973, 424);
+            this.btn_SS.Location = new System.Drawing.Point(103, 54);
             this.btn_SS.Name = "btn_SS";
             this.btn_SS.Size = new System.Drawing.Size(65, 61);
             this.btn_SS.TabIndex = 40;
@@ -277,7 +370,7 @@
             // btnAtras
             // 
             this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
-            this.btnAtras.Location = new System.Drawing.Point(1020, 27);
+            this.btnAtras.Location = new System.Drawing.Point(1130, 27);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(61, 36);
             this.btnAtras.TabIndex = 39;
@@ -287,9 +380,9 @@
             // btn_Marcas
             // 
             this.btn_Marcas.Image = global::SistemaInventario.Properties.Resources.Marca;
-            this.btn_Marcas.Location = new System.Drawing.Point(894, 424);
+            this.btn_Marcas.Location = new System.Drawing.Point(196, 54);
             this.btn_Marcas.Name = "btn_Marcas";
-            this.btn_Marcas.Size = new System.Drawing.Size(59, 61);
+            this.btn_Marcas.Size = new System.Drawing.Size(70, 61);
             this.btn_Marcas.TabIndex = 38;
             this.btn_Marcas.UseVisualStyleBackColor = true;
             this.btn_Marcas.Click += new System.EventHandler(this.Btn_Marcas_Click);
@@ -297,7 +390,7 @@
             // btn_Ubi
             // 
             this.btn_Ubi.Image = global::SistemaInventario.Properties.Resources.Ubicacion__2_1;
-            this.btn_Ubi.Location = new System.Drawing.Point(817, 424);
+            this.btn_Ubi.Location = new System.Drawing.Point(287, 53);
             this.btn_Ubi.Name = "btn_Ubi";
             this.btn_Ubi.Size = new System.Drawing.Size(71, 61);
             this.btn_Ubi.TabIndex = 37;
@@ -308,7 +401,7 @@
             // 
             this.btn_Toner.ForeColor = System.Drawing.Color.Black;
             this.btn_Toner.Image = global::SistemaInventario.Properties.Resources.Toner;
-            this.btn_Toner.Location = new System.Drawing.Point(731, 425);
+            this.btn_Toner.Location = new System.Drawing.Point(376, 53);
             this.btn_Toner.Name = "btn_Toner";
             this.btn_Toner.Size = new System.Drawing.Size(70, 61);
             this.btn_Toner.TabIndex = 36;
@@ -319,102 +412,69 @@
             // 
             this.btn_CC.ForeColor = System.Drawing.Color.Transparent;
             this.btn_CC.Image = global::SistemaInventario.Properties.Resources.Inventario;
-            this.btn_CC.Location = new System.Drawing.Point(646, 424);
+            this.btn_CC.Location = new System.Drawing.Point(14, 53);
             this.btn_CC.Name = "btn_CC";
             this.btn_CC.Size = new System.Drawing.Size(67, 61);
             this.btn_CC.TabIndex = 35;
             this.btn_CC.UseVisualStyleBackColor = true;
             this.btn_CC.Click += new System.EventHandler(this.Btn_CC_Click);
             // 
-            // btn_Cancelar
+            // metroLabel7
             // 
-            this.btn_Cancelar.ActiveBorderThickness = 1;
-            this.btn_Cancelar.ActiveCornerRadius = 20;
-            this.btn_Cancelar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Cancelar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
-            this.btn_Cancelar.ButtonText = "Cancelar";
-            this.btn_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleBorderThickness = 1;
-            this.btn_Cancelar.IdleCornerRadius = 20;
-            this.btn_Cancelar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Cancelar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Cancelar.Location = new System.Drawing.Point(326, 5);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(105, 41);
-            this.btn_Cancelar.TabIndex = 4;
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel7.Location = new System.Drawing.Point(3, 117);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(78, 25);
+            this.metroLabel7.TabIndex = 41;
+            this.metroLabel7.Text = "Almacen";
             // 
-            // btn_Eliminar
+            // metroLabel8
             // 
-            this.btn_Eliminar.ActiveBorderThickness = 1;
-            this.btn_Eliminar.ActiveCornerRadius = 20;
-            this.btn_Eliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Eliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar.BackgroundImage")));
-            this.btn_Eliminar.ButtonText = "Eliminar";
-            this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleBorderThickness = 1;
-            this.btn_Eliminar.IdleCornerRadius = 20;
-            this.btn_Eliminar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Eliminar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Eliminar.Location = new System.Drawing.Point(171, 5);
-            this.btn_Eliminar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Eliminar.TabIndex = 3;
-            this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel8.Location = new System.Drawing.Point(87, 117);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(76, 25);
+            this.metroLabel8.TabIndex = 42;
+            this.metroLabel8.Text = "Solicitud";
             // 
-            // btn_Guardar
+            // metroLabel9
             // 
-            this.btn_Guardar.ActiveBorderThickness = 1;
-            this.btn_Guardar.ActiveCornerRadius = 20;
-            this.btn_Guardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_Guardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.BackgroundImage")));
-            this.btn_Guardar.ButtonText = "Guardar";
-            this.btn_Guardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Guardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guardar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleBorderThickness = 1;
-            this.btn_Guardar.IdleCornerRadius = 20;
-            this.btn_Guardar.IdleFillColor = System.Drawing.Color.White;
-            this.btn_Guardar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Guardar.Location = new System.Drawing.Point(14, 5);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(119, 41);
-            this.btn_Guardar.TabIndex = 2;
-            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel9.Location = new System.Drawing.Point(196, 117);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(66, 25);
+            this.metroLabel9.TabIndex = 43;
+            this.metroLabel9.Text = "Marcas";
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel10.Location = new System.Drawing.Point(285, 117);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(87, 25);
+            this.metroLabel10.TabIndex = 44;
+            this.metroLabel10.Text = "Ubicacion";
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel11.Location = new System.Drawing.Point(393, 117);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(53, 25);
+            this.metroLabel11.TabIndex = 45;
+            this.metroLabel11.Text = "Toner";
             // 
             // Envios_de_Toner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 498);
-            this.Controls.Add(this.btn_SS);
+            this.ClientSize = new System.Drawing.Size(1193, 531);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.btn_Marcas);
-            this.Controls.Add(this.btn_Ubi);
-            this.Controls.Add(this.btn_Toner);
-            this.Controls.Add(this.btn_CC);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroPanel3);
@@ -425,6 +485,7 @@
             this.metroPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
             this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_Envios)).EndInit();
@@ -459,5 +520,10 @@
         private System.Windows.Forms.Button btn_Marcas;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btn_SS;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
     }
 }

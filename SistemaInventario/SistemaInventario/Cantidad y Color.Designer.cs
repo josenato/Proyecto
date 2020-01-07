@@ -66,7 +66,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(12, 72);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(530, 308);
+            this.metroPanel3.Size = new System.Drawing.Size(740, 308);
             this.metroPanel3.TabIndex = 21;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -105,14 +105,14 @@
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(496, 280);
+            this.gtb_datos.Size = new System.Drawing.Size(706, 289);
             this.gtb_datos.TabIndex = 11;
             this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
             // btnAtras
             // 
             this.btnAtras.Image = global::SistemaInventario.Properties.Resources.atras21;
-            this.btnAtras.Location = new System.Drawing.Point(876, 22);
+            this.btnAtras.Location = new System.Drawing.Point(1086, 23);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(61, 34);
             this.btnAtras.TabIndex = 27;
@@ -134,7 +134,7 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(548, 72);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(758, 72);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(389, 308);
@@ -152,7 +152,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(19, 6);
+            this.metroLabel1.Location = new System.Drawing.Point(21, 6);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(117, 19);
             this.metroLabel1.TabIndex = 28;
@@ -166,7 +166,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(14, 228);
+            this.metroPanel1.Location = new System.Drawing.Point(14, 198);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(354, 67);
             this.metroPanel1.TabIndex = 27;
@@ -256,7 +256,7 @@
             // 
             this.cbx_Marcas.FormattingEnabled = true;
             this.cbx_Marcas.ItemHeight = 23;
-            this.cbx_Marcas.Location = new System.Drawing.Point(187, 28);
+            this.cbx_Marcas.Location = new System.Drawing.Point(201, 28);
             this.cbx_Marcas.Name = "cbx_Marcas";
             this.cbx_Marcas.Size = new System.Drawing.Size(159, 29);
             this.cbx_Marcas.TabIndex = 2;
@@ -268,7 +268,7 @@
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(187, 122);
+            this.metroPanel2.Location = new System.Drawing.Point(187, 95);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(181, 82);
             this.metroPanel2.TabIndex = 24;
@@ -313,7 +313,7 @@
             this.metroPanel4.HorizontalScrollbarBarColor = true;
             this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel4.HorizontalScrollbarSize = 10;
-            this.metroPanel4.Location = new System.Drawing.Point(14, 122);
+            this.metroPanel4.Location = new System.Drawing.Point(14, 95);
             this.metroPanel4.Name = "metroPanel4";
             this.metroPanel4.Size = new System.Drawing.Size(159, 82);
             this.metroPanel4.TabIndex = 25;
@@ -342,7 +342,7 @@
             // 
             this.cbx_Tonner.FormattingEnabled = true;
             this.cbx_Tonner.ItemHeight = 23;
-            this.cbx_Tonner.Location = new System.Drawing.Point(14, 28);
+            this.cbx_Tonner.Location = new System.Drawing.Point(19, 28);
             this.cbx_Tonner.Name = "cbx_Tonner";
             this.cbx_Tonner.Size = new System.Drawing.Size(159, 29);
             this.cbx_Tonner.TabIndex = 1;
@@ -353,7 +353,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(946, 406);
+            this.ClientSize = new System.Drawing.Size(1159, 427);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.metroPanel3);

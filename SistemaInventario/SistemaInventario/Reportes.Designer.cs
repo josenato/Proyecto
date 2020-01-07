@@ -48,6 +48,8 @@
             this.cbx_Marcas = new MetroFramework.Controls.MetroComboBox();
             this.cbx_Ubicacion = new MetroFramework.Controls.MetroComboBox();
             this.btnAtras = new System.Windows.Forms.Button();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).BeginInit();
             this.metroPanel1.SuspendLayout();
@@ -63,7 +65,7 @@
             this.metroPanel3.HorizontalScrollbarSize = 10;
             this.metroPanel3.Location = new System.Drawing.Point(12, 78);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(601, 372);
+            this.metroPanel3.Size = new System.Drawing.Size(668, 429);
             this.metroPanel3.TabIndex = 21;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -102,7 +104,7 @@
             this.gtb_datos.ReadOnly = true;
             this.gtb_datos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gtb_datos.RowHeadersWidth = 51;
-            this.gtb_datos.Size = new System.Drawing.Size(595, 359);
+            this.gtb_datos.Size = new System.Drawing.Size(662, 416);
             this.gtb_datos.TabIndex = 11;
             this.gtb_datos.DoubleClick += new System.EventHandler(this.Gtb_datos_DoubleClick);
             // 
@@ -114,9 +116,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(616, 388);
+            this.metroPanel1.Location = new System.Drawing.Point(686, 445);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(349, 62);
+            this.metroPanel1.Size = new System.Drawing.Size(346, 62);
             this.metroPanel1.TabIndex = 27;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -203,16 +205,18 @@
             // 
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Controls.Add(this.materialLabel5);
+            this.bunifuGradientPanel2.Controls.Add(this.materialLabel4);
             this.bunifuGradientPanel2.Controls.Add(this.dtp_Inicio);
             this.bunifuGradientPanel2.Controls.Add(this.dtp_Final);
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(619, 81);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(686, 67);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(349, 100);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(349, 140);
             this.bunifuGradientPanel2.TabIndex = 29;
             // 
             // dtp_Inicio
@@ -223,7 +227,7 @@
             this.dtp_Inicio.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtp_Inicio.FormatCustom = null;
             this.dtp_Inicio.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtp_Inicio.Location = new System.Drawing.Point(7, 14);
+            this.dtp_Inicio.Location = new System.Drawing.Point(7, 32);
             this.dtp_Inicio.Name = "dtp_Inicio";
             this.dtp_Inicio.Size = new System.Drawing.Size(337, 26);
             this.dtp_Inicio.TabIndex = 24;
@@ -237,7 +241,7 @@
             this.dtp_Final.ForeColor = System.Drawing.Color.White;
             this.dtp_Final.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtp_Final.FormatCustom = null;
-            this.dtp_Final.Location = new System.Drawing.Point(7, 62);
+            this.dtp_Final.Location = new System.Drawing.Point(9, 96);
             this.dtp_Final.Name = "dtp_Final";
             this.dtp_Final.Size = new System.Drawing.Size(337, 26);
             this.dtp_Final.TabIndex = 23;
@@ -258,18 +262,18 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(619, 192);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(686, 226);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(346, 190);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(349, 213);
             this.bunifuGradientPanel1.TabIndex = 28;
             // 
             // txt_observaciones
             // 
-            this.txt_observaciones.Location = new System.Drawing.Point(3, 145);
+            this.txt_observaciones.Location = new System.Drawing.Point(7, 145);
             this.txt_observaciones.Multiline = true;
             this.txt_observaciones.Name = "txt_observaciones";
-            this.txt_observaciones.Size = new System.Drawing.Size(324, 45);
+            this.txt_observaciones.Size = new System.Drawing.Size(334, 45);
             this.txt_observaciones.TabIndex = 31;
             // 
             // materialLabel3
@@ -339,11 +343,37 @@
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(6, 10);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(98, 19);
+            this.materialLabel4.TabIndex = 28;
+            this.materialLabel4.Text = "Fecha Inicnio";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(6, 74);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(85, 19);
+            this.materialLabel5.TabIndex = 29;
+            this.materialLabel5.Text = "Fecha Final";
+            // 
             // Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 470);
+            this.ClientSize = new System.Drawing.Size(1047, 530);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.bunifuGradientPanel2);
             this.Controls.Add(this.bunifuGradientPanel1);
@@ -356,6 +386,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gtb_datos)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
+            this.bunifuGradientPanel2.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -381,6 +412,8 @@
         private System.Windows.Forms.TextBox txt_observaciones;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.Button btnAtras;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
         //   private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
     }
 }
